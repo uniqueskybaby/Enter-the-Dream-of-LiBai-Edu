@@ -1,0 +1,243 @@
+{
+  "gameId": "dream_li_bai_tianshan_cloudsea_v1",
+  "title": "入梦李白：关山月",
+  "poem": {
+    "poet": "李白",
+    "line": "明月出天山，苍茫云海间。",
+    "source": "关山月"
+  },
+  "world": {
+    "worldName": "天山云海梦境",
+    "visualTone": "清冷、辽阔、边塞月色、雪山云海",
+    "spaceRules": [
+      "探索全景中的诗意意象",
+      "解开三道与诗句紧密相关的闯关题",
+      "集齐碎片后选择梦境归宿"
+    ]
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "天山云海梦境",
+      "subtitle": "环顾画面，点亮三枚诗意碎片。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "initialView": {
+        "yaw": -70,
+        "pitch": 8,
+        "fov": 105
+      },
+      "ambientLine": "明月从天山雪脊后升起，云海像无边白浪铺向夜色。",
+      "hotspots": [
+        {
+          "id": "moonrise",
+          "label": "明月",
+          "yaw": -105,
+          "pitch": 31,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_moonrise_locked",
+          "effect": "moon.particles"
+        },
+        {
+          "id": "tianshan",
+          "label": "天山",
+          "yaw": -126,
+          "pitch": 5,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_tianshan_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "cloudsea",
+          "label": "云海",
+          "yaw": 33,
+          "pitch": -14,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_cloudsea_locked",
+          "effect": "ui.inkRipple"
+        }
+      ]
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "踏月过关山",
+      "subtitle": "顺着“明月”进入第一重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "initialView": {
+        "yaw": -105,
+        "pitch": 31,
+        "fov": 104
+      },
+      "ambientLine": "月亮不是静挂空中，而是从天山之后缓缓升起。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "雪岭听风",
+      "subtitle": "顺着“天山”进入第二重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "initialView": {
+        "yaw": -126,
+        "pitch": 5,
+        "fov": 104
+      },
+      "ambientLine": "天山把月色托起，也把边塞的辽远感推到眼前。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "云海归心",
+      "subtitle": "顺着“云海”进入第三重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "initialView": {
+        "yaw": 33,
+        "pitch": -14,
+        "fov": 104
+      },
+      "ambientLine": "云海铺开，让一轮明月显得更加孤高辽阔。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_moonrise_locked": {
+      "id": "story_moonrise_locked",
+      "speaker": "李白",
+      "text": "先解开“明月”之问，让“明月出天山，苍茫云海间。”的第一枚意象碎片归位。",
+      "choices": []
+    },
+    "story_tianshan_locked": {
+      "id": "story_tianshan_locked",
+      "speaker": "梦境",
+      "text": "“天山”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_cloudsea_locked": {
+      "id": "story_cloudsea_locked",
+      "speaker": "梦境",
+      "text": "“云海”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "三枚碎片已经照亮：“明月出天山，苍茫云海间。”在你眼前展开。选择一条路，把这幅诗境写成你的归宿。",
+      "choices": [
+        {
+          "id": "branch_a",
+          "text": "踏月过关山",
+          "tone": "豪放",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "branch_b",
+          "text": "雪岭听风",
+          "tone": "清远",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "branch_c",
+          "text": "云海归心",
+          "tone": "诗心",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "踏月过关山",
+      "rarity": "珍稀结局",
+      "text": "你循着“明月”入梦，读懂了《关山月》里最先跃出的那一笔。",
+      "rewardTitle": "解锁梦境印记",
+      "rewardText": "踏月过关山",
+      "imageUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "雪岭听风",
+      "rarity": "清远结局",
+      "text": "你停在“天山”之前，让诗句中的空间、光色与心境慢慢合拢。",
+      "rewardTitle": "解锁诗意碎片",
+      "rewardText": "雪岭听风",
+      "imageUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "云海归心",
+      "rarity": "诗心结局",
+      "text": "你最终选择“云海”，把眼前景物读成了属于自己的李白梦。",
+      "rewardTitle": "解锁新视角",
+      "rewardText": "云海归心",
+      "imageUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png"
+    }
+  },
+  "puzzles": {
+    "moonrise": {
+      "id": "moonrise",
+      "motif": "月",
+      "clueName": "天山月魄",
+      "clueText": "月亮不是静挂空中，而是从天山之后缓缓升起。",
+      "hint": "看“出天山”三字，月亮的动作不是停留。",
+      "rewardLine": "月魄点亮，雪峰的轮廓清晰起来。",
+      "question": "“明月出天山”把月亮写成怎样的画面？",
+      "options": [
+        "从天山雪峰后升起",
+        "沉入江心水面",
+        "挂在庭院酒盏中",
+        "藏进行人的袖中"
+      ],
+      "correctIndex": 0
+    },
+    "tianshan": {
+      "id": "tianshan",
+      "motif": "山",
+      "clueName": "雪岭界碑",
+      "clueText": "天山把月色托起，也把边塞的辽远感推到眼前。",
+      "hint": "这句的山不是背景小景，而是托出明月的高大边塞。",
+      "rewardLine": "雪岭回应，云海开始翻涌。",
+      "question": "诗句中“天山”最主要强化了怎样的空间感？",
+      "options": [
+        "江南庭院、细雨温柔",
+        "市井热闹、灯火稠密",
+        "边塞高远、天地辽阔",
+        "宫殿华丽、金碧辉煌"
+      ],
+      "correctIndex": 2
+    },
+    "cloudsea": {
+      "id": "cloudsea",
+      "motif": "云",
+      "clueName": "苍茫云涛",
+      "clueText": "云海铺开，让一轮明月显得更加孤高辽阔。",
+      "hint": "“苍茫”写的是望不到边的开阔。",
+      "rewardLine": "云涛归位，诗阵显出边关夜色。",
+      "question": "“苍茫云海间”的“苍茫”主要营造什么感受？",
+      "options": [
+        "狭小封闭、近在眼前",
+        "辽阔无边、迷蒙深远",
+        "热烈喧闹、人声鼎沸",
+        "精巧细密、工整华丽"
+      ],
+      "correctIndex": 1
+    }
+  },
+  "puzzleOrder": [
+    "moonrise",
+    "tianshan",
+    "cloudsea"
+  ],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for Li Bai line 明月出天山，苍茫云海间。; 清冷、辽阔、边塞月色、雪山云海; no text, no watermark."
+  }
+}

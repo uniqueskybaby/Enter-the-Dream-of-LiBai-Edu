@@ -1,0 +1,275 @@
+{
+  "gameId": "dream_generated_silver_saddle_meteor",
+  "title": "入梦李白：侠客行",
+  "poem": {
+    "poet": "李白",
+    "line": "银鞍照白马，飒沓如流星。",
+    "source": "侠客行"
+  },
+  "world": {
+    "worldName": "流星侠客境",
+    "visualTone": "古典水墨风格，夜空中银鞍白马疾驰，流星划过，动态光影效果，武侠氛围",
+    "spaceRules": [
+      "探索全景收集意象碎片",
+      "解开诗句谜题获得线索",
+      "做出选择影响梦境走向"
+    ]
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "银鞍白马流星夜",
+      "subtitle": "在这迅疾的梦境中，寻找散落的意象碎片，解开李白的诗意密码。",
+      "panoramaUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_main_scene.png",
+      "initialView": {
+        "yaw": 46,
+        "pitch": 2,
+        "fov": 105
+      },
+      "ambientLine": "夜色深沉，银鞍闪耀，白马嘶鸣，远处流星划过天际。",
+      "hotspots": [
+        {
+          "id": "silver_saddle",
+          "label": "银鞍",
+          "yaw": 36,
+          "pitch": -15,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_silver_saddle",
+          "effect": "silver.gleam"
+        },
+        {
+          "id": "white_horse",
+          "label": "白马",
+          "yaw": 73,
+          "pitch": 0,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_white_horse_locked",
+          "effect": "horse.gallop"
+        },
+        {
+          "id": "meteor",
+          "label": "流星",
+          "yaw": 58,
+          "pitch": 50,
+          "radius": 16,
+          "state": "available",
+          "storyId": "story_meteor_locked",
+          "effect": "meteor.trail"
+        }
+      ]
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "疾风追月",
+      "subtitle": "选择豪迈之路，与白马一同追逐流星，体验侠客的疾驰。",
+      "panoramaUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_branch_a.png",
+      "initialView": {
+        "yaw": -24,
+        "pitch": 1,
+        "fov": 104
+      },
+      "ambientLine": "狂风呼啸，月光如水，马蹄声碎，流星在前方指引。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "星光大道",
+      "subtitle": "选择悠然之路，驻足欣赏银鞍与白马的光影，感悟夜的宁静。",
+      "panoramaUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_branch_b.png",
+      "initialView": {
+        "yaw": 15,
+        "pitch": -2,
+        "fov": 104
+      },
+      "ambientLine": "星光璀璨，银河倒映，银鞍闪烁，白马静立，时光仿佛凝固。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "沉思流星",
+      "subtitle": "选择沉思之路，凝视流星划过，思考诗意中的永恒瞬间。",
+      "panoramaUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_branch_c.png",
+      "initialView": {
+        "yaw": 5,
+        "pitch": -4,
+        "fov": 104
+      },
+      "ambientLine": "流星定格在夜空，万籁俱寂，银鞍白马化作剪影，引发无尽遐想。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_silver_saddle": {
+      "id": "story_silver_saddle",
+      "speaker": "李白",
+      "text": "银鞍闪耀，映照着白马的身躯，这迅疾的景象是否让你想起了侠客的豪情？在这流星划过的夜，你选择如何前行？",
+      "choices": [
+        {
+          "id": "choice_a",
+          "text": "疾驰向前，追逐流星",
+          "tone": "豪迈",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "choice_b",
+          "text": "驻足欣赏，沐浴星光",
+          "tone": "悠然",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "choice_c",
+          "text": "静思默想，感悟诗意",
+          "tone": "沉思",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    },
+    "story_white_horse_locked": {
+      "id": "story_white_horse_locked",
+      "speaker": "梦境",
+      "text": "这匹白马似乎被银鞍的光芒吸引，但需要先获得银鞍的碎片才能解锁它的故事。",
+      "choices": []
+    },
+    "story_meteor_locked": {
+      "id": "story_meteor_locked",
+      "speaker": "梦境",
+      "text": "流星在天际闪烁，它的秘密隐藏在诗句之中，先解开银鞍的谜题吧。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "所有意象碎片已集齐，银鞍、白马、流星交织成完整的侠客画卷。现在，选择你的归宿。",
+      "choices": [
+        {
+          "id": "choice_a",
+          "text": "融入疾驰的梦",
+          "tone": "豪迈",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "choice_b",
+          "text": "归于宁静的夜",
+          "tone": "悠然",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "choice_c",
+          "text": "化作诗意的光",
+          "tone": "沉思",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "疾风侠影",
+      "rarity": "珍稀结局",
+      "text": "你化身为流星，与银鞍白马一同划过夜空，成为永恒的侠客传说。",
+      "rewardTitle": "解锁新梦境",
+      "rewardText": "疾风追月梦",
+      "imageUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_ending_a.png"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "星夜逍遥",
+      "rarity": "逍遥结局",
+      "text": "你选择与白马驻足星光下，享受这一刻的宁静与自由，逍遥于天地之间。",
+      "rewardTitle": "解锁梦之印记",
+      "rewardText": "星光印记",
+      "imageUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_ending_b.png"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "诗心永恒",
+      "rarity": "诗心结局",
+      "text": "你深思流星的瞬逝与银鞍的闪光，领悟到诗意在瞬间永恒，心灵得到升华。",
+      "rewardTitle": "解锁诗意碎片",
+      "rewardText": "流星诗心碎片",
+      "imageUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_ending_c.png"
+    }
+  },
+  "puzzles": {
+    "silver_saddle": {
+      "id": "silver_saddle",
+      "motif": "鞍",
+      "clueName": "银鞍碎片",
+      "clueText": "银光闪闪的马鞍，象征着侠客的装备与荣耀。",
+      "hint": "思考'照'字在诗句中的含义。",
+      "rewardLine": "获得银鞍碎片，侠客之风再现。",
+      "question": "诗句'银鞍照白马'中的'照'字最能体现什么？",
+      "options": [
+        "光芒反射",
+        "照耀前路",
+        "映衬美景",
+        "引导方向"
+      ],
+      "correctIndex": 0
+    },
+    "white_horse": {
+      "id": "white_horse",
+      "motif": "马",
+      "clueName": "白马碎片",
+      "clueText": "纯洁的白马，与银鞍相配，迅疾如风。",
+      "hint": "白马在诗句中如何与银鞍互动？",
+      "rewardLine": "获得白马碎片，疾驰之姿跃然眼前。",
+      "question": "'白马'在诗句中象征着什么？",
+      "options": [
+        "速度与力量",
+        "纯洁与高贵",
+        "忠诚与陪伴",
+        "自由与奔放"
+      ],
+      "correctIndex": 1
+    },
+    "meteor": {
+      "id": "meteor",
+      "motif": "星",
+      "clueName": "流星碎片",
+      "clueText": "划过夜空的流星，比喻侠客行动的迅疾。",
+      "hint": "流星如何形容侠客的飒沓？",
+      "rewardLine": "获得流星碎片，迅疾瞬间永存。",
+      "question": "'飒沓如流星'中，流星比喻什么？",
+      "options": [
+        "侠客的身影",
+        "夜晚的景色",
+        "马的速度",
+        "时光的流逝"
+      ],
+      "correctIndex": 0
+    }
+  },
+  "puzzleOrder": [
+    "silver_saddle",
+    "white_horse",
+    "meteor"
+  ],
+  "imagePrompts": {
+    "main_scene": "A 360-degree panoramic view of a night scene with a silver saddle glinting on a white horse, a meteor streaking across the sky, dynamic motion blur, ink wash painting style, Chinese wuxia atmosphere.",
+    "branch_a": "A panoramic scene of the white horse galloping towards the moon under a windy sky, with stars trailing, adventurous and romantic tone.",
+    "branch_b": "A serene night panorama with the white horse standing still under starlight, silver saddle reflecting soft light, peaceful and meditative mood.",
+    "branch_c": "A contemplative 360-degree view with the meteor frozen in the sky, the white horse and silver saddle in silhouette, quiet and thoughtful atmosphere.",
+    "ending_a": "A dynamic scene of the white horse and silver saddle blending into a meteor shower, becoming part of the night sky, epic and legendary style.",
+    "ending_b": "A tranquil panorama of the white horse resting under a canopy of stars, with the silver saddle glowing softly, serene and free.",
+    "ending_c": "An abstract scene with the meteor, horse, and saddle dissolving into poetic light, meditative and eternal."
+  },
+  "meta": {
+    "origin": "player-ai",
+    "savedAt": "2026-05-24T15:08:36.294Z"
+  }
+}

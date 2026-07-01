@@ -1,0 +1,243 @@
+{
+  "gameId": "dream_li_bai_lanling_wine_v1",
+  "title": "入梦李白：客中行",
+  "poem": {
+    "poet": "李白",
+    "line": "兰陵美酒郁金香，玉碗盛来琥珀光。",
+    "source": "客中行"
+  },
+  "world": {
+    "worldName": "兰陵酒光梦境",
+    "visualTone": "温暖、华美、酒香、玉碗琥珀光",
+    "spaceRules": [
+      "探索全景中的诗意意象",
+      "解开三道与诗句紧密相关的闯关题",
+      "集齐碎片后选择梦境归宿"
+    ]
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "兰陵酒光梦境",
+      "subtitle": "环顾画面，点亮三枚诗意碎片。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png",
+      "initialView": {
+        "yaw": 0,
+        "pitch": -15,
+        "fov": 105
+      },
+      "ambientLine": "玉碗盛着琥珀般的兰陵美酒，香气在月下化成金色花影。",
+      "hotspots": [
+        {
+          "id": "lanling_wine",
+          "label": "美酒",
+          "yaw": 3,
+          "pitch": -18,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_lanling_wine_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "jade_bowl",
+          "label": "玉碗",
+          "yaw": 3,
+          "pitch": -34,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_jade_bowl_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "amber_light",
+          "label": "琥珀光",
+          "yaw": 11,
+          "pitch": 16,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_amber_light_locked",
+          "effect": "ui.inkRipple"
+        }
+      ]
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "客中忘乡",
+      "subtitle": "顺着“美酒”进入第一重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png",
+      "initialView": {
+        "yaw": 3,
+        "pitch": -18,
+        "fov": 104
+      },
+      "ambientLine": "兰陵美酒以香气先入梦，温暖而明亮。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "玉碗留香",
+      "subtitle": "顺着“玉碗”进入第二重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png",
+      "initialView": {
+        "yaw": 3,
+        "pitch": -34,
+        "fov": 104
+      },
+      "ambientLine": "玉碗用温润器色衬出酒液的华美。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "琥珀微醺",
+      "subtitle": "顺着“琥珀光”进入第三重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png",
+      "initialView": {
+        "yaw": 11,
+        "pitch": 16,
+        "fov": 104
+      },
+      "ambientLine": "酒光像琥珀一样澄明，客中也能生出欢意。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_lanling_wine_locked": {
+      "id": "story_lanling_wine_locked",
+      "speaker": "李白",
+      "text": "先解开“美酒”之问，让“兰陵美酒郁金香，玉碗盛来琥珀光。”的第一枚意象碎片归位。",
+      "choices": []
+    },
+    "story_jade_bowl_locked": {
+      "id": "story_jade_bowl_locked",
+      "speaker": "梦境",
+      "text": "“玉碗”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_amber_light_locked": {
+      "id": "story_amber_light_locked",
+      "speaker": "梦境",
+      "text": "“琥珀光”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "三枚碎片已经照亮：“兰陵美酒郁金香，玉碗盛来琥珀光。”在你眼前展开。选择一条路，把这幅诗境写成你的归宿。",
+      "choices": [
+        {
+          "id": "branch_a",
+          "text": "客中忘乡",
+          "tone": "豪放",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "branch_b",
+          "text": "玉碗留香",
+          "tone": "清远",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "branch_c",
+          "text": "琥珀微醺",
+          "tone": "诗心",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "客中忘乡",
+      "rarity": "珍稀结局",
+      "text": "你循着“美酒”入梦，读懂了《客中行》里最先跃出的那一笔。",
+      "rewardTitle": "解锁梦境印记",
+      "rewardText": "客中忘乡",
+      "imageUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "玉碗留香",
+      "rarity": "清远结局",
+      "text": "你停在“玉碗”之前，让诗句中的空间、光色与心境慢慢合拢。",
+      "rewardTitle": "解锁诗意碎片",
+      "rewardText": "玉碗留香",
+      "imageUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "琥珀微醺",
+      "rarity": "诗心结局",
+      "text": "你最终选择“琥珀光”，把眼前景物读成了属于自己的李白梦。",
+      "rewardTitle": "解锁新视角",
+      "rewardText": "琥珀微醺",
+      "imageUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png"
+    }
+  },
+  "puzzles": {
+    "lanling_wine": {
+      "id": "lanling_wine",
+      "motif": "酒",
+      "clueName": "兰陵酒香",
+      "clueText": "兰陵美酒以香气先入梦，温暖而明亮。",
+      "hint": "“郁金香”在这里写的是酒香与色泽的美感。",
+      "rewardLine": "酒香浮起，玉碗泛光。",
+      "question": "“兰陵美酒郁金香”主要写出了酒的什么特点？",
+      "options": [
+        "清淡无味、近乎白水",
+        "苦涩难饮、令人退避",
+        "香气浓郁、色味皆美",
+        "冰冷锋利、像兵器"
+      ],
+      "correctIndex": 2
+    },
+    "jade_bowl": {
+      "id": "jade_bowl",
+      "motif": "碗",
+      "clueName": "玉碗温光",
+      "clueText": "玉碗用温润器色衬出酒液的华美。",
+      "hint": "器物不是随便出现，它在托起酒光。",
+      "rewardLine": "玉碗归位，琥珀光更明。",
+      "question": "“玉碗盛来”中，玉碗在画面中的作用是什么？",
+      "options": [
+        "以温润器色衬托酒光",
+        "遮住美酒不让人看见",
+        "把酒变成清水",
+        "表示旅途缺少饮食"
+      ],
+      "correctIndex": 0
+    },
+    "amber_light": {
+      "id": "amber_light",
+      "motif": "光",
+      "clueName": "琥珀金光",
+      "clueText": "酒光像琥珀一样澄明，客中也能生出欢意。",
+      "hint": "“琥珀光”是颜色、质感与情绪的共同描写。",
+      "rewardLine": "琥珀光归位，客中诗阵开启。",
+      "question": "“琥珀光”最准确地写出了酒色怎样的质感？",
+      "options": [
+        "乌黑沉重、毫无光泽",
+        "惨白冰冷、像霜雪",
+        "澄明金亮、温润透明",
+        "杂乱刺眼、不可分辨"
+      ],
+      "correctIndex": 2
+    }
+  },
+  "puzzleOrder": [
+    "lanling_wine",
+    "jade_bowl",
+    "amber_light"
+  ],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for Li Bai line 兰陵美酒郁金香，玉碗盛来琥珀光。; 温暖、华美、酒香、玉碗琥珀光; no text, no watermark."
+  }
+}

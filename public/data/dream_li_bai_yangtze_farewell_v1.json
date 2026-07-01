@@ -1,0 +1,253 @@
+{
+  "gameId": "dream_li_bai_yangtze_farewell_v1",
+  "title": "入梦李白：黄鹤楼送孟浩然之广陵",
+  "poem": {
+    "poet": "李白",
+    "line": "孤帆远影碧空尽，惟见长江天际流。",
+    "source": "黄鹤楼送孟浩然之广陵"
+  },
+  "world": {
+    "worldName": "长江天际梦境",
+    "visualTone": "青碧晴空、淡金夕照、江水如练、送别留白",
+    "spaceRules": ["孤帆会在视线尽头化成云影", "碧空与江水共享同一条天际线", "送别之情只能顺江流向远方"]
+  },
+  "startNodeId": "main_yangtze_farewell",
+  "nodes": [
+    {
+      "id": "main_yangtze_farewell",
+      "type": "panorama",
+      "title": "长江天际梦境",
+      "subtitle": "凭栏远望，寻找孤帆、碧空、长江三枚诗意碎片",
+      "panoramaUrl": "/assets/panoramas/yangtze_farewell_main_4096x2048.jpg",
+      "initialView": { "yaw": 2, "pitch": -1, "fov": 105 },
+      "ambientLine": "远帆慢慢淡入碧空，只剩长江把离别推向天边。",
+      "hotspots": [
+        {
+          "id": "sail",
+          "label": "孤帆",
+          "yaw": 14,
+          "pitch": 1,
+          "radius": 16,
+          "state": "available",
+          "storyId": "story_sail",
+          "effect": "moon.particles"
+        },
+        {
+          "id": "sky",
+          "label": "碧空",
+          "yaw": 0,
+          "pitch": 44,
+          "radius": 16,
+          "state": "available",
+          "storyId": "story_sky_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "river",
+          "label": "长江",
+          "yaw": 0,
+          "pitch": -15,
+          "radius": 16,
+          "state": "available",
+          "storyId": "story_river_locked",
+          "effect": "waterfall.mist"
+        }
+      ]
+    },
+    {
+      "id": "branch_yangtze_pavilion",
+      "type": "panorama",
+      "title": "黄鹤送别亭",
+      "subtitle": "杯盏与书信还在亭中，故人的帆影已经远去。",
+      "panoramaUrl": "/assets/panoramas/yangtze_farewell_pavilion_4096x2048.jpg",
+      "initialView": { "yaw": -8, "pitch": -2, "fov": 104 },
+      "ambientLine": "柳丝拂过栏杆，江风把未说完的话递向远帆。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_yangtze_sail",
+      "type": "panorama",
+      "title": "孤帆云影",
+      "subtitle": "你沿云路追望，那一点白帆几乎融进晴空。",
+      "panoramaUrl": "/assets/panoramas/yangtze_farewell_sail_4096x2048.jpg",
+      "initialView": { "yaw": 0, "pitch": 0, "fov": 104 },
+      "ambientLine": "云与江水在脚下相接，孤帆像一枚即将消失的诗印。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_yangtze_horizon",
+      "type": "panorama",
+      "title": "天际江流",
+      "subtitle": "帆影已尽，只余一江青碧流向天边。",
+      "panoramaUrl": "/assets/panoramas/yangtze_farewell_horizon_4096x2048.jpg",
+      "initialView": { "yaw": 12, "pitch": -3, "fov": 104 },
+      "ambientLine": "你不再寻找帆影，只听见长江把思念缓缓带走。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_sail": {
+      "id": "story_sail",
+      "speaker": "李白",
+      "text": "你望向那叶孤帆，帆影细得像一笔未干的墨。李白轻声说：送别最远处，才看见心的去向。",
+      "choices": [
+        {
+          "id": "pavilion",
+          "text": "亭中送别",
+          "tone": "温柔",
+          "nextNodeId": "branch_yangtze_pavilion",
+          "endingId": "ending_farewell_watcher"
+        },
+        {
+          "id": "sail",
+          "text": "追望孤帆",
+          "tone": "逍遥",
+          "nextNodeId": "branch_yangtze_sail",
+          "endingId": "ending_cloud_sail"
+        },
+        {
+          "id": "horizon",
+          "text": "听江入天",
+          "tone": "诗心",
+          "nextNodeId": "branch_yangtze_horizon",
+          "endingId": "ending_river_horizon"
+        }
+      ]
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "江天诗阵",
+      "text": "孤帆、碧空与长江在天际相接。离别没有停在亭中，而是随水色铺成三条梦路。",
+      "choices": [
+        {
+          "id": "pavilion",
+          "text": "亭中送别",
+          "tone": "温柔",
+          "nextNodeId": "branch_yangtze_pavilion",
+          "endingId": "ending_farewell_watcher"
+        },
+        {
+          "id": "sail",
+          "text": "追望孤帆",
+          "tone": "逍遥",
+          "nextNodeId": "branch_yangtze_sail",
+          "endingId": "ending_cloud_sail"
+        },
+        {
+          "id": "horizon",
+          "text": "听江入天",
+          "tone": "诗心",
+          "nextNodeId": "branch_yangtze_horizon",
+          "endingId": "ending_river_horizon"
+        }
+      ]
+    },
+    "story_sky_locked": {
+      "id": "story_sky_locked",
+      "speaker": "碧空",
+      "text": "天空还没有收下帆影。先找到那一点远去的白帆。",
+      "choices": []
+    },
+    "story_river_locked": {
+      "id": "story_river_locked",
+      "speaker": "长江",
+      "text": "江流尚未显出天际线。待碧空归位，再听水声远去。",
+      "choices": []
+    }
+  },
+  "endings": {
+    "ending_farewell_watcher": {
+      "id": "ending_farewell_watcher",
+      "name": "送别望帆人",
+      "rarity": "珍稀结局",
+      "text": "你留在黄鹤楼上，替李白守住最后一线帆影。风过栏杆，未出口的祝愿都顺江而去。",
+      "rewardTitle": "解锁新梦境",
+      "rewardText": "《长江天际梦境·黄鹤送别亭》"
+    },
+    "ending_cloud_sail": {
+      "id": "ending_cloud_sail",
+      "name": "云帆远游客",
+      "rarity": "逍遥结局",
+      "text": "你踏上云路追望孤帆，发现远方并非消失，而是把人的心意带向更宽的江天。",
+      "rewardTitle": "解锁梦之印记",
+      "rewardText": "孤帆云影"
+    },
+    "ending_river_horizon": {
+      "id": "ending_river_horizon",
+      "name": "天际听江者",
+      "rarity": "诗心结局",
+      "text": "帆影尽了，你仍看见长江在天际流。真正留下的不是船，而是望到最后的深情。",
+      "rewardTitle": "解锁诗意碎片",
+      "rewardText": "江天一线"
+    }
+  },
+  "puzzles": {
+    "sail": {
+      "id": "sail",
+      "motif": "帆",
+      "clueName": "孤帆远影",
+      "clueText": "孤帆是离别的具体身影，越远越显出情意。",
+      "hint": "先找诗句里最小也最远的物象。",
+      "rewardLine": "孤帆印亮起，碧空开始变得清澈。",
+      "question": "“孤帆远影”中，被诗人一直追望的是什么？",
+      "options": ["一叶孤帆", "一轮明月", "一座高楼", "一片落花"],
+      "correctIndex": 0
+    },
+    "sky": {
+      "id": "sky",
+      "motif": "空",
+      "clueName": "碧空尽处",
+      "clueText": "碧空不是空无，而是帆影消失的尽头。",
+      "hint": "帆影消失在哪里？",
+      "rewardLine": "碧空印归位，长江的天际线浮现。",
+      "question": "“碧空尽”写出了帆影怎样的变化？",
+      "options": ["停在岸边", "沉入水底", "渐渐消失在晴空尽头", "回到亭前"],
+      "correctIndex": 2
+    },
+    "river": {
+      "id": "river",
+      "motif": "江",
+      "clueName": "长江天流",
+      "clueText": "帆影尽后，长江仍在天际流动，留下望不尽的情。",
+      "hint": "帆影消失以后，诗人还看见什么？",
+      "rewardLine": "长江印成形，江天诗阵已经开启。",
+      "question": "“惟见长江天际流”中，帆影之后还留在视野里的是什么？",
+      "options": ["山寺钟声", "长江向天际流去", "月下酒盏", "黄河金涛"],
+      "correctIndex": 1
+    }
+  },
+  "puzzleOrder": ["sail", "sky", "river"],
+  "hiddenHotspots": [
+    {
+      "id": "hidden_yangtze_willow_letter",
+      "label": "柳下素笺",
+      "yaw": 126,
+      "pitch": -5,
+      "triggerRadius": 14,
+      "dwellMs": 1800,
+      "speaker": "江风",
+      "dialogue": "柳下压着一张素笺，纸上没有字，只有被江风吹皱的祝愿。",
+      "reward": { "scroll": 60 }
+    },
+    {
+      "id": "hidden_yangtze_crane_shadow",
+      "label": "黄鹤余影",
+      "yaw": -140,
+      "pitch": 13,
+      "triggerRadius": 15,
+      "dwellMs": 2000,
+      "speaker": "黄鹤",
+      "dialogue": "一片鹤影掠过江面，像替远行人回望了一眼。",
+      "reward": { "moonlight": 120 }
+    }
+  ],
+  "imagePrompts": {
+    "main_yangtze_farewell": "360-degree equirectangular panorama, Tang riverside farewell pavilion, lone sail fading into blue-green sky and Yangtze horizon, airy Chinese ink-and-color, seamless left-right edge, no text, no watermark.",
+    "branch_yangtze_pavilion": "360-degree equirectangular panorama, Yellow Crane farewell pavilion with cup and folded letter, willow branches, broad Yangtze, warm melancholic Tang mood, seamless edge, no text.",
+    "branch_yangtze_sail": "360-degree equirectangular panorama, translucent cloud path above Yangtze, lone white sail far ahead in blue sky, dreamlike ink-and-color, seamless edge, no text.",
+    "branch_yangtze_horizon": "360-degree equirectangular panorama, open river-sky observatory, Yangtze flowing into bright horizon, no sail, spacious meditative mood, seamless edge, no text.",
+    "ending_farewell_watcher": "Cinematic ending illustration, Tang farewell pavilion, traveler watching lone sail disappear, willow and river light, no text.",
+    "ending_cloud_sail": "Cinematic ending illustration, cloud path above Yangtze, distant white sail in blue sky, poetic farewell dream, no text.",
+    "ending_river_horizon": "Cinematic ending illustration, broad Yangtze flowing into horizon after sail vanishes, quiet blue-green sky, no text."
+  }
+}

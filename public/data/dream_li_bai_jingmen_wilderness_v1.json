@@ -1,0 +1,243 @@
+{
+  "gameId": "dream_li_bai_jingmen_wilderness_v1",
+  "title": "入梦李白：渡荆门送别",
+  "poem": {
+    "poet": "李白",
+    "line": "山随平野尽，江入大荒流。",
+    "source": "渡荆门送别"
+  },
+  "world": {
+    "worldName": "荆门大荒梦境",
+    "visualTone": "远行、舒展、山尽原开、江流大荒",
+    "spaceRules": [
+      "探索全景中的诗意意象",
+      "解开三道与诗句紧密相关的闯关题",
+      "集齐碎片后选择梦境归宿"
+    ]
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "荆门大荒梦境",
+      "subtitle": "环顾画面，点亮三枚诗意碎片。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "initialView": {
+        "yaw": 5,
+        "pitch": -8,
+        "fov": 105
+      },
+      "ambientLine": "群山在身后渐退，江水穿过平野，流向更辽远的大荒。",
+      "hotspots": [
+        {
+          "id": "receding_mountains",
+          "label": "山尽",
+          "yaw": -119,
+          "pitch": 9,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_receding_mountains_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "open_plain",
+          "label": "平野",
+          "yaw": 88,
+          "pitch": -20,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_open_plain_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "great_river",
+          "label": "江流",
+          "yaw": 3,
+          "pitch": -32,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_great_river_locked",
+          "effect": "water.ripple"
+        }
+      ]
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "江入大荒",
+      "subtitle": "顺着“山尽”进入第一重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "initialView": {
+        "yaw": -119,
+        "pitch": 9,
+        "fov": 104
+      },
+      "ambientLine": "山势随行旅远去，视野从险峻转向开阔。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "平野放歌",
+      "subtitle": "顺着“平野”进入第二重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "initialView": {
+        "yaw": 88,
+        "pitch": -20,
+        "fov": 104
+      },
+      "ambientLine": "平野让旅人的视线一下子放远，天地显得宽阔。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "山尽远游",
+      "subtitle": "顺着“江流”进入第三重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "initialView": {
+        "yaw": 3,
+        "pitch": -32,
+        "fov": 104
+      },
+      "ambientLine": "江水不是停住，而是一路流入无边大荒。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_receding_mountains_locked": {
+      "id": "story_receding_mountains_locked",
+      "speaker": "李白",
+      "text": "先解开“山尽”之问，让“山随平野尽，江入大荒流。”的第一枚意象碎片归位。",
+      "choices": []
+    },
+    "story_open_plain_locked": {
+      "id": "story_open_plain_locked",
+      "speaker": "梦境",
+      "text": "“平野”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_great_river_locked": {
+      "id": "story_great_river_locked",
+      "speaker": "梦境",
+      "text": "“江流”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "三枚碎片已经照亮：“山随平野尽，江入大荒流。”在你眼前展开。选择一条路，把这幅诗境写成你的归宿。",
+      "choices": [
+        {
+          "id": "branch_a",
+          "text": "江入大荒",
+          "tone": "豪放",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "branch_b",
+          "text": "平野放歌",
+          "tone": "清远",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "branch_c",
+          "text": "山尽远游",
+          "tone": "诗心",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "江入大荒",
+      "rarity": "珍稀结局",
+      "text": "你循着“山尽”入梦，读懂了《渡荆门送别》里最先跃出的那一笔。",
+      "rewardTitle": "解锁梦境印记",
+      "rewardText": "江入大荒",
+      "imageUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "平野放歌",
+      "rarity": "清远结局",
+      "text": "你停在“平野”之前，让诗句中的空间、光色与心境慢慢合拢。",
+      "rewardTitle": "解锁诗意碎片",
+      "rewardText": "平野放歌",
+      "imageUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "山尽远游",
+      "rarity": "诗心结局",
+      "text": "你最终选择“江流”，把眼前景物读成了属于自己的李白梦。",
+      "rewardTitle": "解锁新视角",
+      "rewardText": "山尽远游",
+      "imageUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png"
+    }
+  },
+  "puzzles": {
+    "receding_mountains": {
+      "id": "receding_mountains",
+      "motif": "山",
+      "clueName": "退尽群山",
+      "clueText": "山势随行旅远去，视野从险峻转向开阔。",
+      "hint": "“随平野尽”写的是空间在变化。",
+      "rewardLine": "群山退开，平野向前展开。",
+      "question": "“山随平野尽”写出了怎样的视觉变化？",
+      "options": [
+        "群山忽然压到眼前",
+        "山峰化作楼阁",
+        "平原被山完全遮住",
+        "山势随着平原展开而渐渐退尽"
+      ],
+      "correctIndex": 3
+    },
+    "open_plain": {
+      "id": "open_plain",
+      "motif": "野",
+      "clueName": "平野旷望",
+      "clueText": "平野让旅人的视线一下子放远，天地显得宽阔。",
+      "hint": "平野对应的是开阔，不是幽闭。",
+      "rewardLine": "平野明亮，江声更远。",
+      "question": "诗中的“平野”主要让画面从山地转向什么状态？",
+      "options": [
+        "开阔舒展",
+        "阴暗逼仄",
+        "繁华拥挤",
+        "静止封闭"
+      ],
+      "correctIndex": 0
+    },
+    "great_river": {
+      "id": "great_river",
+      "motif": "江",
+      "clueName": "入荒江流",
+      "clueText": "江水不是停住，而是一路流入无边大荒。",
+      "hint": "注意“入”和“流”，两个字都在推动画面向远方去。",
+      "rewardLine": "江流归位，大荒诗阵开启。",
+      "question": "“江入大荒流”中的“入”与“流”共同表现了什么？",
+      "options": [
+        "江水被山石截断",
+        "江水只在庭院中回旋",
+        "江水奔向更辽远的天地",
+        "江水凝成静止的镜面"
+      ],
+      "correctIndex": 2
+    }
+  },
+  "puzzleOrder": [
+    "receding_mountains",
+    "open_plain",
+    "great_river"
+  ],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for Li Bai line 山随平野尽，江入大荒流。; 远行、舒展、山尽原开、江流大荒; no text, no watermark."
+  }
+}

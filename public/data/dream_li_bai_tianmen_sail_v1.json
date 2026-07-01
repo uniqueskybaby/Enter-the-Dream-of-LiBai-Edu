@@ -1,0 +1,243 @@
+{
+  "gameId": "dream_li_bai_tianmen_sail_v1",
+  "title": "入梦李白：望天门山",
+  "poem": {
+    "poet": "李白",
+    "line": "两岸青山相对出，孤帆一片日边来。",
+    "source": "望天门山"
+  },
+  "world": {
+    "worldName": "天门孤帆梦境",
+    "visualTone": "明朗、开阔、江山对峙、日边行舟",
+    "spaceRules": [
+      "探索全景中的诗意意象",
+      "解开三道与诗句紧密相关的闯关题",
+      "集齐碎片后选择梦境归宿"
+    ]
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "天门孤帆梦境",
+      "subtitle": "环顾画面，点亮三枚诗意碎片。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png",
+      "initialView": {
+        "yaw": 0,
+        "pitch": 5,
+        "fov": 105
+      },
+      "ambientLine": "两岸青峰迎面展开，一叶孤帆从日光尽头驶来。",
+      "hotspots": [
+        {
+          "id": "green_cliffs",
+          "label": "青山",
+          "yaw": -127,
+          "pitch": 10,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_green_cliffs_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "lone_sail",
+          "label": "孤帆",
+          "yaw": 0,
+          "pitch": 7,
+          "radius": 16,
+          "state": "available",
+          "storyId": "story_lone_sail_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "sun_horizon",
+          "label": "日边",
+          "yaw": 0,
+          "pitch": 22,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_sun_horizon_locked",
+          "effect": "ui.inkRipple"
+        }
+      ]
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "日边归帆",
+      "subtitle": "顺着“青山”进入第一重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png",
+      "initialView": {
+        "yaw": -127,
+        "pitch": 10,
+        "fov": 104
+      },
+      "ambientLine": "两岸青山像主动迎出，把江路豁然打开。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "青山开门",
+      "subtitle": "顺着“孤帆”进入第二重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png",
+      "initialView": {
+        "yaw": 0,
+        "pitch": 7,
+        "fov": 104
+      },
+      "ambientLine": "孤帆虽小，却把远方的江路带到眼前。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "江天远行",
+      "subtitle": "顺着“日边”进入第三重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png",
+      "initialView": {
+        "yaw": 0,
+        "pitch": 22,
+        "fov": 104
+      },
+      "ambientLine": "日边让孤帆带着远行的光，显得明亮而开阔。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_green_cliffs_locked": {
+      "id": "story_green_cliffs_locked",
+      "speaker": "李白",
+      "text": "先解开“青山”之问，让“两岸青山相对出，孤帆一片日边来。”的第一枚意象碎片归位。",
+      "choices": []
+    },
+    "story_lone_sail_locked": {
+      "id": "story_lone_sail_locked",
+      "speaker": "梦境",
+      "text": "“孤帆”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_sun_horizon_locked": {
+      "id": "story_sun_horizon_locked",
+      "speaker": "梦境",
+      "text": "“日边”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "三枚碎片已经照亮：“两岸青山相对出，孤帆一片日边来。”在你眼前展开。选择一条路，把这幅诗境写成你的归宿。",
+      "choices": [
+        {
+          "id": "branch_a",
+          "text": "日边归帆",
+          "tone": "豪放",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "branch_b",
+          "text": "青山开门",
+          "tone": "清远",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "branch_c",
+          "text": "江天远行",
+          "tone": "诗心",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "日边归帆",
+      "rarity": "珍稀结局",
+      "text": "你循着“青山”入梦，读懂了《望天门山》里最先跃出的那一笔。",
+      "rewardTitle": "解锁梦境印记",
+      "rewardText": "日边归帆",
+      "imageUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "青山开门",
+      "rarity": "清远结局",
+      "text": "你停在“孤帆”之前，让诗句中的空间、光色与心境慢慢合拢。",
+      "rewardTitle": "解锁诗意碎片",
+      "rewardText": "青山开门",
+      "imageUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "江天远行",
+      "rarity": "诗心结局",
+      "text": "你最终选择“日边”，把眼前景物读成了属于自己的李白梦。",
+      "rewardTitle": "解锁新视角",
+      "rewardText": "江天远行",
+      "imageUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png"
+    }
+  },
+  "puzzles": {
+    "green_cliffs": {
+      "id": "green_cliffs",
+      "motif": "山",
+      "clueName": "对出青峰",
+      "clueText": "两岸青山像主动迎出，把江路豁然打开。",
+      "hint": "留意“相对出”，山像有动作。",
+      "rewardLine": "青峰分列，江面显出通路。",
+      "question": "“两岸青山相对出”中的“出”字写出了什么？",
+      "options": [
+        "青山慢慢沉入水底",
+        "青山被云完全遮住",
+        "青山变成城墙",
+        "青山仿佛迎面显现"
+      ],
+      "correctIndex": 3
+    },
+    "lone_sail": {
+      "id": "lone_sail",
+      "motif": "帆",
+      "clueName": "日边孤帆",
+      "clueText": "孤帆虽小，却把远方的江路带到眼前。",
+      "hint": "诗句说的是“一片”孤帆，画面重点在远处的小舟。",
+      "rewardLine": "孤帆归位，日光向江心铺开。",
+      "question": "“孤帆一片日边来”中，孤帆从哪里进入视野？",
+      "options": [
+        "山脚近岸的渡口",
+        "太阳映照的天水尽头",
+        "亭台后面的花径",
+        "夜色中的城门"
+      ],
+      "correctIndex": 1
+    },
+    "sun_horizon": {
+      "id": "sun_horizon",
+      "motif": "日",
+      "clueName": "日边金路",
+      "clueText": "日边让孤帆带着远行的光，显得明亮而开阔。",
+      "hint": "“日边”不是近景，它把距离推远。",
+      "rewardLine": "金路点亮，天门诗阵开启。",
+      "question": "“日边来”最能强化这幅画面的哪一点？",
+      "options": [
+        "船舱内部的狭小感",
+        "夜雨打窗的幽暗感",
+        "远处天际与行舟的开阔感",
+        "庭院饮酒的私密感"
+      ],
+      "correctIndex": 2
+    }
+  },
+  "puzzleOrder": [
+    "green_cliffs",
+    "lone_sail",
+    "sun_horizon"
+  ],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for Li Bai line 两岸青山相对出，孤帆一片日边来。; 明朗、开阔、江山对峙、日边行舟; no text, no watermark."
+  }
+}

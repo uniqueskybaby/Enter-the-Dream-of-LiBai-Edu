@@ -1,0 +1,253 @@
+{
+  "gameId": "dream_li_bai_yellow_river_v1",
+  "title": "入梦李白：将进酒",
+  "poem": {
+    "poet": "李白",
+    "line": "黄河之水天上来，奔流到海不复回。",
+    "source": "将进酒"
+  },
+  "world": {
+    "worldName": "黄河天海梦境",
+    "visualTone": "史诗金涛、风暴青灰、云上天光、奔涌水墨",
+    "spaceRules": ["黄河从天幕裂隙垂落", "奔流的水声会推动道路", "海潮记录一去不回的时间"]
+  },
+  "startNodeId": "main_yellow_river",
+  "nodes": [
+    {
+      "id": "main_yellow_river",
+      "type": "panorama",
+      "title": "黄河天海梦境",
+      "subtitle": "站在天河石台，寻找黄河、天水、归海三枚诗意碎片",
+      "panoramaUrl": "/assets/panoramas/yellow_river_main_4096x2048.jpg",
+      "initialView": { "yaw": -4, "pitch": 2, "fov": 105 },
+      "ambientLine": "金色大河从云端奔来，轰鸣声像一卷被展开的时间。",
+      "hotspots": [
+        {
+          "id": "river",
+          "label": "黄河",
+          "yaw": 18,
+          "pitch": -14,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_river",
+          "effect": "waterfall.mist"
+        },
+        {
+          "id": "heaven",
+          "label": "天水",
+          "yaw": 0,
+          "pitch": 42,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_heaven_locked",
+          "effect": "moon.particles"
+        },
+        {
+          "id": "sea",
+          "label": "归海",
+          "yaw": 83,
+          "pitch": 16,
+          "radius": 16,
+          "state": "available",
+          "storyId": "story_sea_locked",
+          "effect": "ui.inkRipple"
+        }
+      ]
+    },
+    {
+      "id": "branch_river_source",
+      "type": "panorama",
+      "title": "天河源门",
+      "subtitle": "云门洞开，黄河像从天上落入人间。",
+      "panoramaUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg",
+      "initialView": { "yaw": 3, "pitch": 4, "fov": 104 },
+      "ambientLine": "你站在云端石门前，看见金河从天光深处奔涌而下。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_river_canyon",
+      "type": "panorama",
+      "title": "奔流峡道",
+      "subtitle": "水势穿峡而过，像万匹金马撞开山骨。",
+      "panoramaUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
+      "initialView": { "yaw": -10, "pitch": -2, "fov": 104 },
+      "ambientLine": "浪声卷起你的衣袖，李白的笑声被水雾推向远方。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_river_sea",
+      "type": "panorama",
+      "title": "入海潮台",
+      "subtitle": "黄河散入沧海，回头路已被潮声洗净。",
+      "panoramaUrl": "/assets/panoramas/yellow_river_sea_4096x2048.jpg",
+      "initialView": { "yaw": 12, "pitch": -4, "fov": 104 },
+      "ambientLine": "金涛与碧海相接，你忽然明白奔流也是一种归处。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_river": {
+      "id": "story_river",
+      "speaker": "李白",
+      "text": "你望向黄河，水声从天顶压下。李白踏浪而笑：看它如何来，又看它如何不回。",
+      "choices": [
+        {
+          "id": "source",
+          "text": "问源天上",
+          "tone": "壮阔",
+          "nextNodeId": "branch_river_source",
+          "endingId": "ending_heaven_source"
+        },
+        {
+          "id": "rush",
+          "text": "顺流破峡",
+          "tone": "豪迈",
+          "nextNodeId": "branch_river_canyon",
+          "endingId": "ending_river_rush"
+        },
+        {
+          "id": "sea",
+          "text": "听潮入海",
+          "tone": "沉思",
+          "nextNodeId": "branch_river_sea",
+          "endingId": "ending_sea_return"
+        }
+      ]
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "天海诗阵",
+      "text": "黄河、天水与归海三印汇成金涛。你脚下的石台震动，三条水路同时向梦境深处打开。",
+      "choices": [
+        {
+          "id": "source",
+          "text": "问源天上",
+          "tone": "壮阔",
+          "nextNodeId": "branch_river_source",
+          "endingId": "ending_heaven_source"
+        },
+        {
+          "id": "rush",
+          "text": "顺流破峡",
+          "tone": "豪迈",
+          "nextNodeId": "branch_river_canyon",
+          "endingId": "ending_river_rush"
+        },
+        {
+          "id": "sea",
+          "text": "听潮入海",
+          "tone": "沉思",
+          "nextNodeId": "branch_river_sea",
+          "endingId": "ending_sea_return"
+        }
+      ]
+    },
+    "story_heaven_locked": {
+      "id": "story_heaven_locked",
+      "speaker": "云门",
+      "text": "天上的裂隙还未完全开启。先听清黄河的来处。",
+      "choices": []
+    },
+    "story_sea_locked": {
+      "id": "story_sea_locked",
+      "speaker": "潮声",
+      "text": "海潮还在远方等你。待天水归位，它会显出奔流的终点。",
+      "choices": []
+    }
+  },
+  "endings": {
+    "ending_heaven_source": {
+      "id": "ending_heaven_source",
+      "name": "天河问源客",
+      "rarity": "珍稀结局",
+      "text": "你登上云门，见黄河从天光中生出。李白把一滴天水赠你，教你在万事开端处先听雷声。",
+      "rewardTitle": "解锁新梦境",
+      "rewardText": "《黄河天海梦境·天河源门》"
+    },
+    "ending_river_rush": {
+      "id": "ending_river_rush",
+      "name": "奔流破浪者",
+      "rarity": "逍遥结局",
+      "text": "你顺着金涛穿过峡道，胸中郁气被万浪撞散。自此凡遇高崖，你都知道水会自己找路。",
+      "rewardTitle": "解锁梦之印记",
+      "rewardText": "破峡金涛"
+    },
+    "ending_sea_return": {
+      "id": "ending_sea_return",
+      "name": "入海听潮人",
+      "rarity": "诗心结局",
+      "text": "你在潮台看黄河入海，明白不复回并非失去，而是把自己交给更辽阔的天地。",
+      "rewardTitle": "解锁诗意碎片",
+      "rewardText": "归海潮印"
+    }
+  },
+  "puzzles": {
+    "river": {
+      "id": "river",
+      "motif": "河",
+      "clueName": "黄河金骨",
+      "clueText": "黄河在诗中不是静水，而是从天而来的巨大生命力。",
+      "hint": "先确认诗句里的主角是哪条河。",
+      "rewardLine": "黄河金骨归位，云端传来更大的水声。",
+      "question": "这两句诗中，奔涌的主角是哪条河？",
+      "options": ["黄河", "长江", "洛水", "湘江"],
+      "correctIndex": 0
+    },
+    "heaven": {
+      "id": "heaven",
+      "motif": "天",
+      "clueName": "天上来水",
+      "clueText": "“天上来”把河水写成从宇宙高处倾泻而下的神迹。",
+      "hint": "抬头看水从哪里落下。",
+      "rewardLine": "天水印亮起，归海之路在远方显形。",
+      "question": "“黄河之水天上来”最强调黄河怎样的气势？",
+      "options": ["低回婉转", "从天而降的壮阔", "静止如镜", "细雨无声"],
+      "correctIndex": 1
+    },
+    "sea": {
+      "id": "sea",
+      "motif": "海",
+      "clueName": "归海潮印",
+      "clueText": "奔流到海不复回，把水势、时间与人生一并推向远方。",
+      "hint": "终点不是停下，而是归入更大的水域。",
+      "rewardLine": "归海潮印成形，天海诗阵已经开启。",
+      "question": "“不复回”在诗中主要强化了什么感受？",
+      "options": ["春日闲适", "庭院幽静", "时间与生命不可倒流", "花影摇曳"],
+      "correctIndex": 2
+    }
+  },
+  "puzzleOrder": ["river", "heaven", "sea"],
+  "hiddenHotspots": [
+    {
+      "id": "hidden_river_drum",
+      "label": "浪底鼓声",
+      "yaw": 142,
+      "pitch": -6,
+      "triggerRadius": 14,
+      "dwellMs": 1800,
+      "speaker": "黄河",
+      "dialogue": "水底似有战鼓回响，每一声都把诗句推向更远的海。",
+      "reward": { "moonlight": 150 }
+    },
+    {
+      "id": "hidden_river_cliffmark",
+      "label": "崖上金痕",
+      "yaw": -132,
+      "pitch": 16,
+      "triggerRadius": 15,
+      "dwellMs": 2000,
+      "speaker": "石崖",
+      "dialogue": "崖壁被浪花刻出一道金痕，像时间曾在这里回头看了一眼。",
+      "reward": { "scroll": 55 }
+    }
+  ],
+  "imagePrompts": {
+    "main_yellow_river": "360-degree equirectangular panorama, mythic Yellow River descending from luminous clouds, golden river through canyon to distant sea, Tang dynasty epic fantasy, seamless left-right edge, no text, no watermark.",
+    "branch_river_source": "360-degree equirectangular panorama, cloud gate above the world, golden river source pouring from heaven, cranes and stone arches, Chinese epic ink-and-color, seamless edge, no text.",
+    "branch_river_canyon": "360-degree equirectangular panorama, roaring Yellow River canyon, rock island center viewpoint, golden rapids and storm mist, epic Chinese landscape, seamless edge, no text.",
+    "branch_river_sea": "360-degree equirectangular panorama, Yellow River meeting turquoise sea, tide platform, waves and distant islands, reflective epic mood, seamless edge, no text.",
+    "ending_heaven_source": "Cinematic ending illustration, traveler at heavenly river source, golden water from clouds, Tang dynasty epic fantasy, no text.",
+    "ending_river_rush": "Cinematic ending illustration, traveler breaking through Yellow River canyon spray, golden rapids, heroic Tang poetry, no text.",
+    "ending_sea_return": "Cinematic ending illustration, Yellow River entering vast sea, tide platform, reflective sky, poetic and grand, no text."
+  }
+}

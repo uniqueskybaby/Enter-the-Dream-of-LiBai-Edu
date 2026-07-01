@@ -1,0 +1,243 @@
+{
+  "gameId": "dream_li_bai_tianmu_rain_mist_v1",
+  "title": "入梦李白：梦游天姥吟留别·烟雨",
+  "poem": {
+    "poet": "李白",
+    "line": "云青青兮欲雨，水澹澹兮生烟。",
+    "source": "梦游天姥吟留别"
+  },
+  "world": {
+    "worldName": "天姥烟雨梦境",
+    "visualTone": "青云欲雨、水烟初生、梦境将启",
+    "spaceRules": [
+      "探索全景中的诗意意象",
+      "解开三道与诗句紧密相关的闯关题",
+      "集齐碎片后选择梦境归宿"
+    ]
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "天姥烟雨梦境",
+      "subtitle": "环顾画面，点亮三枚诗意碎片。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png",
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 105
+      },
+      "ambientLine": "青云压低，水波轻摇，烟雾从天姥山前慢慢生出。",
+      "hotspots": [
+        {
+          "id": "rain_cloud",
+          "label": "青云",
+          "yaw": -25,
+          "pitch": 55,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_rain_cloud_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "rippling_water",
+          "label": "澹水",
+          "yaw": 3,
+          "pitch": -35,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_rippling_water_locked",
+          "effect": "water.ripple"
+        },
+        {
+          "id": "rising_mist",
+          "label": "生烟",
+          "yaw": 28,
+          "pitch": -7,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_rising_mist_locked",
+          "effect": "ui.inkRipple"
+        }
+      ]
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "青云入梦",
+      "subtitle": "顺着“青云”进入第一重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png",
+      "initialView": {
+        "yaw": -25,
+        "pitch": 55,
+        "fov": 104
+      },
+      "ambientLine": "青云浓重欲雨，把梦境入口压得幽深。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "水烟开门",
+      "subtitle": "顺着“澹水”进入第二重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png",
+      "initialView": {
+        "yaw": 3,
+        "pitch": -35,
+        "fov": 104
+      },
+      "ambientLine": "澹澹水波不喧哗，却在暗处孕出烟气。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "天姥听雨",
+      "subtitle": "顺着“生烟”进入第三重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png",
+      "initialView": {
+        "yaw": 28,
+        "pitch": -7,
+        "fov": 104
+      },
+      "ambientLine": "烟雾从水面与山脚之间升起，像梦境的门慢慢打开。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_rain_cloud_locked": {
+      "id": "story_rain_cloud_locked",
+      "speaker": "李白",
+      "text": "先解开“青云”之问，让“云青青兮欲雨，水澹澹兮生烟。”的第一枚意象碎片归位。",
+      "choices": []
+    },
+    "story_rippling_water_locked": {
+      "id": "story_rippling_water_locked",
+      "speaker": "梦境",
+      "text": "“澹水”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_rising_mist_locked": {
+      "id": "story_rising_mist_locked",
+      "speaker": "梦境",
+      "text": "“生烟”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "三枚碎片已经照亮：“云青青兮欲雨，水澹澹兮生烟。”在你眼前展开。选择一条路，把这幅诗境写成你的归宿。",
+      "choices": [
+        {
+          "id": "branch_a",
+          "text": "青云入梦",
+          "tone": "豪放",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "branch_b",
+          "text": "水烟开门",
+          "tone": "清远",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "branch_c",
+          "text": "天姥听雨",
+          "tone": "诗心",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "青云入梦",
+      "rarity": "珍稀结局",
+      "text": "你循着“青云”入梦，读懂了《梦游天姥吟留别》里最先跃出的那一笔。",
+      "rewardTitle": "解锁梦境印记",
+      "rewardText": "青云入梦",
+      "imageUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "水烟开门",
+      "rarity": "清远结局",
+      "text": "你停在“澹水”之前，让诗句中的空间、光色与心境慢慢合拢。",
+      "rewardTitle": "解锁诗意碎片",
+      "rewardText": "水烟开门",
+      "imageUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "天姥听雨",
+      "rarity": "诗心结局",
+      "text": "你最终选择“生烟”，把眼前景物读成了属于自己的李白梦。",
+      "rewardTitle": "解锁新视角",
+      "rewardText": "天姥听雨",
+      "imageUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png"
+    }
+  },
+  "puzzles": {
+    "rain_cloud": {
+      "id": "rain_cloud",
+      "motif": "云",
+      "clueName": "欲雨青云",
+      "clueText": "青云浓重欲雨，把梦境入口压得幽深。",
+      "hint": "“欲雨”是将雨未雨，不是雨后放晴。",
+      "rewardLine": "青云聚拢，水面暗了下来。",
+      "question": "“云青青兮欲雨”中的“欲雨”表现了什么？",
+      "options": [
+        "雨将至未至的压迫感",
+        "雨已经停后的晴朗",
+        "大雪纷飞的寒冷",
+        "烈日正午的炎热"
+      ],
+      "correctIndex": 0
+    },
+    "rippling_water": {
+      "id": "rippling_water",
+      "motif": "水",
+      "clueName": "澹澹水波",
+      "clueText": "澹澹水波不喧哗，却在暗处孕出烟气。",
+      "hint": "“澹澹”写水波轻动、荡漾。",
+      "rewardLine": "水波归位，烟气升起。",
+      "question": "“水澹澹兮生烟”中的“澹澹”写的是水怎样的状态？",
+      "options": [
+        "完全干涸",
+        "猛烈燃烧",
+        "轻轻荡漾",
+        "冻结成冰"
+      ],
+      "correctIndex": 2
+    },
+    "rising_mist": {
+      "id": "rising_mist",
+      "motif": "烟",
+      "clueName": "水上生烟",
+      "clueText": "烟雾从水面与山脚之间升起，像梦境的门慢慢打开。",
+      "hint": "“生烟”让水面有了从无到有的变化。",
+      "rewardLine": "烟气归位，天姥诗阵开启。",
+      "question": "“生烟”在这句中最适合怎样入画？",
+      "options": [
+        "灯火在城中燃烧",
+        "沙尘在马后扬起",
+        "酒香从玉碗散开",
+        "雾气从水面升起"
+      ],
+      "correctIndex": 3
+    }
+  },
+  "puzzleOrder": [
+    "rain_cloud",
+    "rippling_water",
+    "rising_mist"
+  ],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for Li Bai line 云青青兮欲雨，水澹澹兮生烟。; 青云欲雨、水烟初生、梦境将启; no text, no watermark."
+  }
+}

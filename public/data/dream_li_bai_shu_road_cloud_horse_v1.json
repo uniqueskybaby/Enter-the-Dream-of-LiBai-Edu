@@ -1,0 +1,243 @@
+{
+  "gameId": "dream_li_bai_shu_road_cloud_horse_v1",
+  "title": "入梦李白：送友人入蜀",
+  "poem": {
+    "poet": "李白",
+    "line": "山从人面起，云傍马头生。",
+    "source": "送友人入蜀"
+  },
+  "world": {
+    "worldName": "蜀道云马梦境",
+    "visualTone": "险峻、近身、云雾贴面、马上入蜀",
+    "spaceRules": [
+      "探索全景中的诗意意象",
+      "解开三道与诗句紧密相关的闯关题",
+      "集齐碎片后选择梦境归宿"
+    ]
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "蜀道云马梦境",
+      "subtitle": "环顾画面，点亮三枚诗意碎片。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png",
+      "initialView": {
+        "yaw": 70,
+        "pitch": -5,
+        "fov": 105
+      },
+      "ambientLine": "蜀道从脸前拔地而起，白云贴着马头在石径上生成。",
+      "hotspots": [
+        {
+          "id": "rising_mountain",
+          "label": "起山",
+          "yaw": 35,
+          "pitch": 32,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_rising_mountain_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "cloud_horse",
+          "label": "傍云",
+          "yaw": 94,
+          "pitch": -8,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_cloud_horse_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "horse",
+          "label": "马头",
+          "yaw": 110,
+          "pitch": -12,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_horse_locked",
+          "effect": "ui.inkRipple"
+        }
+      ]
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "云马入蜀",
+      "subtitle": "顺着“起山”进入第一重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png",
+      "initialView": {
+        "yaw": 35,
+        "pitch": 32,
+        "fov": 104
+      },
+      "ambientLine": "山不是远远看见，而像从人面前突然拔起。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "石径听风",
+      "subtitle": "顺着“傍云”进入第二重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png",
+      "initialView": {
+        "yaw": 94,
+        "pitch": -8,
+        "fov": 104
+      },
+      "ambientLine": "云贴着马头升起，让行路者仿佛骑入云中。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "山面相逢",
+      "subtitle": "顺着“马头”进入第三重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png",
+      "initialView": {
+        "yaw": 110,
+        "pitch": -12,
+        "fov": 104
+      },
+      "ambientLine": "马头把观者带进路上，蜀道的险近在眼前。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_rising_mountain_locked": {
+      "id": "story_rising_mountain_locked",
+      "speaker": "李白",
+      "text": "先解开“起山”之问，让“山从人面起，云傍马头生。”的第一枚意象碎片归位。",
+      "choices": []
+    },
+    "story_cloud_horse_locked": {
+      "id": "story_cloud_horse_locked",
+      "speaker": "梦境",
+      "text": "“傍云”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_horse_locked": {
+      "id": "story_horse_locked",
+      "speaker": "梦境",
+      "text": "“马头”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "三枚碎片已经照亮：“山从人面起，云傍马头生。”在你眼前展开。选择一条路，把这幅诗境写成你的归宿。",
+      "choices": [
+        {
+          "id": "branch_a",
+          "text": "云马入蜀",
+          "tone": "豪放",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "branch_b",
+          "text": "石径听风",
+          "tone": "清远",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "branch_c",
+          "text": "山面相逢",
+          "tone": "诗心",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "云马入蜀",
+      "rarity": "珍稀结局",
+      "text": "你循着“起山”入梦，读懂了《送友人入蜀》里最先跃出的那一笔。",
+      "rewardTitle": "解锁梦境印记",
+      "rewardText": "云马入蜀",
+      "imageUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "石径听风",
+      "rarity": "清远结局",
+      "text": "你停在“傍云”之前，让诗句中的空间、光色与心境慢慢合拢。",
+      "rewardTitle": "解锁诗意碎片",
+      "rewardText": "石径听风",
+      "imageUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "山面相逢",
+      "rarity": "诗心结局",
+      "text": "你最终选择“马头”，把眼前景物读成了属于自己的李白梦。",
+      "rewardTitle": "解锁新视角",
+      "rewardText": "山面相逢",
+      "imageUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png"
+    }
+  },
+  "puzzles": {
+    "rising_mountain": {
+      "id": "rising_mountain",
+      "motif": "山",
+      "clueName": "迎面起山",
+      "clueText": "山不是远远看见，而像从人面前突然拔起。",
+      "hint": "“从人面起”写得很近，很有压迫感。",
+      "rewardLine": "山势立起，蜀道露出石阶。",
+      "question": "“山从人面起”给人的主要感觉是什么？",
+      "options": [
+        "山势迎面逼近、陡然拔起",
+        "山在远处慢慢消失",
+        "山像水面一样平坦",
+        "山被城墙完全遮住"
+      ],
+      "correctIndex": 0
+    },
+    "cloud_horse": {
+      "id": "cloud_horse",
+      "motif": "云",
+      "clueName": "马头生云",
+      "clueText": "云贴着马头升起，让行路者仿佛骑入云中。",
+      "hint": "“傍马头”说明云离旅人极近。",
+      "rewardLine": "云气缠上马鬃，前路更深。",
+      "question": "“云傍马头生”中的云在画面里应当靠近哪里？",
+      "options": [
+        "宫殿屋脊",
+        "江面尽头",
+        "酒杯里面",
+        "马头旁边"
+      ],
+      "correctIndex": 3
+    },
+    "horse": {
+      "id": "horse",
+      "motif": "马",
+      "clueName": "入蜀云骑",
+      "clueText": "马头把观者带进路上，蜀道的险近在眼前。",
+      "hint": "这两句不是远眺，而是人在马上亲历。",
+      "rewardLine": "云骑归位，蜀道诗阵开启。",
+      "question": "这两句最突出蜀道行旅的哪种体验？",
+      "options": [
+        "平坦、悠闲、毫无阻碍",
+        "近身、险峻、云雾缠绕",
+        "热闹、拥挤、灯火通明",
+        "室内、静坐、隔窗观看"
+      ],
+      "correctIndex": 1
+    }
+  },
+  "puzzleOrder": [
+    "rising_mountain",
+    "cloud_horse",
+    "horse"
+  ],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for Li Bai line 山从人面起，云傍马头生。; 险峻、近身、云雾贴面、马上入蜀; no text, no watermark."
+  }
+}

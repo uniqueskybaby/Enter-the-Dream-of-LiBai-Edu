@@ -1,0 +1,243 @@
+{
+  "gameId": "dream_li_bai_moon_mirror_sea_tower_v1",
+  "title": "入梦李白：渡荆门送别·月镜海楼",
+  "poem": {
+    "poet": "李白",
+    "line": "月下飞天镜，云生结海楼。",
+    "source": "渡荆门送别"
+  },
+  "world": {
+    "worldName": "月镜海楼梦境",
+    "visualTone": "水月幻境、云楼浮生、清银梦光",
+    "spaceRules": [
+      "探索全景中的诗意意象",
+      "解开三道与诗句紧密相关的闯关题",
+      "集齐碎片后选择梦境归宿"
+    ]
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "月镜海楼梦境",
+      "subtitle": "环顾画面，点亮三枚诗意碎片。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png",
+      "initialView": {
+        "yaw": -10,
+        "pitch": 10,
+        "fov": 105
+      },
+      "ambientLine": "月影在水上飞成天镜，云气凝出一座海上楼台。",
+      "hotspots": [
+        {
+          "id": "moon_mirror",
+          "label": "天镜",
+          "yaw": -100,
+          "pitch": 18,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_moon_mirror_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "cloud_tower",
+          "label": "海楼",
+          "yaw": 72,
+          "pitch": 28,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_cloud_tower_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "water_reflection",
+          "label": "水影",
+          "yaw": -7,
+          "pitch": -44,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_water_reflection_locked",
+          "effect": "water.ripple"
+        }
+      ]
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "月镜飞渡",
+      "subtitle": "顺着“天镜”进入第一重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png",
+      "initialView": {
+        "yaw": -100,
+        "pitch": 18,
+        "fov": 104
+      },
+      "ambientLine": "水中月影像会飞的天镜，把现实推入幻境。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "云楼入梦",
+      "subtitle": "顺着“海楼”进入第二重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png",
+      "initialView": {
+        "yaw": 72,
+        "pitch": 28,
+        "fov": 104
+      },
+      "ambientLine": "云气聚散之间，像结成海市蜃楼。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "水影忘机",
+      "subtitle": "顺着“水影”进入第三重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png",
+      "initialView": {
+        "yaw": -7,
+        "pitch": -44,
+        "fov": 104
+      },
+      "ambientLine": "水面承接月镜与云楼，使真假边界变得柔软。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_moon_mirror_locked": {
+      "id": "story_moon_mirror_locked",
+      "speaker": "李白",
+      "text": "先解开“天镜”之问，让“月下飞天镜，云生结海楼。”的第一枚意象碎片归位。",
+      "choices": []
+    },
+    "story_cloud_tower_locked": {
+      "id": "story_cloud_tower_locked",
+      "speaker": "梦境",
+      "text": "“海楼”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_water_reflection_locked": {
+      "id": "story_water_reflection_locked",
+      "speaker": "梦境",
+      "text": "“水影”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "三枚碎片已经照亮：“月下飞天镜，云生结海楼。”在你眼前展开。选择一条路，把这幅诗境写成你的归宿。",
+      "choices": [
+        {
+          "id": "branch_a",
+          "text": "月镜飞渡",
+          "tone": "豪放",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "branch_b",
+          "text": "云楼入梦",
+          "tone": "清远",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "branch_c",
+          "text": "水影忘机",
+          "tone": "诗心",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "月镜飞渡",
+      "rarity": "珍稀结局",
+      "text": "你循着“天镜”入梦，读懂了《渡荆门送别》里最先跃出的那一笔。",
+      "rewardTitle": "解锁梦境印记",
+      "rewardText": "月镜飞渡",
+      "imageUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "云楼入梦",
+      "rarity": "清远结局",
+      "text": "你停在“海楼”之前，让诗句中的空间、光色与心境慢慢合拢。",
+      "rewardTitle": "解锁诗意碎片",
+      "rewardText": "云楼入梦",
+      "imageUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "水影忘机",
+      "rarity": "诗心结局",
+      "text": "你最终选择“水影”，把眼前景物读成了属于自己的李白梦。",
+      "rewardTitle": "解锁新视角",
+      "rewardText": "水影忘机",
+      "imageUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png"
+    }
+  },
+  "puzzles": {
+    "moon_mirror": {
+      "id": "moon_mirror",
+      "motif": "镜",
+      "clueName": "飞天月镜",
+      "clueText": "水中月影像会飞的天镜，把现实推入幻境。",
+      "hint": "“飞天镜”不是普通镜子，而是月影的奇喻。",
+      "rewardLine": "天镜升起，水面泛出银光。",
+      "question": "“月下飞天镜”最贴近哪一种画面？",
+      "options": [
+        "铜镜从屋中落下",
+        "月亮倒影像天镜飞起",
+        "太阳照亮山门",
+        "船帆变成飞鸟"
+      ],
+      "correctIndex": 1
+    },
+    "cloud_tower": {
+      "id": "cloud_tower",
+      "motif": "楼",
+      "clueName": "云结海楼",
+      "clueText": "云气聚散之间，像结成海市蜃楼。",
+      "hint": "“云生结”写出云从无到有地成形。",
+      "rewardLine": "云楼归位，夜水变得透明。",
+      "question": "“云生结海楼”写云怎样变化？",
+      "options": [
+        "云散后露出平地村落",
+        "云被风吹成文字",
+        "云化作火焰燃烧",
+        "云气凝成海上楼阁般的幻景"
+      ],
+      "correctIndex": 3
+    },
+    "water_reflection": {
+      "id": "water_reflection",
+      "motif": "水",
+      "clueName": "水月幻波",
+      "clueText": "水面承接月镜与云楼，使真假边界变得柔软。",
+      "hint": "两句都靠水面与天空互相映照。",
+      "rewardLine": "水影归位，月镜诗阵开启。",
+      "question": "这两句共同营造的核心意境是什么？",
+      "options": [
+        "水月云楼交融的幻境",
+        "沙场征战的紧张",
+        "市集买卖的热闹",
+        "宫廷宴饮的规矩"
+      ],
+      "correctIndex": 0
+    }
+  },
+  "puzzleOrder": [
+    "moon_mirror",
+    "cloud_tower",
+    "water_reflection"
+  ],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for Li Bai line 月下飞天镜，云生结海楼。; 水月幻境、云楼浮生、清银梦光; no text, no watermark."
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "gameId": "dream_generated_changsha_1925",
+  "title": "入梦沁园春：问苍茫大地",
+  "poem": {
+    "poet": "毛泽东",
+    "line": "问苍茫大地谁主沉浮",
+    "source": "沁园春·长沙"
+  },
+  "world": {
+    "worldName": "橘子洲头，秋水长天",
+    "visualTone": "壮阔、苍凉、充满历史厚重感的水墨油画风格，融合秋色枫林与江天辽阔的景象",
+    "spaceRules": [
+      "世界以江心沙洲为原点，向四面八方延展出无垠的江天大地",
+      "时间的流逝体现为云影的移动和光线的变化，而非简单的昼夜",
+      "诗句的力量是驱动世界变化的核心，解谜过程是与诗句对话"
+    ]
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "独立寒秋，湘江北去",
+      "subtitle": "你立于洲头，西风猎猎。眼前是万山红遍、层林尽染的湘江秋景。远处，水天苍茫，一声来自历史深处的发问在你心中回响：“问苍茫大地，谁主沉浮？”",
+      "panoramaUrl": "/assets/panoramas/dream_generated_changsha_1925_main_scene.png",
+      "initialView": {
+        "yaw": -28,
+        "pitch": 4,
+        "fov": 105
+      },
+      "ambientLine": "风声中夹杂着远处的江涛与隐约的鼓角。漫天落叶如蝶，飞舞出金红色的轨迹。",
+      "hotspots": [
+        {
+          "id": "vast",
+          "label": "苍茫",
+          "yaw": -4,
+          "pitch": 30,
+          "radius": 22,
+          "state": "available",
+          "storyId": "story_vast",
+          "effect": "mist.drift"
+        },
+        {
+          "id": "earth",
+          "label": "大地",
+          "yaw": 0,
+          "pitch": -24,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_earth_locked",
+          "effect": "earth.rumble"
+        },
+        {
+          "id": "surge",
+          "label": "沉浮",
+          "yaw": 16,
+          "pitch": -5,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_surge_locked",
+          "effect": "light.particles"
+        }
+      ]
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "浪淘沙·激扬文字",
+      "subtitle": "你仿佛化身为当年“指点江山，激扬文字”的青年。江面化为墨海，浪花间翻涌着改天换地的豪情与理想。",
+      "panoramaUrl": "/assets/panoramas/dream_generated_changsha_1925_branch_a.png",
+      "initialView": {
+        "yaw": -24,
+        "pitch": 1,
+        "fov": 104
+      },
+      "ambientLine": "墨香与江水的湿润气息交融。每一次浪潮拍岸，都似有金石之声迸发。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "云间逍遥·万类霜天",
+      "subtitle": "你升入云端，俯瞰大地。鹰击长空，鱼翔浅底，万类霜天竞自由。原来“主沉浮”的答案，就藏在这片土地的生机里。",
+      "panoramaUrl": "/assets/panoramas/dream_generated_changsha_1925_branch_b.png",
+      "initialView": {
+        "yaw": 15,
+        "pitch": -2,
+        "fov": 104
+      },
+      "ambientLine": "高空的风清冽而纯净，下方是斑斓如锦绣的秋日山河画卷。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "观潮亭·百舸争流",
+      "subtitle": "你来到江边，一艘艘船只正在急流中竞发。历史的洪流与个人的命运，在此刻交汇。沉与浮，或许本就是一体两面。",
+      "panoramaUrl": "/assets/panoramas/dream_generated_changsha_1925_branch_c.png",
+      "initialView": {
+        "yaw": 5,
+        "pitch": -4,
+        "fov": 104
+      },
+      "ambientLine": "江水的低吼与船桨破水声交织，一种深沉的节奏感贯穿始终。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_vast": {
+      "id": "story_vast",
+      "speaker": "李白（梦境化身）",
+      "text": "（一个狂放不羁的身影出现在远山之巅）“好一个‘苍茫’！这二字道尽了天地之阔，古今之思。欲探其秘，需先答我一问：在诗仙我看来，这‘苍茫’二字，最妙在何处？”",
+      "choices": [
+        {
+          "id": "choice_a",
+          "text": "妙在“苍”字，如天宇之青苍，笼罩万物。",
+          "tone": "豪迈",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "choice_b",
+          "text": "妙在“茫”字，如江水浩渺，无边无际。",
+          "tone": "逍遥",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "choice_c",
+          "text": "妙在二字合用，天地浑然，时空一体，方有此问。",
+          "tone": "深沉",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "（天地间的景象开始旋转、重组）“苍茫为幕，大地为台，沉浮为戏……碎片已然集齐，舞台就绪。诗心所向，即是归途。”",
+      "choices": [
+        {
+          "id": "choice_a",
+          "text": "“我心向那如火的枫林，要将这片江山染得更红！”",
+          "tone": "激情",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "choice_b",
+          "text": "“我欲随那鹰隼而去，看尽这自由翱翔的天地。”",
+          "tone": "超然",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "choice_c",
+          "text": "“我想静坐江畔，倾听这流水与历史的问答。”",
+          "tone": "宁静",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    },
+    "story_earth_locked": {
+      "id": "story_earth_locked",
+      "speaker": "梦境",
+      "text": "大地深邃，承载万物。你需要先理解“苍茫”的广阔，才能感知脚下的“大地”为何坚实，又为何在历史的长河中“沉浮”。",
+      "choices": []
+    },
+    "story_surge_locked": {
+      "id": "story_surge_locked",
+      "speaker": "梦境",
+      "text": "“沉浮”是动态，是命运。它既关于“大地”之上的兴衰，也关于“苍茫”之下的抉择。你需先触及其二，方能领悟其三。",
+      "choices": []
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "浪淘沙·赤子丹心",
+      "rarity": "珍稀结局",
+      "text": "你选择了激扬澎湃的答案。眼前景象化为一片赤红，江水奔流如血，枫林燃烧似火。你仿佛与百年前那些心怀天下、改造山河的青年灵魂同频共振，他们的信念与激情注入你的体内。你终于明白，“谁主沉浮”的答案，是燃烧自己、照亮前路的“赤子丹心”。",
+      "rewardTitle": "解锁新梦境：赤子之心",
+      "rewardText": "获得专属诗魂印记“丹心”"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "云间逍遥·万物自由",
+      "rarity": "逍遥结局",
+      "text": "你选择了逍遥超然的答案。你的视角急速拉升，直至与云朵并肩。脚下是微缩如沙盘的壮丽山河，鹰、鱼、帆船皆在自由演绎各自的生存。你豁然开朗，“谁主沉浮”的答案，不在某一人手中，而在于万物竞发、各得其所的“自在秩序”。",
+      "rewardTitle": "解锁梦之印记：逍遥游",
+      "rewardText": "获得动态头像框“云间观世”",
+      "imageUrl": "/assets/panoramas/dream_generated_changsha_1925_ending_b.png"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "观潮亭·千古一问",
+      "rarity": "诗心结局",
+      "text": "你选择了深邃哲思的答案。世界骤然寂静，只有你与那句穿越时空的叩问相对。江水、大地、天空都化为抽象的线条与色彩。你领悟到，“谁主沉浮”本身，就是一个永恒的、开放的哲学命题。答案不在过去，而在每一个时代、每一个独立思考者的回答里。你获得了提问的权利。",
+      "rewardTitle": "解锁诗意碎片：历史回响",
+      "rewardText": "获得称号“时代的叩问者”",
+      "imageUrl": "/assets/panoramas/dream_generated_changsha_1925_ending_c.png"
+    }
+  },
+  "puzzles": {
+    "vast": {
+      "id": "vast",
+      "motif": "苍",
+      "clueName": "苍茫之形",
+      "clueText": "一纸水墨残卷，上有“苍茫”二字，笔力雄浑，意境深远。需解其形，方知其神。",
+      "hint": "“苍”字本义是什么颜色？它如何描绘天空？",
+      "rewardLine": "画卷微微发光，显出山川天际的轮廓。“苍茫”二字仿佛活了过来，融入天地之间。",
+      "question": "诗中“苍茫大地”的“苍茫”，主要描绘的景象是？",
+      "options": [
+        "A. 青翠欲滴的草原",
+        "B. 暮色苍茫的江天",
+        "C. 白雪皑皑的山巅",
+        "D. 烈日灼灼的戈壁"
+      ],
+      "correctIndex": 1
+    },
+    "earth": {
+      "id": "earth",
+      "motif": "大",
+      "clueName": "大地之基",
+      "clueText": "一块古朴的砚台，纹理似山川河流。砚池中墨水微漾，仿佛蕴藏着大地的力量。",
+      "hint": "大地承载万物，它在诗中是如何被“问”的？这赋予了它什么新的含义？",
+      "rewardLine": "砚台与沙洲大地产生共鸣，脚下的土地仿佛传来厚重的脉搏。“大地”已为你显现。",
+      "question": "“大地”在诗中不仅仅是自然实体，它更象征着？",
+      "options": [
+        "A. 农业文明的根基",
+        "B. 值得被探索的自然奇观",
+        "C. 国家与命运的舞台",
+        "D. 个人情感的寄托"
+      ],
+      "correctIndex": 2
+    },
+    "surge": {
+      "id": "surge",
+      "motif": "沉浮",
+      "clueName": "沉浮之律",
+      "clueText": "一枚古旧的铜钱，一面刻“沉”，一面刻“浮”，边缘有海水纹。轻触它，能感到微妙的失衡。",
+      "hint": "“沉”与“浮”是相对的。在历史长河中，决定它们转换的关键是什么？",
+      "rewardLine": "铜钱悬浮而起，沉与浮两面光芒交替闪烁，最终化作一道光点没入你的眉心。“沉浮”之谜，在你心中流转。",
+      "question": "“谁主沉浮”中的“沉浮”，最贴切的理解是？",
+      "options": [
+        "A. 物体的物理浮力",
+        "B. 人生的得失起落",
+        "C. 历史发展的规律与主宰力量",
+        "D. 季节气候的循环变化"
+      ],
+      "correctIndex": 2
+    }
+  },
+  "puzzleOrder": [
+    "vast",
+    "earth",
+    "surge"
+  ],
+  "imagePrompts": {
+    "main_scene": "360-degree panoramic view from the tip of Orange Island in autumn. Vast Xiangjiang River flows north under a high, cloudy sky. Mountains covered in fiery red and golden foliage surround the river. A solitary figure stands on the shore, gazing into the distance. Style: grand, melancholic Chinese ink wash painting merged with romantic oil painting, dramatic autumnal light, cinematic atmosphere.",
+    "branch_a": "360-degree panoramic view of a turbulent sea of ink under a crimson sky. Waves made of liquid ink crash against shores of parchment, with giant brushes and scrolls emerging from the depths. Figures of young scholars in traditional robes stand defiantly on ink-waves, pointing at the horizon. Style: explosive, passionate expressionist painting, vibrant reds and blacks, dynamic composition.",
+    "branch_b": "360-degree panoramic view from high in the clouds, looking down on the miniature-like autumnal landscape below. Eagles soar at eye level, fish swim in rivers that glint like silver threads. The scene is vast, serene, and full of life. Style: ethereal, dreamlike Chinese landscape painting with a touch of surrealism, soft light, emphasizing freedom and perspective.",
+    "branch_c": "360-degree panoramic view from a wooden pavilion by the riverbank. Numerous ancient sailing boats are battling strong currents, their sails full. The atmosphere is one of determined struggle and rhythmic motion. Style: realistic yet philosophical realism, muted earthy tones with dramatic lighting, focus on texture of wood, water, and canvas, contemplative mood.",
+    "ending_a": "结算画面：一片燃烧的枫林映红半边天，江水如熔金奔流。画面中央是一个由光芒构成的年轻背影，手持毛笔，笔尖滴落的红色光点化为枫叶漫天飞舞。背景是激昂的红色漩涡与隐约的工农兵浮雕剪影。",
+    "ending_b": "结算画面：澄澈的高空视角，脚下是锦绣山河微缩模型。一只雄鹰、一条锦鲤、一艘帆船的发光轮廓并列，彼此呼应。画面中心是柔和的白色光团，象征自由意志。整体风格空灵、宁静、充满生机。",
+    "ending_c": "结算画面：极简主义构图。左侧是深邃的星空，右侧是奔流的江水剪影，中间悬浮着一个巨大的、不断变化的问号符文。符文由流动的光影构成，映照出不同时代的微小人影。风格抽象、哲学、引人深思。"
+  },
+  "meta": {
+    "origin": "player-ai",
+    "savedAt": "2026-05-24T08:49:10.818Z"
+  }
+}

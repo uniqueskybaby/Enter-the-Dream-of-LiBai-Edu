@@ -1,0 +1,243 @@
+{
+  "gameId": "dream_li_bai_shanxi_moon_shadow_v1",
+  "title": "入梦李白：梦游天姥吟留别·剡溪",
+  "poem": {
+    "poet": "李白",
+    "line": "湖月照我影，送我至剡溪。",
+    "source": "梦游天姥吟留别"
+  },
+  "world": {
+    "worldName": "剡溪月影梦境",
+    "visualTone": "清夜、湖月、水路、影随人行",
+    "spaceRules": [
+      "探索全景中的诗意意象",
+      "解开三道与诗句紧密相关的闯关题",
+      "集齐碎片后选择梦境归宿"
+    ]
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "剡溪月影梦境",
+      "subtitle": "环顾画面，点亮三枚诗意碎片。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png",
+      "initialView": {
+        "yaw": -35,
+        "pitch": -12,
+        "fov": 105
+      },
+      "ambientLine": "湖月照着舟中身影，银色水路把梦送向剡溪深处。",
+      "hotspots": [
+        {
+          "id": "lake_moon",
+          "label": "湖月",
+          "yaw": -92,
+          "pitch": 58,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_lake_moon_locked",
+          "effect": "moon.particles"
+        },
+        {
+          "id": "traveler_shadow",
+          "label": "我影",
+          "yaw": -44,
+          "pitch": -40,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_traveler_shadow_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "shanxi_creek",
+          "label": "剡溪",
+          "yaw": 44,
+          "pitch": -12,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_shanxi_creek_locked",
+          "effect": "water.ripple"
+        }
+      ]
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "月送剡溪",
+      "subtitle": "顺着“湖月”进入第一重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png",
+      "initialView": {
+        "yaw": -92,
+        "pitch": 58,
+        "fov": 104
+      },
+      "ambientLine": "湖月不是旁观者，它照亮诗人的身影与去路。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "舟影入梦",
+      "subtitle": "顺着“我影”进入第二重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png",
+      "initialView": {
+        "yaw": -44,
+        "pitch": -40,
+        "fov": 104
+      },
+      "ambientLine": "我影让梦游不是纯远景，而是诗人亲身进入山水。",
+      "hotspots": []
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "清夜寻山",
+      "subtitle": "顺着“剡溪”进入第三重梦。",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png",
+      "initialView": {
+        "yaw": 44,
+        "pitch": -12,
+        "fov": 104
+      },
+      "ambientLine": "剡溪是梦游前路，月光像送行者一样把人引去。",
+      "hotspots": []
+    }
+  ],
+  "stories": {
+    "story_lake_moon_locked": {
+      "id": "story_lake_moon_locked",
+      "speaker": "李白",
+      "text": "先解开“湖月”之问，让“湖月照我影，送我至剡溪。”的第一枚意象碎片归位。",
+      "choices": []
+    },
+    "story_traveler_shadow_locked": {
+      "id": "story_traveler_shadow_locked",
+      "speaker": "梦境",
+      "text": "“我影”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_shanxi_creek_locked": {
+      "id": "story_shanxi_creek_locked",
+      "speaker": "梦境",
+      "text": "“剡溪”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "三枚碎片已经照亮：“湖月照我影，送我至剡溪。”在你眼前展开。选择一条路，把这幅诗境写成你的归宿。",
+      "choices": [
+        {
+          "id": "branch_a",
+          "text": "月送剡溪",
+          "tone": "豪放",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "branch_b",
+          "text": "舟影入梦",
+          "tone": "清远",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "branch_c",
+          "text": "清夜寻山",
+          "tone": "诗心",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "月送剡溪",
+      "rarity": "珍稀结局",
+      "text": "你循着“湖月”入梦，读懂了《梦游天姥吟留别》里最先跃出的那一笔。",
+      "rewardTitle": "解锁梦境印记",
+      "rewardText": "月送剡溪",
+      "imageUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "舟影入梦",
+      "rarity": "清远结局",
+      "text": "你停在“我影”之前，让诗句中的空间、光色与心境慢慢合拢。",
+      "rewardTitle": "解锁诗意碎片",
+      "rewardText": "舟影入梦",
+      "imageUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "清夜寻山",
+      "rarity": "诗心结局",
+      "text": "你最终选择“剡溪”，把眼前景物读成了属于自己的李白梦。",
+      "rewardTitle": "解锁新视角",
+      "rewardText": "清夜寻山",
+      "imageUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png"
+    }
+  },
+  "puzzles": {
+    "lake_moon": {
+      "id": "lake_moon",
+      "motif": "月",
+      "clueName": "湖上明月",
+      "clueText": "湖月不是旁观者，它照亮诗人的身影与去路。",
+      "hint": "“照我影”说明月光直接参与行旅。",
+      "rewardLine": "湖月照亮，舟影浮出水面。",
+      "question": "“湖月照我影”中，月亮怎样参与旅程？",
+      "options": [
+        "把道路完全遮暗",
+        "化成战鼓催人出征",
+        "变成酒香停在杯中",
+        "照见并陪伴诗人的身影"
+      ],
+      "correctIndex": 3
+    },
+    "traveler_shadow": {
+      "id": "traveler_shadow",
+      "motif": "影",
+      "clueName": "舟中我影",
+      "clueText": "我影让梦游不是纯远景，而是诗人亲身进入山水。",
+      "hint": "诗句里有“我”，说明画面包含自我经验。",
+      "rewardLine": "我影归位，水路开始发光。",
+      "question": "诗句写“我影”，最重要的是把什么带入画面？",
+      "options": [
+        "旁观者的冷漠距离",
+        "热闹市集的人群",
+        "诗人自身的行旅感",
+        "完全无人的静物"
+      ],
+      "correctIndex": 2
+    },
+    "shanxi_creek": {
+      "id": "shanxi_creek",
+      "motif": "溪",
+      "clueName": "剡溪梦路",
+      "clueText": "剡溪是梦游前路，月光像送行者一样把人引去。",
+      "hint": "“送我至”说明水路有引导方向。",
+      "rewardLine": "剡溪归位，月影诗阵开启。",
+      "question": "“送我至剡溪”中，真正像送行者的是谁？",
+      "options": [
+        "城中车马",
+        "湖月与水路",
+        "边塞战旗",
+        "杯中美酒"
+      ],
+      "correctIndex": 1
+    }
+  },
+  "puzzleOrder": [
+    "lake_moon",
+    "traveler_shadow",
+    "shanxi_creek"
+  ],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for Li Bai line 湖月照我影，送我至剡溪。; 清夜、湖月、水路、影随人行; no text, no watermark."
+  }
+}
