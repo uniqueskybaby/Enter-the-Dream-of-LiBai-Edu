@@ -30,7 +30,7 @@ const supplementalManifest = supplementalWorldGuides.map((guide) => ({
   source: guide.source,
   worldName: guide.worldName,
   configUrl: `/data/${guide.gameId}.json`,
-  coverUrl: `/assets/edu-covers/${guide.gameId}.svg`,
+  coverUrl: guide.panoramaUrl,
   theme: guide.themeLabel,
   origin: 'education-supplement',
   savedAt,
