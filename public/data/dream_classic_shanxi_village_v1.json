@@ -34,7 +34,7 @@
       "type": "panorama",
       "title": "柳暗花明梦境",
       "subtitle": "环顾 360 度诗境，按顺序点亮三枚学习意象。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
       "initialView": {
         "yaw": 10,
         "pitch": 0,
@@ -91,7 +91,7 @@
       "type": "panorama",
       "title": "山重乡村",
       "subtitle": "顺着“山重”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
       "initialView": {
         "yaw": -52,
         "pitch": 18,
@@ -117,7 +117,7 @@
       "type": "panorama",
       "title": "柳暗乡村",
       "subtitle": "顺着“柳暗”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
       "initialView": {
         "yaw": 12,
         "pitch": -12,
@@ -143,7 +143,7 @@
       "type": "panorama",
       "title": "村庄乡村",
       "subtitle": "顺着“村庄”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
       "initialView": {
         "yaw": 96,
         "pitch": 14,
@@ -221,7 +221,7 @@
       "text": "你循着“山重”入梦，读懂了《游山西村》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "山重乡村",
-      "imageUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png"
+      "imageUrl": "/assets/panoramas/lushan_main_4096x2048.jpg"
     },
     "ending_b": {
       "id": "ending_b",
@@ -230,7 +230,7 @@
       "text": "你循着“柳暗”入梦，读懂了《游山西村》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "柳暗乡村",
-      "imageUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png"
+      "imageUrl": "/assets/panoramas/lushan_main_4096x2048.jpg"
     },
     "ending_c": {
       "id": "ending_c",
@@ -239,7 +239,7 @@
       "text": "你循着“村庄”入梦，读懂了《游山西村》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "村庄乡村",
-      "imageUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png"
+      "imageUrl": "/assets/panoramas/lushan_main_4096x2048.jpg"
     }
   },
   "puzzles": {

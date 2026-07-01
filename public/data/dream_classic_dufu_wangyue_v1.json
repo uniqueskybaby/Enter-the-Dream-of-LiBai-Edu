@@ -34,7 +34,7 @@
       "type": "panorama",
       "title": "泰山绝顶梦境",
       "subtitle": "环顾 360 度诗境，按顺序点亮三枚学习意象。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "panoramaUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
       "initialView": {
         "yaw": 10,
         "pitch": 0,
@@ -91,7 +91,7 @@
       "type": "panorama",
       "title": "泰山壮志",
       "subtitle": "顺着“泰山”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "panoramaUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
       "initialView": {
         "yaw": -52,
         "pitch": 18,
@@ -117,7 +117,7 @@
       "type": "panorama",
       "title": "层云壮志",
       "subtitle": "顺着“层云”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "panoramaUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
       "initialView": {
         "yaw": 12,
         "pitch": -12,
@@ -143,7 +143,7 @@
       "type": "panorama",
       "title": "绝顶壮志",
       "subtitle": "顺着“绝顶”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "panoramaUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
       "initialView": {
         "yaw": 96,
         "pitch": 14,
@@ -221,7 +221,7 @@
       "text": "你循着“泰山”入梦，读懂了《望岳》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "泰山壮志",
-      "imageUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png"
+      "imageUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg"
     },
     "ending_b": {
       "id": "ending_b",
@@ -230,7 +230,7 @@
       "text": "你循着“层云”入梦，读懂了《望岳》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "层云壮志",
-      "imageUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png"
+      "imageUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg"
     },
     "ending_c": {
       "id": "ending_c",
@@ -239,7 +239,7 @@
       "text": "你循着“绝顶”入梦，读懂了《望岳》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "绝顶壮志",
-      "imageUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png"
+      "imageUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg"
     }
   },
   "puzzles": {

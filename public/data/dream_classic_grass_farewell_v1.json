@@ -34,7 +34,7 @@
       "type": "panorama",
       "title": "古原春草梦境",
       "subtitle": "环顾 360 度诗境，按顺序点亮三枚学习意象。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "panoramaUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg",
       "initialView": {
         "yaw": 10,
         "pitch": 0,
@@ -91,7 +91,7 @@
       "type": "panorama",
       "title": "原草生命",
       "subtitle": "顺着“原草”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "panoramaUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg",
       "initialView": {
         "yaw": -52,
         "pitch": 18,
@@ -117,7 +117,7 @@
       "type": "panorama",
       "title": "野火生命",
       "subtitle": "顺着“野火”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "panoramaUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg",
       "initialView": {
         "yaw": 12,
         "pitch": -12,
@@ -143,7 +143,7 @@
       "type": "panorama",
       "title": "春风生命",
       "subtitle": "顺着“春风”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "panoramaUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg",
       "initialView": {
         "yaw": 96,
         "pitch": 14,
@@ -221,7 +221,7 @@
       "text": "你循着“原草”入梦，读懂了《赋得古原草送别》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "原草生命",
-      "imageUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png"
+      "imageUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg"
     },
     "ending_b": {
       "id": "ending_b",
@@ -230,7 +230,7 @@
       "text": "你循着“野火”入梦，读懂了《赋得古原草送别》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "野火生命",
-      "imageUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png"
+      "imageUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg"
     },
     "ending_c": {
       "id": "ending_c",
@@ -239,7 +239,7 @@
       "text": "你循着“春风”入梦，读懂了《赋得古原草送别》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "春风生命",
-      "imageUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png"
+      "imageUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg"
     }
   },
   "puzzles": {

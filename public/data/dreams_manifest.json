@@ -298,7 +298,7 @@
     "source": "望岳",
     "worldName": "泰山绝顶梦境",
     "configUrl": "/data/dream_classic_dufu_wangyue_v1.json",
-    "coverUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+    "coverUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
     "theme": "泰山层云",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -310,7 +310,7 @@
     "source": "春望",
     "worldName": "春城草木梦境",
     "configUrl": "/data/dream_classic_dufu_spring_view_v1.json",
-    "coverUrl": "/assets/panoramas/dream_generated_changsha_1925_branch_b.png",
+    "coverUrl": "/assets/panoramas/yangtze_farewell_pavilion_4096x2048.jpg",
     "theme": "春望家国",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -334,7 +334,7 @@
     "source": "赋得古原草送别",
     "worldName": "古原春草梦境",
     "configUrl": "/data/dream_classic_grass_farewell_v1.json",
-    "coverUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+    "coverUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg",
     "theme": "古原春风",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -358,7 +358,7 @@
     "source": "江雪",
     "worldName": "寒江独钓梦境",
     "configUrl": "/data/dream_classic_jiangxue_boat_v1.json",
-    "coverUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+    "coverUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
     "theme": "寒江雪静",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -406,7 +406,7 @@
     "source": "饮湖上初晴后雨",
     "worldName": "西湖晴雨梦境",
     "configUrl": "/data/dream_classic_westlake_rain_v1.json",
-    "coverUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png",
+    "coverUrl": "/assets/panoramas/yangtze_farewell_horizon_4096x2048.jpg",
     "theme": "西湖晴雨",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -430,7 +430,7 @@
     "source": "游山西村",
     "worldName": "柳暗花明梦境",
     "configUrl": "/data/dream_classic_shanxi_village_v1.json",
-    "coverUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+    "coverUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
     "theme": "山村转机",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -442,7 +442,7 @@
     "source": "破阵子·为陈同甫赋壮词以寄之",
     "worldName": "沙场秋兵梦境",
     "configUrl": "/data/dream_classic_battle_song_v1.json",
-    "coverUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_branch_b.png",
+    "coverUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
     "theme": "沙场壮词",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -478,7 +478,7 @@
     "source": "敕勒歌",
     "worldName": "敕勒草原梦境",
     "configUrl": "/data/dream_classic_chile_sky_v1.json",
-    "coverUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+    "coverUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg",
     "theme": "草原天地",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
