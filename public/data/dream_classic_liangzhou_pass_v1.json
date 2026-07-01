@@ -1,0 +1,319 @@
+{
+  "gameId": "dream_classic_liangzhou_pass_v1",
+  "title": "入梦王之涣：凉州词",
+  "poem": {
+    "poet": "王之涣",
+    "line": "羌笛何须怨杨柳，春风不度玉门关。",
+    "source": "凉州词"
+  },
+  "world": {
+    "worldName": "玉门孤城梦境",
+    "visualTone": "黄河、白云、孤城、边关",
+    "spaceRules": [
+      "在 360 度全景中观察诗歌意象，保持原版沉浸式探索节奏。",
+      "热点集中在中部视区，避开左右 180 度接缝，减少拼接错位感。",
+      "用三道诗境题把画面、字词、情感和写法连起来。"
+    ],
+    "panoramaSeamPolicy": {
+      "seamYaw": 180,
+      "safeYawRange": [
+        -120,
+        120
+      ],
+      "hotspotYawRange": [
+        -60,
+        100
+      ],
+      "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+    }
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "玉门孤城梦境",
+      "subtitle": "环顾 360 度诗境，按顺序点亮三枚学习意象。",
+      "panoramaUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
+      "initialView": {
+        "yaw": 10,
+        "pitch": 0,
+        "fov": 105
+      },
+      "ambientLine": "玉门孤城梦境展开，孤城、羌笛、玉门关在四周浮现；重点句“羌笛何须怨杨柳，春风不度玉门关。”正等待被点亮。",
+      "hotspots": [
+        {
+          "id": "dream_classic_liangzhou_pass_v1_1",
+          "label": "孤城",
+          "yaw": -52,
+          "pitch": 18,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_dream_classic_liangzhou_pass_v1_1_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "dream_classic_liangzhou_pass_v1_2",
+          "label": "羌笛",
+          "yaw": 12,
+          "pitch": -12,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_dream_classic_liangzhou_pass_v1_2_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "dream_classic_liangzhou_pass_v1_3",
+          "label": "玉门关",
+          "yaw": 96,
+          "pitch": 14,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_dream_classic_liangzhou_pass_v1_3_locked",
+          "effect": "moon.particles"
+        }
+      ],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "孤城边塞",
+      "subtitle": "顺着“孤城”进入这一重诗境。",
+      "panoramaUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
+      "initialView": {
+        "yaw": -52,
+        "pitch": 18,
+        "fov": 104
+      },
+      "ambientLine": "靠近“孤城”，先把眼前景物读成诗中的画面线索。",
+      "hotspots": [],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "羌笛边塞",
+      "subtitle": "顺着“羌笛”进入这一重诗境。",
+      "panoramaUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
+      "initialView": {
+        "yaw": 12,
+        "pitch": -12,
+        "fov": 104
+      },
+      "ambientLine": "停在“羌笛”前，把字词、空间和情绪连起来。",
+      "hotspots": [],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "玉门关边塞",
+      "subtitle": "顺着“玉门关”进入这一重诗境。",
+      "panoramaUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
+      "initialView": {
+        "yaw": 96,
+        "pitch": 14,
+        "fov": 104
+      },
+      "ambientLine": "顺着“玉门关”回望全景，诗句的写法逐渐清楚。",
+      "hotspots": [],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    }
+  ],
+  "stories": {
+    "story_dream_classic_liangzhou_pass_v1_1_locked": {
+      "id": "story_dream_classic_liangzhou_pass_v1_1_locked",
+      "speaker": "王之涣",
+      "text": "先解开“孤城”之问，让“羌笛何须怨杨柳，春风不度玉门关。”的第一枚意象碎片归位。",
+      "choices": []
+    },
+    "story_dream_classic_liangzhou_pass_v1_2_locked": {
+      "id": "story_dream_classic_liangzhou_pass_v1_2_locked",
+      "speaker": "诗境",
+      "text": "“羌笛”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_dream_classic_liangzhou_pass_v1_3_locked": {
+      "id": "story_dream_classic_liangzhou_pass_v1_3_locked",
+      "speaker": "诗境",
+      "text": "“玉门关”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "三枚碎片已经照亮：“羌笛何须怨杨柳，春风不度玉门关。”在你眼前展开。选择一条路，把这幅诗境写成你的归宿。",
+      "choices": [
+        {
+          "id": "branch_a",
+          "text": "孤城边塞",
+          "tone": "清远",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "branch_b",
+          "text": "羌笛边塞",
+          "tone": "沉思",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "branch_c",
+          "text": "玉门关边塞",
+          "tone": "开阔",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "孤城边塞",
+      "rarity": "清远结局",
+      "text": "你循着“孤城”入梦，读懂了《凉州词》里跃出的这一笔。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "孤城边塞",
+      "imageUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "羌笛边塞",
+      "rarity": "沉思结局",
+      "text": "你循着“羌笛”入梦，读懂了《凉州词》里跃出的这一笔。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "羌笛边塞",
+      "imageUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "玉门关边塞",
+      "rarity": "诗心结局",
+      "text": "你循着“玉门关”入梦，读懂了《凉州词》里跃出的这一笔。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "玉门关边塞",
+      "imageUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg"
+    }
+  },
+  "puzzles": {
+    "dream_classic_liangzhou_pass_v1_1": {
+      "id": "dream_classic_liangzhou_pass_v1_1",
+      "motif": "孤城",
+      "clueName": "孤城意象",
+      "clueText": "请把“孤城”放回《凉州词》的画面中观察。",
+      "hint": "先看它和“边塞苍凉”之间的联系。",
+      "rewardLine": "孤城亮起，诗境的第一层画面展开。",
+      "question": "在《凉州词》中，“孤城”最主要帮助我们看见什么？",
+      "options": [
+        "诗中的边塞苍凉和画面线索",
+        "完全无关的装饰",
+        "议论文的论点",
+        "现代城市广告"
+      ],
+      "correctIndex": 0
+    },
+    "dream_classic_liangzhou_pass_v1_2": {
+      "id": "dream_classic_liangzhou_pass_v1_2",
+      "motif": "羌笛",
+      "clueName": "羌笛之问",
+      "clueText": "“羌笛”让诗句的空间和情绪继续推进。",
+      "hint": "联系重点句“羌笛何须怨杨柳，春风不度玉门关。”。",
+      "rewardLine": "羌笛归位，画面和诗心靠近了一步。",
+      "question": "理解“羌笛何须怨杨柳，春风不度玉门关。”时，下面哪种做法最合适？",
+      "options": [
+        "把羌笛与前后意象、诗人情感一起看",
+        "只数一共有几个字",
+        "跳过画面，只背题目",
+        "把它当作和诗无关的物品"
+      ],
+      "correctIndex": 0
+    },
+    "dream_classic_liangzhou_pass_v1_3": {
+      "id": "dream_classic_liangzhou_pass_v1_3",
+      "motif": "玉门关",
+      "clueName": "玉门关归位",
+      "clueText": "最后观察“玉门关”，把画面、字词和写法合拢。",
+      "hint": "重点看边塞意象、反问。",
+      "rewardLine": "玉门关照亮，诗境之门开启。",
+      "question": "这首诗最适合从哪组写法入手赏析？",
+      "options": [
+        "边塞意象、反问",
+        "倒叙、插叙",
+        "说明顺序、列数字",
+        "合同条款、报价说明"
+      ],
+      "correctIndex": 0
+    }
+  },
+  "puzzleOrder": [
+    "dream_classic_liangzhou_pass_v1_1",
+    "dream_classic_liangzhou_pass_v1_2",
+    "dream_classic_liangzhou_pass_v1_3"
+  ],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for 王之涣《凉州词》 line 羌笛何须怨杨柳，春风不度玉门关。; 黄河、白云、孤城、边关; natural 360 panorama, seamless horizon, no visible left-right seam, no broken architecture, no duplicated obvious object at the wrap line, no text, no watermark"
+  },
+  "meta": {
+    "origin": "education-supplement",
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "panoramaSeamPolicy": {
+      "seamYaw": 180,
+      "safeYawRange": [
+        -120,
+        120
+      ],
+      "hotspotYawRange": [
+        -60,
+        100
+      ],
+      "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+    }
+  }
+}

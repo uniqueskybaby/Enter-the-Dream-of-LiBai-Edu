@@ -1,0 +1,319 @@
+{
+  "gameId": "dream_classic_xilin_wall_v1",
+  "title": "入梦苏轼：题西林壁",
+  "poem": {
+    "poet": "苏轼",
+    "line": "不识庐山真面目，只缘身在此山中。",
+    "source": "题西林壁"
+  },
+  "world": {
+    "worldName": "庐山多面梦境",
+    "visualTone": "山岭、峰峦、云雾、视角变化",
+    "spaceRules": [
+      "在 360 度全景中观察诗歌意象，保持原版沉浸式探索节奏。",
+      "热点集中在中部视区，避开左右 180 度接缝，减少拼接错位感。",
+      "用三道诗境题把画面、字词、情感和写法连起来。"
+    ],
+    "panoramaSeamPolicy": {
+      "seamYaw": 180,
+      "safeYawRange": [
+        -120,
+        120
+      ],
+      "hotspotYawRange": [
+        -60,
+        100
+      ],
+      "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+    }
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "庐山多面梦境",
+      "subtitle": "环顾 360 度诗境，按顺序点亮三枚学习意象。",
+      "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
+      "initialView": {
+        "yaw": 10,
+        "pitch": 0,
+        "fov": 105
+      },
+      "ambientLine": "庐山多面梦境展开，山岭、峰峦、山中在四周浮现；重点句“不识庐山真面目，只缘身在此山中。”正等待被点亮。",
+      "hotspots": [
+        {
+          "id": "dream_classic_xilin_wall_v1_1",
+          "label": "山岭",
+          "yaw": -52,
+          "pitch": 18,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_dream_classic_xilin_wall_v1_1_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "dream_classic_xilin_wall_v1_2",
+          "label": "峰峦",
+          "yaw": 12,
+          "pitch": -12,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_dream_classic_xilin_wall_v1_2_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "dream_classic_xilin_wall_v1_3",
+          "label": "山中",
+          "yaw": 96,
+          "pitch": 14,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_dream_classic_xilin_wall_v1_3_locked",
+          "effect": "moon.particles"
+        }
+      ],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "山岭观察",
+      "subtitle": "顺着“山岭”进入这一重诗境。",
+      "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
+      "initialView": {
+        "yaw": -52,
+        "pitch": 18,
+        "fov": 104
+      },
+      "ambientLine": "靠近“山岭”，先把眼前景物读成诗中的画面线索。",
+      "hotspots": [],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "峰峦观察",
+      "subtitle": "顺着“峰峦”进入这一重诗境。",
+      "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
+      "initialView": {
+        "yaw": 12,
+        "pitch": -12,
+        "fov": 104
+      },
+      "ambientLine": "停在“峰峦”前，把字词、空间和情绪连起来。",
+      "hotspots": [],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "山中观察",
+      "subtitle": "顺着“山中”进入这一重诗境。",
+      "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
+      "initialView": {
+        "yaw": 96,
+        "pitch": 14,
+        "fov": 104
+      },
+      "ambientLine": "顺着“山中”回望全景，诗句的写法逐渐清楚。",
+      "hotspots": [],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    }
+  ],
+  "stories": {
+    "story_dream_classic_xilin_wall_v1_1_locked": {
+      "id": "story_dream_classic_xilin_wall_v1_1_locked",
+      "speaker": "苏轼",
+      "text": "先解开“山岭”之问，让“不识庐山真面目，只缘身在此山中。”的第一枚意象碎片归位。",
+      "choices": []
+    },
+    "story_dream_classic_xilin_wall_v1_2_locked": {
+      "id": "story_dream_classic_xilin_wall_v1_2_locked",
+      "speaker": "诗境",
+      "text": "“峰峦”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_dream_classic_xilin_wall_v1_3_locked": {
+      "id": "story_dream_classic_xilin_wall_v1_3_locked",
+      "speaker": "诗境",
+      "text": "“山中”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "三枚碎片已经照亮：“不识庐山真面目，只缘身在此山中。”在你眼前展开。选择一条路，把这幅诗境写成你的归宿。",
+      "choices": [
+        {
+          "id": "branch_a",
+          "text": "山岭观察",
+          "tone": "清远",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "branch_b",
+          "text": "峰峦观察",
+          "tone": "沉思",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "branch_c",
+          "text": "山中观察",
+          "tone": "开阔",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "山岭观察",
+      "rarity": "清远结局",
+      "text": "你循着“山岭”入梦，读懂了《题西林壁》里跃出的这一笔。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "山岭观察",
+      "imageUrl": "/assets/panoramas/lushan_main_4096x2048.jpg"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "峰峦观察",
+      "rarity": "沉思结局",
+      "text": "你循着“峰峦”入梦，读懂了《题西林壁》里跃出的这一笔。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "峰峦观察",
+      "imageUrl": "/assets/panoramas/lushan_main_4096x2048.jpg"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "山中观察",
+      "rarity": "诗心结局",
+      "text": "你循着“山中”入梦，读懂了《题西林壁》里跃出的这一笔。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "山中观察",
+      "imageUrl": "/assets/panoramas/lushan_main_4096x2048.jpg"
+    }
+  },
+  "puzzles": {
+    "dream_classic_xilin_wall_v1_1": {
+      "id": "dream_classic_xilin_wall_v1_1",
+      "motif": "山岭",
+      "clueName": "山岭意象",
+      "clueText": "请把“山岭”放回《题西林壁》的画面中观察。",
+      "hint": "先看它和“观察角度”之间的联系。",
+      "rewardLine": "山岭亮起，诗境的第一层画面展开。",
+      "question": "在《题西林壁》中，“山岭”最主要帮助我们看见什么？",
+      "options": [
+        "诗中的观察角度和画面线索",
+        "完全无关的装饰",
+        "议论文的论点",
+        "现代城市广告"
+      ],
+      "correctIndex": 0
+    },
+    "dream_classic_xilin_wall_v1_2": {
+      "id": "dream_classic_xilin_wall_v1_2",
+      "motif": "峰峦",
+      "clueName": "峰峦之问",
+      "clueText": "“峰峦”让诗句的空间和情绪继续推进。",
+      "hint": "联系重点句“不识庐山真面目，只缘身在此山中。”。",
+      "rewardLine": "峰峦归位，画面和诗心靠近了一步。",
+      "question": "理解“不识庐山真面目，只缘身在此山中。”时，下面哪种做法最合适？",
+      "options": [
+        "把峰峦与前后意象、诗人情感一起看",
+        "只数一共有几个字",
+        "跳过画面，只背题目",
+        "把它当作和诗无关的物品"
+      ],
+      "correctIndex": 0
+    },
+    "dream_classic_xilin_wall_v1_3": {
+      "id": "dream_classic_xilin_wall_v1_3",
+      "motif": "山中",
+      "clueName": "山中归位",
+      "clueText": "最后观察“山中”，把画面、字词和写法合拢。",
+      "hint": "重点看哲理表达、角度变化。",
+      "rewardLine": "山中照亮，诗境之门开启。",
+      "question": "这首诗最适合从哪组写法入手赏析？",
+      "options": [
+        "哲理表达、角度变化",
+        "倒叙、插叙",
+        "说明顺序、列数字",
+        "合同条款、报价说明"
+      ],
+      "correctIndex": 0
+    }
+  },
+  "puzzleOrder": [
+    "dream_classic_xilin_wall_v1_1",
+    "dream_classic_xilin_wall_v1_2",
+    "dream_classic_xilin_wall_v1_3"
+  ],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for 苏轼《题西林壁》 line 不识庐山真面目，只缘身在此山中。; 山岭、峰峦、云雾、视角变化; natural 360 panorama, seamless horizon, no visible left-right seam, no broken architecture, no duplicated obvious object at the wrap line, no text, no watermark"
+  },
+  "meta": {
+    "origin": "education-supplement",
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "panoramaSeamPolicy": {
+      "seamYaw": 180,
+      "safeYawRange": [
+        -120,
+        120
+      ],
+      "hotspotYawRange": [
+        -60,
+        100
+      ],
+      "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+    }
+  }
+}

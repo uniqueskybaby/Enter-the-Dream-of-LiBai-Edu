@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | 0 项目隔离 | 独立目录、独立 `package.json`、独立启动/构建/数据库 | `education-edition/package.json`、`server/config.mjs`、`storage/edu-libai.sqlite` |
 | 1 内容模型 | 诗词、教材、知识点、素材、关系、Prompt、会话、限流和审计表 | `server/database.mjs` 中全部 `edu_*` 表 |
-| 1 种子数据 | 16 首诗、1 个课程包、教育字段补齐 | `npm run seed -- --force` |
+| 1 种子数据 | 41 首诗、1 个课程包、教育字段补齐；25 个补充诗境保留 360 度全景结构 | `npm run seed -- --force` |
 | 2 学生闭环 | 目录进入诗词、六步学习、作答、完成、报告、问诗人、笔记 | `npm run smoke:test` 学生流程 |
 | 3 诗词星图 | 诗、作者、朝代、教材单元、主题、意象、地点、知识点节点 | `GET /api/edu/graph` |
 | 4 教师工作台 | 创建班级、添加学生、布置任务、报告、单个学生记录 | `npm run smoke:test` 教师流程 |
@@ -25,7 +25,8 @@
 - 每首诗至少 3 条诗词关系。
 - 每首诗至少 1 个素材资源。
 - 每首诗都有独立诗人对话 Profile。
-- 16 个诗人 System Prompt 互不相同。
+- 41 个诗人 System Prompt 互不相同。
+- 补充诗境的热点位于中部安全视区，避开左右 180 度全景拼接接缝。
 
 可用以下命令复查：
 

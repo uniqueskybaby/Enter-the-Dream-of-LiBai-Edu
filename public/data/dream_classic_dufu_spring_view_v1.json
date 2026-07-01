@@ -1,0 +1,319 @@
+{
+  "gameId": "dream_classic_dufu_spring_view_v1",
+  "title": "入梦杜甫：春望",
+  "poem": {
+    "poet": "杜甫",
+    "line": "感时花溅泪，恨别鸟惊心。",
+    "source": "春望"
+  },
+  "world": {
+    "worldName": "春城草木梦境",
+    "visualTone": "春城、草木、花鸟、烽火远影",
+    "spaceRules": [
+      "在 360 度全景中观察诗歌意象，保持原版沉浸式探索节奏。",
+      "热点集中在中部视区，避开左右 180 度接缝，减少拼接错位感。",
+      "用三道诗境题把画面、字词、情感和写法连起来。"
+    ],
+    "panoramaSeamPolicy": {
+      "seamYaw": 180,
+      "safeYawRange": [
+        -120,
+        120
+      ],
+      "hotspotYawRange": [
+        -60,
+        100
+      ],
+      "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+    }
+  },
+  "startNodeId": "main_scene",
+  "nodes": [
+    {
+      "id": "main_scene",
+      "type": "panorama",
+      "title": "春城草木梦境",
+      "subtitle": "环顾 360 度诗境，按顺序点亮三枚学习意象。",
+      "panoramaUrl": "/assets/panoramas/dream_generated_changsha_1925_branch_b.png",
+      "initialView": {
+        "yaw": 10,
+        "pitch": 0,
+        "fov": 105
+      },
+      "ambientLine": "春城草木梦境展开，草木、花泪、家书在四周浮现；重点句“感时花溅泪，恨别鸟惊心。”正等待被点亮。",
+      "hotspots": [
+        {
+          "id": "dream_classic_dufu_spring_view_v1_1",
+          "label": "草木",
+          "yaw": -52,
+          "pitch": 18,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_dream_classic_dufu_spring_view_v1_1_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "dream_classic_dufu_spring_view_v1_2",
+          "label": "花泪",
+          "yaw": 12,
+          "pitch": -12,
+          "radius": 20,
+          "state": "available",
+          "storyId": "story_dream_classic_dufu_spring_view_v1_2_locked",
+          "effect": "ui.inkRipple"
+        },
+        {
+          "id": "dream_classic_dufu_spring_view_v1_3",
+          "label": "家书",
+          "yaw": 96,
+          "pitch": 14,
+          "radius": 18,
+          "state": "available",
+          "storyId": "story_dream_classic_dufu_spring_view_v1_3_locked",
+          "effect": "moon.particles"
+        }
+      ],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    },
+    {
+      "id": "branch_a",
+      "type": "panorama",
+      "title": "草木忧国",
+      "subtitle": "顺着“草木”进入这一重诗境。",
+      "panoramaUrl": "/assets/panoramas/dream_generated_changsha_1925_branch_b.png",
+      "initialView": {
+        "yaw": -52,
+        "pitch": 18,
+        "fov": 104
+      },
+      "ambientLine": "靠近“草木”，先把眼前景物读成诗中的画面线索。",
+      "hotspots": [],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    },
+    {
+      "id": "branch_b",
+      "type": "panorama",
+      "title": "花泪忧国",
+      "subtitle": "顺着“花泪”进入这一重诗境。",
+      "panoramaUrl": "/assets/panoramas/dream_generated_changsha_1925_branch_b.png",
+      "initialView": {
+        "yaw": 12,
+        "pitch": -12,
+        "fov": 104
+      },
+      "ambientLine": "停在“花泪”前，把字词、空间和情绪连起来。",
+      "hotspots": [],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    },
+    {
+      "id": "branch_c",
+      "type": "panorama",
+      "title": "家书忧国",
+      "subtitle": "顺着“家书”进入这一重诗境。",
+      "panoramaUrl": "/assets/panoramas/dream_generated_changsha_1925_branch_b.png",
+      "initialView": {
+        "yaw": 96,
+        "pitch": 14,
+        "fov": 104
+      },
+      "ambientLine": "顺着“家书”回望全景，诗句的写法逐渐清楚。",
+      "hotspots": [],
+      "panoramaQuality": {
+        "seamYaw": 180,
+        "safeYawRange": [
+          -120,
+          120
+        ],
+        "hotspotYawRange": [
+          -60,
+          100
+        ],
+        "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+      }
+    }
+  ],
+  "stories": {
+    "story_dream_classic_dufu_spring_view_v1_1_locked": {
+      "id": "story_dream_classic_dufu_spring_view_v1_1_locked",
+      "speaker": "杜甫",
+      "text": "先解开“草木”之问，让“感时花溅泪，恨别鸟惊心。”的第一枚意象碎片归位。",
+      "choices": []
+    },
+    "story_dream_classic_dufu_spring_view_v1_2_locked": {
+      "id": "story_dream_classic_dufu_spring_view_v1_2_locked",
+      "speaker": "诗境",
+      "text": "“花泪”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_dream_classic_dufu_spring_view_v1_3_locked": {
+      "id": "story_dream_classic_dufu_spring_view_v1_3_locked",
+      "speaker": "诗境",
+      "text": "“家书”仍隔着一层梦雾。请按诗句脉络继续点亮前一枚碎片。",
+      "choices": []
+    },
+    "story_gate": {
+      "id": "story_gate",
+      "speaker": "星河诗阵",
+      "text": "三枚碎片已经照亮：“感时花溅泪，恨别鸟惊心。”在你眼前展开。选择一条路，把这幅诗境写成你的归宿。",
+      "choices": [
+        {
+          "id": "branch_a",
+          "text": "草木忧国",
+          "tone": "清远",
+          "nextNodeId": "branch_a",
+          "endingId": "ending_a"
+        },
+        {
+          "id": "branch_b",
+          "text": "花泪忧国",
+          "tone": "沉思",
+          "nextNodeId": "branch_b",
+          "endingId": "ending_b"
+        },
+        {
+          "id": "branch_c",
+          "text": "家书忧国",
+          "tone": "开阔",
+          "nextNodeId": "branch_c",
+          "endingId": "ending_c"
+        }
+      ]
+    }
+  },
+  "endings": {
+    "ending_a": {
+      "id": "ending_a",
+      "name": "草木忧国",
+      "rarity": "清远结局",
+      "text": "你循着“草木”入梦，读懂了《春望》里跃出的这一笔。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "草木忧国",
+      "imageUrl": "/assets/panoramas/dream_generated_changsha_1925_branch_b.png"
+    },
+    "ending_b": {
+      "id": "ending_b",
+      "name": "花泪忧国",
+      "rarity": "沉思结局",
+      "text": "你循着“花泪”入梦，读懂了《春望》里跃出的这一笔。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "花泪忧国",
+      "imageUrl": "/assets/panoramas/dream_generated_changsha_1925_branch_b.png"
+    },
+    "ending_c": {
+      "id": "ending_c",
+      "name": "家书忧国",
+      "rarity": "诗心结局",
+      "text": "你循着“家书”入梦，读懂了《春望》里跃出的这一笔。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "家书忧国",
+      "imageUrl": "/assets/panoramas/dream_generated_changsha_1925_branch_b.png"
+    }
+  },
+  "puzzles": {
+    "dream_classic_dufu_spring_view_v1_1": {
+      "id": "dream_classic_dufu_spring_view_v1_1",
+      "motif": "草木",
+      "clueName": "草木意象",
+      "clueText": "请把“草木”放回《春望》的画面中观察。",
+      "hint": "先看它和“忧国思家”之间的联系。",
+      "rewardLine": "草木亮起，诗境的第一层画面展开。",
+      "question": "在《春望》中，“草木”最主要帮助我们看见什么？",
+      "options": [
+        "诗中的忧国思家和画面线索",
+        "完全无关的装饰",
+        "议论文的论点",
+        "现代城市广告"
+      ],
+      "correctIndex": 0
+    },
+    "dream_classic_dufu_spring_view_v1_2": {
+      "id": "dream_classic_dufu_spring_view_v1_2",
+      "motif": "花泪",
+      "clueName": "花泪之问",
+      "clueText": "“花泪”让诗句的空间和情绪继续推进。",
+      "hint": "联系重点句“感时花溅泪，恨别鸟惊心。”。",
+      "rewardLine": "花泪归位，画面和诗心靠近了一步。",
+      "question": "理解“感时花溅泪，恨别鸟惊心。”时，下面哪种做法最合适？",
+      "options": [
+        "把花泪与前后意象、诗人情感一起看",
+        "只数一共有几个字",
+        "跳过画面，只背题目",
+        "把它当作和诗无关的物品"
+      ],
+      "correctIndex": 0
+    },
+    "dream_classic_dufu_spring_view_v1_3": {
+      "id": "dream_classic_dufu_spring_view_v1_3",
+      "motif": "家书",
+      "clueName": "家书归位",
+      "clueText": "最后观察“家书”，把画面、字词和写法合拢。",
+      "hint": "重点看以乐景写哀情、对偶。",
+      "rewardLine": "家书照亮，诗境之门开启。",
+      "question": "这首诗最适合从哪组写法入手赏析？",
+      "options": [
+        "以乐景写哀情、对偶",
+        "倒叙、插叙",
+        "说明顺序、列数字",
+        "合同条款、报价说明"
+      ],
+      "correctIndex": 0
+    }
+  },
+  "puzzleOrder": [
+    "dream_classic_dufu_spring_view_v1_1",
+    "dream_classic_dufu_spring_view_v1_2",
+    "dream_classic_dufu_spring_view_v1_3"
+  ],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for 杜甫《春望》 line 感时花溅泪，恨别鸟惊心。; 春城、草木、花鸟、烽火远影; natural 360 panorama, seamless horizon, no visible left-right seam, no broken architecture, no duplicated obvious object at the wrap line, no text, no watermark"
+  },
+  "meta": {
+    "origin": "education-supplement",
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "panoramaSeamPolicy": {
+      "seamYaw": 180,
+      "safeYawRange": [
+        -120,
+        120
+      ],
+      "hotspotYawRange": [
+        -60,
+        100
+      ],
+      "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+    }
+  }
+}

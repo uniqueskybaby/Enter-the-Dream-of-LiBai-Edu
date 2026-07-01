@@ -1,6 +1,6 @@
 import http from 'node:http';
 import { randomUUID } from 'node:crypto';
-import { createReadStream, existsSync, mkdirSync, statSync, writeFileSync } from 'node:fs';
+import { createReadStream, existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { eduConfig } from './config.mjs';
@@ -8,10 +8,21 @@ import { json, normalizePoemRow, nowIso, openEduDatabase, parseJson, randomId } 
 import { seed } from './seed.mjs';
 
 let db = openEduDatabase(eduConfig.dbPath);
-if (db.prepare('SELECT COUNT(*) AS count FROM edu_poems').get().count === 0) {
+const seedCount = db.prepare('SELECT COUNT(*) AS count FROM edu_poems').get().count;
+const expectedSeedCount = expectedSeedPoemCount();
+if (seedCount === 0 || (process.env.VERCEL === '1' && expectedSeedCount > seedCount)) {
   db.close();
-  seed();
+  seed({ force: seedCount > 0 });
   db = openEduDatabase(eduConfig.dbPath);
+}
+
+function expectedSeedPoemCount() {
+  try {
+    const manifestPath = path.join(eduConfig.publicDir, 'data', 'dreams_manifest.json');
+    return JSON.parse(readFileSync(manifestPath, 'utf8')).length;
+  } catch {
+    return 0;
+  }
 }
 
 export async function handleEduRequest(req, res) {
