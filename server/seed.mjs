@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -288,11 +289,14 @@ const stepTemplates = [
 ];
 
 function stableId(prefix, value) {
-  return `${prefix}_${String(value)
+  const raw = String(value);
+  const slug = raw
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '_')
     .replace(/^_+|_+$/g, '')
-    .slice(0, 80)}`;
+    .slice(0, 80);
+  if (slug) return `${prefix}_${slug}`;
+  return `${prefix}_${createHash('sha1').update(raw).digest('hex').slice(0, 12)}`;
 }
 
 function safeReadJson(file) {

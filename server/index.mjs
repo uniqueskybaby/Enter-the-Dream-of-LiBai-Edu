@@ -10,7 +10,8 @@ import { seed } from './seed.mjs';
 let db = openEduDatabase(eduConfig.dbPath);
 const seedCount = db.prepare('SELECT COUNT(*) AS count FROM edu_poems').get().count;
 const expectedSeedCount = expectedSeedPoemCount();
-if (seedCount === 0 || (process.env.VERCEL === '1' && expectedSeedCount > seedCount)) {
+const seedAuditCounts = getSeedAuditCounts();
+if (seedCount === 0 || (process.env.VERCEL === '1' && shouldRefreshVercelSeed(seedCount, expectedSeedCount, seedAuditCounts))) {
   db.close();
   seed({ force: seedCount > 0 });
   db = openEduDatabase(eduConfig.dbPath);
@@ -23,6 +24,29 @@ function expectedSeedPoemCount() {
   } catch {
     return 0;
   }
+}
+
+function getSeedAuditCounts() {
+  try {
+    return {
+      authors: db.prepare('SELECT COUNT(*) AS count FROM edu_authors').get().count,
+      motifs: db.prepare('SELECT COUNT(*) AS count FROM edu_motifs').get().count,
+      places: db.prepare('SELECT COUNT(*) AS count FROM edu_places').get().count,
+      units: db.prepare('SELECT COUNT(*) AS count FROM edu_textbook_units').get().count,
+    };
+  } catch {
+    return { authors: 0, motifs: 0, places: 0, units: 0 };
+  }
+}
+
+function shouldRefreshVercelSeed(seedCount, expectedSeedCount, auditCounts) {
+  return (
+    expectedSeedCount > seedCount ||
+    auditCounts.authors < 10 ||
+    auditCounts.motifs < 20 ||
+    auditCounts.places < 20 ||
+    auditCounts.units < 10
+  );
 }
 
 export async function handleEduRequest(req, res) {
