@@ -380,6 +380,13 @@ p {
   margin-bottom: 16px;
 }
 
+.section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
 .section-title h2,
 .band > h2,
 .form-panel h2 {

@@ -248,8 +248,7 @@ function roleName(role: string) {
 }
 
 function HomePage({ poems, catalogs, navigate }: { poems: Poem[]; catalogs: Catalog[]; navigate: (path: string) => void }) {
-  const featured = poems.slice(0, 6);
-  const firstLesson = featured[0]?.lesson_id;
+  const firstLesson = poems[0]?.lesson_id;
   return (
     <div className="page-grid">
       <section className="hero-panel dream-entry">
@@ -303,13 +302,16 @@ function HomePage({ poems, catalogs, navigate }: { poems: Poem[]; catalogs: Cata
             <span className="eyebrow">诗库</span>
             <h2>已导入的诗境素材</h2>
           </div>
-          <button className="ghost" onClick={() => navigate('/edu/graph')}>
-            打开星图
-            <GitBranch size={16} />
-          </button>
+          <div className="section-actions">
+            <span className="pill">共 {poems.length} 个诗境</span>
+            <button className="ghost" onClick={() => navigate('/edu/graph')}>
+              打开星图
+              <GitBranch size={16} />
+            </button>
+          </div>
         </div>
         <div className="poem-grid">
-          {featured.map((poem) => (
+          {poems.map((poem) => (
             <PoemCard key={poem.id} poem={poem} navigate={navigate} />
           ))}
         </div>
