@@ -2,6 +2,22 @@
 
 教育版是独立于原版沉浸式体验主线的本地应用。它拥有自己的 `package.json`、前端路由、Node 服务、SQLite 数据库、种子脚本和静态资源副本。
 
+## 在线演示
+
+公开演示地址：
+
+```text
+https://enter-dream-libai-edu.vercel.app
+```
+
+360° 学习页直达：
+
+```text
+https://enter-dream-libai-edu.vercel.app/edu/learn/lesson_dream_li_bai_yueyang_geese_moon_v1
+```
+
+线上演示使用 Vercel Node 函数启动教育版 API，SQLite 数据库位于函数临时目录并在冷启动时自动导入样板包，适合公开演示和体验验证。
+
 ## 本地命令
 
 ```bash
