@@ -226,7 +226,7 @@
     "source": "登鹳雀楼",
     "worldName": "鹳雀楼远望梦境",
     "configUrl": "/data/dream_classic_stork_tower_v1.json",
-    "coverUrl": "/assets/panoramas/yellow_river_main_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_generated_changsha_1925_ending_b.png",
     "theme": "登高黄河",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -274,7 +274,7 @@
     "source": "鹿柴",
     "worldName": "鹿柴深林梦境",
     "configUrl": "/data/dream_classic_luchai_echo_v1.json",
-    "coverUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png",
+    "coverUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_branch_c.png",
     "theme": "空山返照",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -298,7 +298,7 @@
     "source": "望岳",
     "worldName": "泰山绝顶梦境",
     "configUrl": "/data/dream_classic_dufu_wangyue_v1.json",
-    "coverUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+    "coverUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_branch_a.png",
     "theme": "泰山层云",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -334,7 +334,7 @@
     "source": "赋得古原草送别",
     "worldName": "古原春草梦境",
     "configUrl": "/data/dream_classic_grass_farewell_v1.json",
-    "coverUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+    "coverUrl": "/assets/panoramas/yangtze_farewell_main_4096x2048.webp",
     "theme": "古原春风",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -346,7 +346,7 @@
     "source": "钱塘湖春行",
     "worldName": "钱塘早春梦境",
     "configUrl": "/data/dream_classic_qiantang_spring_v1.json",
-    "coverUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png",
+    "coverUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_ending_c.png",
     "theme": "湖上早春",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -358,7 +358,7 @@
     "source": "江雪",
     "worldName": "寒江独钓梦境",
     "configUrl": "/data/dream_classic_jiangxue_boat_v1.json",
-    "coverUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_ending_a.png",
     "theme": "寒江雪静",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
@@ -406,7 +406,7 @@
     "source": "饮湖上初晴后雨",
     "worldName": "西湖晴雨梦境",
     "configUrl": "/data/dream_classic_westlake_rain_v1.json",
-    "coverUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png",
+    "coverUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_ending_b.png",
     "theme": "西湖晴雨",
     "origin": "education-supplement",
     "savedAt": "2026-07-01T00:00:00.000Z"
