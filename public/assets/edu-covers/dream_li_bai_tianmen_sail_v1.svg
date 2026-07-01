@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="望天门山 封面">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#20364d" />
+      <stop offset="48%" stop-color="#b98042" />
+      <stop offset="100%" stop-color="#f3d8a6" />
+    </linearGradient>
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffdf2" />
+      <stop offset="60%" stop-color="#ffe8b6" />
+      <stop offset="100%" stop-color="#ffe8b6" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      text { font-family: "Noto Serif SC", "Songti SC", "STSong", serif; }
+      .source { font-size: 58px; font-weight: 700; letter-spacing: 0; }
+      .meta { font-size: 24px; font-weight: 600; letter-spacing: 0; }
+      .line { font-size: 28px; font-weight: 600; letter-spacing: 0; }
+      .world { font-size: 20px; font-weight: 600; letter-spacing: 0; }
+      .motif { font-size: 25px; font-weight: 700; letter-spacing: 0; }
+    </style>
+  </defs>
+  <rect width="960" height="540" fill="url(#sky)" />
+  <rect width="960" height="540" fill="#3d2b1a" opacity="0.22" />
+  <circle cx="254" cy="110" r="96" fill="url(#moon)" opacity="0.92" />
+  <circle cx="317" cy="61" r="1.9" fill="#fff7d8" opacity="0.49" />
+<circle cx="390" cy="102" r="2.6" fill="#fff7d8" opacity="0.61" />
+<circle cx="463" cy="143" r="1.2" fill="#fff7d8" opacity="0.73" />
+<circle cx="536" cy="184" r="1.9" fill="#fff7d8" opacity="0.25" />
+<circle cx="609" cy="51" r="2.6" fill="#fff7d8" opacity="0.37" />
+<circle cx="682" cy="92" r="1.2" fill="#fff7d8" opacity="0.49" />
+<circle cx="755" cy="133" r="1.9" fill="#fff7d8" opacity="0.61" />
+<circle cx="828" cy="174" r="2.6" fill="#fff7d8" opacity="0.73" />
+<circle cx="901" cy="41" r="1.2" fill="#fff7d8" opacity="0.25" />
+<circle cx="122" cy="82" r="1.9" fill="#fff7d8" opacity="0.37" />
+<circle cx="195" cy="123" r="2.6" fill="#fff7d8" opacity="0.49" />
+<circle cx="268" cy="164" r="1.2" fill="#fff7d8" opacity="0.61" />
+<circle cx="341" cy="205" r="1.9" fill="#fff7d8" opacity="0.73" />
+<circle cx="414" cy="72" r="2.6" fill="#fff7d8" opacity="0.25" />
+<circle cx="487" cy="113" r="1.2" fill="#fff7d8" opacity="0.37" />
+<circle cx="560" cy="154" r="1.9" fill="#fff7d8" opacity="0.49" />
+<circle cx="633" cy="195" r="2.6" fill="#fff7d8" opacity="0.61" />
+<circle cx="706" cy="62" r="1.2" fill="#fff7d8" opacity="0.73" />
+<circle cx="779" cy="103" r="1.9" fill="#fff7d8" opacity="0.25" />
+<circle cx="852" cy="144" r="2.6" fill="#fff7d8" opacity="0.37" />
+<circle cx="73" cy="185" r="1.2" fill="#fff7d8" opacity="0.49" />
+<circle cx="146" cy="52" r="1.9" fill="#fff7d8" opacity="0.61" />
+  <path d="M0 410 L0 324 C68 292 94 260 142 286 C194 236 234 254 292 312 C360 238 420 238 494 322 C560 272 610 286 660 330 C730 260 806 246 960 330 L960 540 L0 540 Z" fill="#293c2f" opacity="0.72" />
+  <path d="M40 364 C178 356 262 396 408 384 C540 304 626 422 916 326" fill="none" stroke="#e9bd62" stroke-width="8" opacity="0.62" stroke-linecap="round" />
+  <path d="M40 382 C178 338 262 414 408 366 C540 322 626 404 916 344" fill="none" stroke="#47351e" stroke-width="3" opacity="0.28" stroke-linecap="round" />
+  <path d="M42 430 C174 390 254 460 382 416 C500 376 636 452 918 388" fill="none" stroke="#f6d274" stroke-width="4" opacity="0.56" stroke-linecap="round" />
+  
+        <g transform="translate(156 318)">
+          <circle r="62" fill="#ffe0a3" opacity="0.95" filter="url(#softGlow)" />
+          <circle r="52" fill="none" stroke="#47351e" stroke-width="2" opacity="0.42" />
+          <text text-anchor="middle" dominant-baseline="central" class="motif" fill="#fff8e8">青山</text>
+        </g>
+
+        <g transform="translate(480 286)">
+          <circle r="57" fill="#ffe0a3" opacity="0.82" filter="url(#softGlow)" />
+          <circle r="48" fill="none" stroke="#47351e" stroke-width="2" opacity="0.42" />
+          <text text-anchor="middle" dominant-baseline="central" class="motif" fill="#fff8e8">孤帆</text>
+        </g>
+
+        <g transform="translate(804 330)">
+          <circle r="52" fill="#ffe0a3" opacity="0.74" filter="url(#softGlow)" />
+          <circle r="44" fill="none" stroke="#47351e" stroke-width="2" opacity="0.42" />
+          <text text-anchor="middle" dominant-baseline="central" class="motif" fill="#fff8e8">日边</text>
+        </g>
+  <g transform="translate(58 62)">
+    <text class="meta" fill="#f4d99b">李白 · 天门孤帆梦境</text>
+    <text y="76" class="source" fill="#fff8e8">望天门山</text>
+    <text y="130" class="line" fill="#fff8e8">两岸青山相对出，孤帆一片日边来。</text>
+  </g>
+  <g transform="translate(58 466)">
+    <rect width="330" height="44" rx="22" fill="#231b12" opacity="0.78" />
+    <text x="24" y="29" class="world" fill="#fff8e8">诗境热点 · 青山 · 孤帆 · 日边</text>
+  </g>
+</svg>

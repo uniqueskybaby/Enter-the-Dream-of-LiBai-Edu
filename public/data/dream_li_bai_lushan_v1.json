@@ -8,8 +8,8 @@
   },
   "world": {
     "worldName": "庐山银河梦境",
-    "visualTone": "宏伟、浪漫、蓝银月光、金色诗意光点",
-    "spaceRules": ["瀑布如银河垂落", "月光可化为道路", "酒杯可映出山河"]
+    "visualTone": "宏伟、浪漫、紫烟云崖、蓝银飞瀑、金色诗意光点",
+    "spaceRules": ["香炉峰云烟对应“日照香炉生紫烟”", "瀑布动势对应“飞流直下三千尺”", "银河想象对应“疑是银河落九天”"]
   },
   "startNodeId": "main_lushan_galaxy",
   "nodes": [
@@ -20,17 +20,17 @@
       "subtitle": "环顾云崖，寻找发光的诗意点位",
       "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
       "initialView": { "yaw": -28, "pitch": 4, "fov": 105 },
-      "ambientLine": "银河瀑布垂入云海，月色在杯沿轻轻发亮。",
+      "ambientLine": "阳光照着香炉峰，紫烟升起；瀑布从云崖直落，像银河从九天坠入人间。",
       "hotspots": [
         {
-          "id": "moon",
-          "label": "月",
-          "yaw": -119,
-          "pitch": 39,
+          "id": "purple_mist",
+          "label": "香炉峰",
+          "yaw": -52,
+          "pitch": 22,
           "radius": 18,
           "state": "available",
-          "storyId": "story_moon",
-          "effect": "moon.particles"
+          "storyId": "story_purple_mist_locked",
+          "effect": "ui.inkRipple"
         },
         {
           "id": "waterfall",
@@ -43,99 +43,77 @@
           "effect": "waterfall.mist"
         },
         {
-          "id": "wine",
-          "label": "酒",
+          "id": "galaxy",
+          "label": "银河",
           "yaw": 96,
-          "pitch": -46,
+          "pitch": 8,
           "radius": 16,
           "state": "available",
-          "storyId": "story_wine_locked",
-          "effect": "ui.inkRipple"
+          "storyId": "story_galaxy_locked",
+          "effect": "moon.particles"
         }
       ]
     },
     {
       "id": "branch_moon_toast",
       "type": "panorama",
-      "title": "月下酒台",
-      "subtitle": "杯中月影成三，风把云海吹成了酒香。",
+      "title": "香炉紫烟",
+      "subtitle": "顺着“香炉峰”进入第一重诗境。",
       "panoramaUrl": "/assets/panoramas/branch_moon_toast_4096x2048.jpg",
       "initialView": { "yaw": -24, "pitch": 1, "fov": 104 },
-      "ambientLine": "你举杯邀月，月影竟在清辉里应声而来。",
+      "ambientLine": "阳光照在香炉峰上，紫色云烟从山间升起。",
       "hotspots": []
     },
     {
       "id": "branch_moon_bridge",
       "type": "panorama",
-      "title": "月光云桥",
-      "subtitle": "银光铺成道路，穿过瀑声与星河。",
+      "title": "飞瀑前川",
+      "subtitle": "顺着“瀑布”进入第二重诗境。",
       "panoramaUrl": "/assets/panoramas/branch_moon_bridge_4096x2048.jpg",
       "initialView": { "yaw": 15, "pitch": -2, "fov": 104 },
-      "ambientLine": "你踏上月光，脚下万丈云海忽然变得很近。",
+      "ambientLine": "瀑布从高处直泻，像白练挂在山前。",
       "hotspots": []
     },
     {
       "id": "branch_silent_peak",
       "type": "panorama",
-      "title": "静夜孤峰",
-      "subtitle": "瀑布声退远，一盏酒被李白放在石上。",
+      "title": "银河落天",
+      "subtitle": "顺着“银河”进入第三重诗境。",
       "panoramaUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
       "initialView": { "yaw": 5, "pitch": -4, "fov": 104 },
-      "ambientLine": "你在峰顶沉默，听见月光落在松针上的声音。",
+      "ambientLine": "诗人的想象把瀑布写成从九天落下的银河。",
       "hotspots": []
     }
   ],
   "stories": {
-    "story_moon": {
-      "id": "story_moon",
+    "story_purple_mist_locked": {
+      "id": "story_purple_mist_locked",
       "speaker": "李白",
-      "text": "你抬头望向清月。月光忽然垂落，像一条银白的道路，连接着云海与天门。李白的声音从风中传来：此月，不在人间。",
-      "choices": [
-        {
-          "id": "toast",
-          "text": "举杯邀月",
-          "tone": "浪漫",
-          "nextNodeId": "branch_moon_toast",
-          "endingId": "ending_moon_exile"
-        },
-        {
-          "id": "bridge",
-          "text": "踏月而行",
-          "tone": "逍遥",
-          "nextNodeId": "branch_moon_bridge",
-          "endingId": "ending_silver_bridge"
-        },
-        {
-          "id": "silent",
-          "text": "凝望不语",
-          "tone": "诗心",
-          "nextNodeId": "branch_silent_peak",
-          "endingId": "ending_silent_listener"
-        }
-      ]
+      "text": "香炉峰前紫烟初起。先解开“日照香炉生紫烟”之问，让第一枚诗意碎片归位。",
+      "choices": []
     },
     "story_gate": {
       "id": "story_gate",
       "speaker": "星河诗阵",
-      "text": "月、酒、瀑三枚诗意碎片同时亮起。云海中央浮出一卷未完成的诗，你要将自己的梦意写入其中。",
+      "text": "香炉峰、瀑布、银河三枚诗意碎片同时亮起。云海中央浮出一卷未完成的诗，你要将自己的梦意写入其中。",
       "choices": [
         {
           "id": "toast",
-          "text": "举杯邀月",
+          "text": "香炉紫烟",
           "tone": "浪漫",
           "nextNodeId": "branch_moon_toast",
           "endingId": "ending_moon_exile"
         },
         {
           "id": "bridge",
-          "text": "踏月而行",
+          "text": "飞瀑前川",
           "tone": "逍遥",
           "nextNodeId": "branch_moon_bridge",
           "endingId": "ending_silver_bridge"
         },
         {
           "id": "silent",
-          "text": "凝望不语",
+          "text": "银河落天",
           "tone": "诗心",
           "nextNodeId": "branch_silent_peak",
           "endingId": "ending_silent_listener"
@@ -145,40 +123,79 @@
     "story_waterfall_locked": {
       "id": "story_waterfall_locked",
       "speaker": "梦境",
-      "text": "银河瀑布尚在凝形，待诗意碎片补全后方可入内。",
+      "text": "瀑布仍隔着一层梦雾。请先让香炉峰的紫烟归位，再读“飞流直下三千尺”。",
       "choices": []
     },
-    "story_wine_locked": {
-      "id": "story_wine_locked",
+    "story_galaxy_locked": {
+      "id": "story_galaxy_locked",
       "speaker": "梦境",
-      "text": "酒盏映着山河，却还缺一缕月光。先去寻月。",
+      "text": "银河仍隔着一层梦雾。请先观察瀑布的高度与动势，再进入“落九天”的想象。",
       "choices": []
     }
   },
   "endings": {
     "ending_moon_exile": {
       "id": "ending_moon_exile",
-      "name": "月下谪仙行者",
+      "name": "香炉紫烟入梦",
       "rarity": "珍稀结局",
-      "text": "你以月为钥，以酒为印，以瀑声为誓。李白赠你一盏清酒，从此你能在诗中看见天地，也能把梦境写回人间。",
-      "rewardTitle": "解锁新梦境",
-      "rewardText": "《将进酒·长风万里》"
+      "text": "你在香炉峰前读懂“日照香炉生紫烟”：诗人先用一笔云烟，把庐山写得神秘而开阔。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "香炉紫烟"
     },
     "ending_silver_bridge": {
       "id": "ending_silver_bridge",
-      "name": "银桥问天客",
+      "name": "飞瀑前川观者",
       "rarity": "逍遥结局",
-      "text": "你踏月而行，穿过瀑布尽头的云桥。三枚碎片在脚下排成星路，天地不再遥远，山河都在你的选择中展开。",
-      "rewardTitle": "解锁梦之印记",
-      "rewardText": "银桥问天客"
+      "text": "你站在瀑布前，听见“飞流直下三千尺”的声势。夸张不是随意放大，而是把眼前震撼写出来。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "飞瀑前川"
     },
     "ending_silent_listener": {
       "id": "ending_silent_listener",
-      "name": "静夜听瀑人",
+      "name": "银河落天想象者",
       "rarity": "诗心结局",
-      "text": "你在月下沉默良久，听见瀑布深处藏着一首未写完的诗。那不是谜底，而是李白留给后来人的下一句。",
-      "rewardTitle": "解锁诗意碎片",
-      "rewardText": "孤峰月色"
+      "text": "你把瀑布看成银河，读懂“疑是银河落九天”的浪漫想象：山水景物在李白笔下通向天上。",
+      "rewardTitle": "完成诗境学习",
+      "rewardText": "银河落天"
     }
+  },
+  "puzzles": {
+    "purple_mist": {
+      "id": "purple_mist",
+      "motif": "香炉峰",
+      "clueName": "香炉紫烟",
+      "clueText": "请把“香炉峰”放回“日照香炉生紫烟”的画面里观察。",
+      "hint": "这里的“香炉”不是器物，而是庐山的一座山峰。",
+      "rewardLine": "香炉峰亮起，紫烟从山间升起。",
+      "question": "“日照香炉生紫烟”中的“香炉”指什么？",
+      "options": ["庐山香炉峰", "家中香炉", "江上孤帆", "山间小路"],
+      "correctIndex": 0
+    },
+    "waterfall": {
+      "id": "waterfall",
+      "motif": "瀑布",
+      "clueName": "飞瀑前川",
+      "clueText": "请观察瀑布从高处直落的速度和高度。",
+      "hint": "重点理解“飞流直下三千尺”的夸张写法。",
+      "rewardLine": "瀑布亮起，飞流直下的动势展开。",
+      "question": "“飞流直下三千尺”主要写出瀑布怎样的特点？",
+      "options": ["高而急", "平静无声", "春花繁密", "船行缓慢"],
+      "correctIndex": 0
+    },
+    "galaxy": {
+      "id": "galaxy",
+      "motif": "银河",
+      "clueName": "银河落天",
+      "clueText": "请把眼前瀑布和“银河落九天”的想象连起来。",
+      "hint": "这是李白把山水景物写成天上奇观的浪漫想象。",
+      "rewardLine": "银河亮起，诗境之门开启。",
+      "question": "“疑是银河落九天”把瀑布想象成了什么？",
+      "options": ["从天而降的银河", "山间小路", "客船灯火", "紫烟云霞"],
+      "correctIndex": 0
+    }
+  },
+  "puzzleOrder": ["purple_mist", "waterfall", "galaxy"],
+  "imagePrompts": {
+    "main_scene": "2:1 equirectangular panorama for Li Bai poem 望庐山瀑布; 香炉峰紫烟、飞瀑前川、银河落天; seamless horizon; no text; no watermark"
   }
 }

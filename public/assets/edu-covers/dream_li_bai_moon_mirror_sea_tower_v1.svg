@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="渡荆门送别 封面">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#31283e" />
+      <stop offset="48%" stop-color="#746083" />
+      <stop offset="100%" stop-color="#f1c8a0" />
+    </linearGradient>
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffdf2" />
+      <stop offset="60%" stop-color="#fff2c6" />
+      <stop offset="100%" stop-color="#fff2c6" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      text { font-family: "Noto Serif SC", "Songti SC", "STSong", serif; }
+      .source { font-size: 58px; font-weight: 700; letter-spacing: 0; }
+      .meta { font-size: 24px; font-weight: 600; letter-spacing: 0; }
+      .line { font-size: 28px; font-weight: 600; letter-spacing: 0; }
+      .world { font-size: 20px; font-weight: 600; letter-spacing: 0; }
+      .motif { font-size: 25px; font-weight: 700; letter-spacing: 0; }
+    </style>
+  </defs>
+  <rect width="960" height="540" fill="url(#sky)" />
+  <rect width="960" height="540" fill="#f1d7da" opacity="0.22" />
+  <circle cx="170" cy="92" r="96" fill="url(#moon)" opacity="0.92" />
+  <circle cx="391" cy="119" r="1.2" fill="#fff7d8" opacity="0.73" />
+<circle cx="464" cy="160" r="1.9" fill="#fff7d8" opacity="0.25" />
+<circle cx="537" cy="201" r="2.6" fill="#fff7d8" opacity="0.37" />
+<circle cx="610" cy="68" r="1.2" fill="#fff7d8" opacity="0.49" />
+<circle cx="683" cy="109" r="1.9" fill="#fff7d8" opacity="0.61" />
+<circle cx="756" cy="150" r="2.6" fill="#fff7d8" opacity="0.73" />
+<circle cx="829" cy="191" r="1.2" fill="#fff7d8" opacity="0.25" />
+<circle cx="902" cy="58" r="1.9" fill="#fff7d8" opacity="0.37" />
+<circle cx="123" cy="99" r="2.6" fill="#fff7d8" opacity="0.49" />
+<circle cx="196" cy="140" r="1.2" fill="#fff7d8" opacity="0.61" />
+<circle cx="269" cy="181" r="1.9" fill="#fff7d8" opacity="0.73" />
+<circle cx="342" cy="48" r="2.6" fill="#fff7d8" opacity="0.25" />
+<circle cx="415" cy="89" r="1.2" fill="#fff7d8" opacity="0.37" />
+<circle cx="488" cy="130" r="1.9" fill="#fff7d8" opacity="0.49" />
+<circle cx="561" cy="171" r="2.6" fill="#fff7d8" opacity="0.61" />
+<circle cx="634" cy="38" r="1.2" fill="#fff7d8" opacity="0.73" />
+<circle cx="707" cy="79" r="1.9" fill="#fff7d8" opacity="0.25" />
+<circle cx="780" cy="120" r="2.6" fill="#fff7d8" opacity="0.37" />
+<circle cx="853" cy="161" r="1.2" fill="#fff7d8" opacity="0.49" />
+<circle cx="74" cy="202" r="1.9" fill="#fff7d8" opacity="0.61" />
+<circle cx="147" cy="69" r="2.6" fill="#fff7d8" opacity="0.73" />
+<circle cx="220" cy="110" r="1.2" fill="#fff7d8" opacity="0.25" />
+  <path d="M0 410 L0 324 C68 292 94 260 142 286 C194 236 234 254 292 312 C360 238 420 238 494 322 C560 272 610 286 660 330 C730 260 806 246 960 330 L960 540 L0 540 Z" fill="#3a2d42" opacity="0.72" />
+  <path d="M40 376 C178 344 262 408 408 372 C540 316 626 410 916 338" fill="none" stroke="#d9bddf" stroke-width="8" opacity="0.62" stroke-linecap="round" />
+  <path d="M40 370 C178 350 262 402 408 378 C540 310 626 416 916 332" fill="none" stroke="#f0d089" stroke-width="3" opacity="0.28" stroke-linecap="round" />
+  <path d="M42 430 C174 390 254 460 382 416 C500 376 636 452 918 388" fill="none" stroke="#f5b879" stroke-width="4" opacity="0.56" stroke-linecap="round" />
+  
+        <g transform="translate(156 318)">
+          <circle r="62" fill="#f6e7ff" opacity="0.95" filter="url(#softGlow)" />
+          <circle r="52" fill="none" stroke="#f0d089" stroke-width="2" opacity="0.42" />
+          <text text-anchor="middle" dominant-baseline="central" class="motif" fill="#fff9ed">天镜</text>
+        </g>
+
+        <g transform="translate(480 286)">
+          <circle r="57" fill="#f6e7ff" opacity="0.82" filter="url(#softGlow)" />
+          <circle r="48" fill="none" stroke="#f0d089" stroke-width="2" opacity="0.42" />
+          <text text-anchor="middle" dominant-baseline="central" class="motif" fill="#fff9ed">海楼</text>
+        </g>
+
+        <g transform="translate(804 330)">
+          <circle r="52" fill="#f6e7ff" opacity="0.74" filter="url(#softGlow)" />
+          <circle r="44" fill="none" stroke="#f0d089" stroke-width="2" opacity="0.42" />
+          <text text-anchor="middle" dominant-baseline="central" class="motif" fill="#fff9ed">水影</text>
+        </g>
+  <g transform="translate(58 62)">
+    <text class="meta" fill="#f3d9b7">李白 · 月镜海楼梦境</text>
+    <text y="76" class="source" fill="#fff9ed">渡荆门送别</text>
+    <text y="130" class="line" fill="#fff9ed">月下飞天镜，云生结海楼。</text>
+  </g>
+  <g transform="translate(58 466)">
+    <rect width="330" height="44" rx="22" fill="#261e30" opacity="0.78" />
+    <text x="24" y="29" class="world" fill="#fff9ed">诗境热点 · 天镜 · 海楼 · 水影</text>
+  </g>
+</svg>

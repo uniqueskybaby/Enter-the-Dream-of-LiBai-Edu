@@ -30,7 +30,7 @@ const supplementalManifest = supplementalWorldGuides.map((guide) => ({
   source: guide.source,
   worldName: guide.worldName,
   configUrl: `/data/${guide.gameId}.json`,
-  coverUrl: guide.coverUrl,
+  coverUrl: `/assets/edu-covers/${guide.gameId}.svg`,
   theme: guide.themeLabel,
   origin: 'education-supplement',
   savedAt,
@@ -161,20 +161,25 @@ function buildEndings(guide) {
 
 function buildPuzzles(guide, hotspotIds) {
   const [first, second, third] = guide.hotspots;
+  const firstLine = lineForHotspot(guide, first);
+  const secondLine = lineForHotspot(guide, second);
+  const thirdLine = lineForHotspot(guide, third);
+  const writingFocus = guide.writingPoints.slice(0, 2).join('、');
   return {
     [hotspotIds[0]]: {
       id: hotspotIds[0],
       motif: first,
       clueName: `${first}意象`,
-      clueText: `请把“${first}”放回《${guide.source}》的画面中观察。`,
-      hint: `先看它和“${guide.theme}”之间的联系。`,
+      clueText: `请把“${first}”放回《${guide.source}》的诗句画面中观察。`,
+      hint: `先找它和“${firstLine}”之间的联系。`,
       rewardLine: `${first}亮起，诗境的第一层画面展开。`,
-      question: `在《${guide.source}》中，“${first}”最主要帮助我们看见什么？`,
+      relatedLine: firstLine,
+      question: `在《${guide.source}》里，热点“${first}”应对应哪一句或哪一层画面？`,
       options: [
-        `诗中的${guide.theme}和画面线索`,
-        '完全无关的装饰',
-        '议论文的论点',
-        '现代城市广告',
+        `“${firstLine}”中的${first}画面`,
+        `只对应“${second}”，与${first}无关`,
+        `只对应“${third}”，不看诗句`,
+        '与这首诗没有关系的装饰物',
       ],
       correctIndex: 0,
     },
@@ -182,15 +187,16 @@ function buildPuzzles(guide, hotspotIds) {
       id: hotspotIds[1],
       motif: second,
       clueName: `${second}之问`,
-      clueText: `“${second}”让诗句的空间和情绪继续推进。`,
-      hint: `联系重点句“${guide.line}”。`,
+      clueText: `“${second}”让《${guide.source}》的空间和情绪继续推进。`,
+      hint: `联系“${secondLine}”和主题“${guide.theme}”。`,
       rewardLine: `${second}归位，画面和诗心靠近了一步。`,
-      question: `理解“${guide.line}”时，下面哪种做法最合适？`,
+      relatedLine: secondLine,
+      question: `观察“${second}”时，最应该把它和哪种情感或主题联系起来？`,
       options: [
-        `把${second}与前后意象、诗人情感一起看`,
-        '只数一共有几个字',
-        '跳过画面，只背题目',
-        '把它当作和诗无关的物品',
+        guide.theme,
+        `只看${second}的颜色，不看全诗`,
+        '现代广告口号',
+        `与“${secondLine}”相反的热闹情绪`,
       ],
       correctIndex: 0,
     },
@@ -199,18 +205,27 @@ function buildPuzzles(guide, hotspotIds) {
       motif: third,
       clueName: `${third}归位`,
       clueText: `最后观察“${third}”，把画面、字词和写法合拢。`,
-      hint: `重点看${guide.writingPoints.slice(0, 2).join('、')}。`,
+      hint: `重点看${writingFocus}。`,
       rewardLine: `${third}照亮，诗境之门开启。`,
-      question: `这首诗最适合从哪组写法入手赏析？`,
-      options: [
-        guide.writingPoints.slice(0, 2).join('、'),
-        '倒叙、插叙',
-        '说明顺序、列数字',
-        '合同条款、报价说明',
-      ],
+      relatedLine: thirdLine,
+      question: `围绕“${third}”，《${guide.source}》最适合赏析哪种写法？`,
+      options: [writingFocus, '倒叙、插叙', '说明顺序、列数字', '合同条款、报价说明'],
       correctIndex: 0,
     },
   };
+}
+
+function lineForHotspot(guide, label) {
+  const candidates = String(guide.fullText || guide.line || '')
+    .split(/[。！？；]/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+  const normalizedLabel = label.replace(/[光杯影声]/g, '');
+  const direct = candidates.find((item) => item.includes(label));
+  if (direct) return direct;
+  const fuzzy = candidates.find((item) => normalizedLabel && item.includes(normalizedLabel));
+  if (fuzzy) return fuzzy;
+  return guide.line;
 }
 
 function panoramaQualityGuide() {
