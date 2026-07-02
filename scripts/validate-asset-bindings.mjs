@@ -57,6 +57,12 @@ for (const entry of manifest) {
     }
     if (binding.status !== 'dedicated') errors.push(`${entry.gameId}: supplement assetBinding.status must be dedicated`);
     if (binding.gameId !== entry.gameId) errors.push(`${entry.gameId}: assetBinding.gameId mismatch`);
+    if (binding.generationMethod !== 'image_gen') {
+      errors.push(`${entry.gameId}: supplement panorama must be generated with image_gen`);
+    }
+    if (!String(binding.generationPolicy || '').includes('no hand-drawn SVG')) {
+      errors.push(`${entry.gameId}: supplement generationPolicy must prohibit vector/procedural placeholders`);
+    }
   }
 
   const usage = panoramaUsage.get(mainNode.panoramaUrl) || [];
@@ -77,5 +83,5 @@ console.log(JSON.stringify({
   ok: true,
   poems: manifest.length,
   uniqueMainPanoramas: panoramaUsage.size,
-  checked: ['config', 'manifest', 'coverUrl', 'main panorama', 'assetBinding', 'hotspots', 'puzzles'],
+  checked: ['config', 'manifest', 'coverUrl', 'main panorama', 'assetBinding', 'image_gen policy', 'hotspots', 'puzzles'],
 }, null, 2));

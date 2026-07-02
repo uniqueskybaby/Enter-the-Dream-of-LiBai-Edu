@@ -244,7 +244,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_jingye_moon_v1"
+    "assetGameId": "dream_classic_jingye_moon_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_gulang_moon_v1",
@@ -259,7 +261,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_gulang_moon_v1"
+    "assetGameId": "dream_classic_gulang_moon_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_chunxiao_birds_v1",
@@ -274,7 +278,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_chunxiao_birds_v1"
+    "assetGameId": "dream_classic_chunxiao_birds_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_stork_tower_v1",
@@ -289,7 +295,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_stork_tower_v1"
+    "assetGameId": "dream_classic_stork_tower_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_liangzhou_pass_v1",
@@ -304,7 +312,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_liangzhou_pass_v1"
+    "assetGameId": "dream_classic_liangzhou_pass_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_desert_envoy_v1",
@@ -319,7 +329,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_desert_envoy_v1"
+    "assetGameId": "dream_classic_desert_envoy_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_autumn_mountain_v1",
@@ -334,7 +346,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_autumn_mountain_v1"
+    "assetGameId": "dream_classic_autumn_mountain_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_luchai_echo_v1",
@@ -349,7 +363,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_luchai_echo_v1"
+    "assetGameId": "dream_classic_luchai_echo_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_yuaner_farewell_v1",
@@ -364,7 +380,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_yuaner_farewell_v1"
+    "assetGameId": "dream_classic_yuaner_farewell_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_dufu_wangyue_v1",
@@ -379,7 +397,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_dufu_wangyue_v1"
+    "assetGameId": "dream_classic_dufu_wangyue_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_dufu_spring_view_v1",
@@ -394,7 +414,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_dufu_spring_view_v1"
+    "assetGameId": "dream_classic_dufu_spring_view_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_dufu_quatrain_v1",
@@ -409,7 +431,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_dufu_quatrain_v1"
+    "assetGameId": "dream_classic_dufu_quatrain_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_grass_farewell_v1",
@@ -424,7 +448,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_grass_farewell_v1"
+    "assetGameId": "dream_classic_grass_farewell_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_qiantang_spring_v1",
@@ -439,7 +465,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_qiantang_spring_v1"
+    "assetGameId": "dream_classic_qiantang_spring_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_jiangxue_boat_v1",
@@ -454,7 +482,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_jiangxue_boat_v1"
+    "assetGameId": "dream_classic_jiangxue_boat_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_fengqiao_bells_v1",
@@ -469,7 +499,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_fengqiao_bells_v1"
+    "assetGameId": "dream_classic_fengqiao_bells_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_guazhou_moon_v1",
@@ -484,7 +516,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_guazhou_moon_v1"
+    "assetGameId": "dream_classic_guazhou_moon_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_xilin_wall_v1",
@@ -499,7 +533,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_xilin_wall_v1"
+    "assetGameId": "dream_classic_xilin_wall_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_westlake_rain_v1",
@@ -514,7 +550,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_westlake_rain_v1"
+    "assetGameId": "dream_classic_westlake_rain_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_mid_autumn_moon_v1",
@@ -529,7 +567,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_mid_autumn_moon_v1"
+    "assetGameId": "dream_classic_mid_autumn_moon_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_shanxi_village_v1",
@@ -544,7 +584,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_shanxi_village_v1"
+    "assetGameId": "dream_classic_shanxi_village_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_battle_song_v1",
@@ -559,7 +601,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_battle_song_v1"
+    "assetGameId": "dream_classic_battle_song_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_xijiang_moon_v1",
@@ -574,7 +618,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_xijiang_moon_v1"
+    "assetGameId": "dream_classic_xijiang_moon_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_canghai_sea_v1",
@@ -589,7 +635,9 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_canghai_sea_v1"
+    "assetGameId": "dream_classic_canghai_sea_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   },
   {
     "gameId": "dream_classic_chile_sky_v1",
@@ -604,6 +652,8 @@
     "savedAt": "2026-07-01T00:00:00.000Z",
     "assetStatus": "dedicated",
     "assetKind": "2:1-equirectangular-panorama",
-    "assetGameId": "dream_classic_chile_sky_v1"
+    "assetGameId": "dream_classic_chile_sky_v1",
+    "assetGenerationMethod": "image_gen",
+    "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
   }
 ]

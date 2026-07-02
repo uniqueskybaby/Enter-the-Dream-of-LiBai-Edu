@@ -33,6 +33,11 @@ const supplementalManifest = supplementalWorldGuides.map((guide) => ({
   coverUrl: guide.panoramaUrl,
   theme: guide.themeLabel,
   origin: 'education-supplement',
+  assetStatus: 'dedicated',
+  assetKind: '2:1-equirectangular-panorama',
+  assetGameId: guide.gameId,
+  assetGenerationMethod: 'image_gen',
+  generationPolicy: 'ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders',
   savedAt,
 }));
 
@@ -125,6 +130,8 @@ function buildAssetBinding(guide) {
     panoramaUrl: guide.panoramaUrl,
     coverUrl: guide.panoramaUrl,
     materialType: '2:1-equirectangular-panorama',
+    generationMethod: 'image_gen',
+    generationPolicy: 'ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders',
     semanticAnchors: guide.hotspots,
   };
 }

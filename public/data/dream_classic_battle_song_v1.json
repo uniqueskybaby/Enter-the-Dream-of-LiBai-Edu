@@ -37,7 +37,9 @@
         "剑光",
         "角声",
         "沙场"
-      ]
+      ],
+      "generationMethod": "image_gen",
+      "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
     }
   },
   "startNodeId": "main_scene",
@@ -342,7 +344,9 @@
         "剑光",
         "角声",
         "沙场"
-      ]
+      ],
+      "generationMethod": "image_gen",
+      "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
     }
   }
 }

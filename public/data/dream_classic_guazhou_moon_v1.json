@@ -37,7 +37,9 @@
         "江南岸",
         "春风",
         "明月"
-      ]
+      ],
+      "generationMethod": "image_gen",
+      "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
     }
   },
   "startNodeId": "main_scene",
@@ -342,7 +344,9 @@
         "江南岸",
         "春风",
         "明月"
-      ]
+      ],
+      "generationMethod": "image_gen",
+      "generationPolicy": "ai-generated raster only; no hand-drawn SVG, code-drawn procedural graphics, or vector placeholders"
     }
   }
 }
