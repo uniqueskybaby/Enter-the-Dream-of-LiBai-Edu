@@ -13,7 +13,20 @@
       "探索全景中的诗意意象",
       "解开三道与诗句紧密相关的闯关题",
       "集齐碎片后选择梦境归宿"
-    ]
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_lanling_wine_v1",
+      "source": "客中行",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "美酒",
+        "玉碗",
+        "琥珀光"
+      ]
+    }
   },
   "startNodeId": "main_scene",
   "nodes": [
@@ -239,5 +252,20 @@
   ],
   "imagePrompts": {
     "main_scene": "2:1 equirectangular panorama for Li Bai line 兰陵美酒郁金香，玉碗盛来琥珀光。; 温暖、华美、酒香、玉碗琥珀光; no text, no watermark."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_lanling_wine_v1",
+      "source": "客中行",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "美酒",
+        "玉碗",
+        "琥珀光"
+      ]
+    }
   }
 }

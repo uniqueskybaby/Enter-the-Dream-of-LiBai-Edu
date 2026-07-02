@@ -16,7 +16,8 @@
     "start": "node server/index.mjs",
     "smoke:test": "node scripts/smoke-test.mjs",
     "ux:check": "node scripts/ux-check.mjs",
-    "check": "npm run build && npm run smoke:test && npm run ux:check"
+    "asset:check": "node scripts/validate-asset-bindings.mjs",
+    "check": "npm run asset:check && npm run build && npm run smoke:test && npm run ux:check"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

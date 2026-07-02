@@ -13,7 +13,20 @@
       "世界以江心沙洲为原点，向四面八方延展出无垠的江天大地",
       "时间的流逝体现为云影的移动和光线的变化，而非简单的昼夜",
       "诗句的力量是驱动世界变化的核心，解谜过程是与诗句对话"
-    ]
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_generated_changsha_1925",
+      "source": "沁园春·长沙",
+      "panoramaUrl": "/assets/panoramas/dream_generated_changsha_1925_main_scene.png",
+      "coverUrl": "/assets/panoramas/dream_generated_changsha_1925_main_scene.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "苍茫",
+        "大地",
+        "沉浮"
+      ]
+    }
   },
   "startNodeId": "main_scene",
   "nodes": [
@@ -269,6 +282,19 @@
   },
   "meta": {
     "origin": "player-ai",
-    "savedAt": "2026-05-24T08:49:10.818Z"
+    "savedAt": "2026-05-24T08:49:10.818Z",
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_generated_changsha_1925",
+      "source": "沁园春·长沙",
+      "panoramaUrl": "/assets/panoramas/dream_generated_changsha_1925_main_scene.png",
+      "coverUrl": "/assets/panoramas/dream_generated_changsha_1925_main_scene.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "苍茫",
+        "大地",
+        "沉浮"
+      ]
+    }
   }
 }

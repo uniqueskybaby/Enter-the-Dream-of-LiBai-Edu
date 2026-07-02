@@ -13,7 +13,20 @@
       "探索全景中的诗意意象",
       "解开三道与诗句紧密相关的闯关题",
       "集齐碎片后选择梦境归宿"
-    ]
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_tianmu_rain_mist_v1",
+      "source": "梦游天姥吟留别",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "青云",
+        "澹水",
+        "生烟"
+      ]
+    }
   },
   "startNodeId": "main_scene",
   "nodes": [
@@ -239,5 +252,20 @@
   ],
   "imagePrompts": {
     "main_scene": "2:1 equirectangular panorama for Li Bai line 云青青兮欲雨，水澹澹兮生烟。; 青云欲雨、水烟初生、梦境将启; no text, no watermark."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_tianmu_rain_mist_v1",
+      "source": "梦游天姥吟留别",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "青云",
+        "澹水",
+        "生烟"
+      ]
+    }
   }
 }

@@ -13,7 +13,20 @@
       "探索全景中的诗意意象",
       "解开三道与诗句紧密相关的闯关题",
       "集齐碎片后选择梦境归宿"
-    ]
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_tianmen_sail_v1",
+      "source": "望天门山",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "青山",
+        "孤帆",
+        "日边"
+      ]
+    }
   },
   "startNodeId": "main_scene",
   "nodes": [
@@ -239,5 +252,20 @@
   ],
   "imagePrompts": {
     "main_scene": "2:1 equirectangular panorama for Li Bai line 两岸青山相对出，孤帆一片日边来。; 明朗、开阔、江山对峙、日边行舟; no text, no watermark."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_tianmen_sail_v1",
+      "source": "望天门山",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "青山",
+        "孤帆",
+        "日边"
+      ]
+    }
   }
 }

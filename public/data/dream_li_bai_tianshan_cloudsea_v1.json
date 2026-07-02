@@ -13,7 +13,20 @@
       "探索全景中的诗意意象",
       "解开三道与诗句紧密相关的闯关题",
       "集齐碎片后选择梦境归宿"
-    ]
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_tianshan_cloudsea_v1",
+      "source": "关山月",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "明月",
+        "天山",
+        "云海"
+      ]
+    }
   },
   "startNodeId": "main_scene",
   "nodes": [
@@ -239,5 +252,20 @@
   ],
   "imagePrompts": {
     "main_scene": "2:1 equirectangular panorama for Li Bai line 明月出天山，苍茫云海间。; 清冷、辽阔、边塞月色、雪山云海; no text, no watermark."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_tianshan_cloudsea_v1",
+      "source": "关山月",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "明月",
+        "天山",
+        "云海"
+      ]
+    }
   }
 }

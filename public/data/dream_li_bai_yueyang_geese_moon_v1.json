@@ -13,7 +13,20 @@
       "探索全景中的诗意意象",
       "解开三道与诗句紧密相关的闯关题",
       "集齐碎片后选择梦境归宿"
-    ]
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_yueyang_geese_moon_v1",
+      "source": "与夏十二登岳阳楼",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_yueyang_geese_moon_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_yueyang_geese_moon_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "雁阵",
+        "愁心",
+        "山月"
+      ]
+    }
   },
   "startNodeId": "main_scene",
   "nodes": [
@@ -239,5 +252,20 @@
   ],
   "imagePrompts": {
     "main_scene": "2:1 equirectangular panorama for Li Bai line 雁引愁心去，山衔好月来。; 登楼、湖月、雁阵远去、愁心舒展; no text, no watermark."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_yueyang_geese_moon_v1",
+      "source": "与夏十二登岳阳楼",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_yueyang_geese_moon_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_yueyang_geese_moon_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "雁阵",
+        "愁心",
+        "山月"
+      ]
+    }
   }
 }

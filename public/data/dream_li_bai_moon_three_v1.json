@@ -9,7 +9,24 @@
   "world": {
     "worldName": "月影三人梦境",
     "visualTone": "清冷月银、温润酒金、深蓝夜色、疏朗水墨",
-    "spaceRules": ["月光能被酒盏邀请", "影子会回应人的孤独", "三道身影共享同一轮清月"]
+    "spaceRules": [
+      "月光能被酒盏邀请",
+      "影子会回应人的孤独",
+      "三道身影共享同一轮清月"
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_moon_three_v1",
+      "source": "月下独酌·其一",
+      "panoramaUrl": "/assets/panoramas/moon_three_main_4096x2048.jpg",
+      "coverUrl": "/assets/panoramas/moon_three_main_4096x2048.jpg",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "明月",
+        "酒杯",
+        "影"
+      ]
+    }
   },
   "startNodeId": "main_moon_three",
   "nodes": [
@@ -19,7 +36,11 @@
       "title": "月影三人梦境",
       "subtitle": "环顾月台，寻找杯、月、影三枚诗意碎片",
       "panoramaUrl": "/assets/panoramas/moon_three_main_4096x2048.jpg",
-      "initialView": { "yaw": -10, "pitch": 0, "fov": 105 },
+      "initialView": {
+        "yaw": -10,
+        "pitch": 0,
+        "fov": 105
+      },
       "ambientLine": "杯中酒色微亮，月与影在云海间慢慢靠近你。",
       "hotspots": [
         {
@@ -60,7 +81,11 @@
       "title": "邀月酒台",
       "subtitle": "月光落入杯中，清辉像一位赴约的客人。",
       "panoramaUrl": "/assets/panoramas/moon_three_toast_4096x2048.jpg",
-      "initialView": { "yaw": -18, "pitch": 0, "fov": 104 },
+      "initialView": {
+        "yaw": -18,
+        "pitch": 0,
+        "fov": 104
+      },
       "ambientLine": "你举杯，月色垂入酒盏，云海为这场相邀让出一圈银光。",
       "hotspots": []
     },
@@ -70,7 +95,11 @@
       "title": "三影回廊",
       "subtitle": "诗人、明月与你的影子，在回廊中并肩而坐。",
       "panoramaUrl": "/assets/panoramas/moon_three_shadow_4096x2048.jpg",
-      "initialView": { "yaw": 8, "pitch": -2, "fov": 104 },
+      "initialView": {
+        "yaw": 8,
+        "pitch": -2,
+        "fov": 104
+      },
       "ambientLine": "地面泛着冷银，三道影子在酒香里忽近忽远。",
       "hotspots": []
     },
@@ -80,7 +109,11 @@
       "title": "独酌归心",
       "subtitle": "竹影沉默，杯中只剩一枚安静的月。",
       "panoramaUrl": "/assets/panoramas/moon_three_silent_4096x2048.jpg",
-      "initialView": { "yaw": 6, "pitch": -5, "fov": 104 },
+      "initialView": {
+        "yaw": 6,
+        "pitch": -5,
+        "fov": 104
+      },
       "ambientLine": "你没有再问月从何来，只听见自己的影子在石上轻轻落座。",
       "hotspots": []
     }
@@ -190,7 +223,12 @@
       "hint": "先看诗句中被邀请的对象。",
       "rewardLine": "清辉入杯，酒盏开始发亮。",
       "question": "“举杯邀明月”中，诗人举杯邀请的是谁？",
-      "options": ["明月", "故人", "春风", "飞鸟"],
+      "options": [
+        "明月",
+        "故人",
+        "春风",
+        "飞鸟"
+      ],
       "correctIndex": 0
     },
     "wine": {
@@ -201,7 +239,12 @@
       "hint": "这一句的关键动作藏在杯盏上。",
       "rewardLine": "酒意归位，影子在地面轻轻晃动。",
       "question": "这两句里，哪一个动作把孤独变成了相逢？",
-      "options": ["倚楼听雨", "举杯相邀", "策马远行", "折柳相送"],
+      "options": [
+        "倚楼听雨",
+        "举杯相邀",
+        "策马远行",
+        "折柳相送"
+      ],
       "correctIndex": 1
     },
     "shadow": {
@@ -212,11 +255,20 @@
       "hint": "三人不一定都是真正的人。",
       "rewardLine": "三影成圆，月影诗阵已经开启。",
       "question": "“对影成三人”中的“三人”最接近哪一组？",
-      "options": ["诗人、明月、影子", "诗人、故友、影子", "明月、江水、飞鸟", "诗人、春风、明月"],
+      "options": [
+        "诗人、明月、影子",
+        "诗人、故友、影子",
+        "明月、江水、飞鸟",
+        "诗人、春风、明月"
+      ],
       "correctIndex": 0
     }
   },
-  "puzzleOrder": ["moon", "wine", "shadow"],
+  "puzzleOrder": [
+    "moon",
+    "wine",
+    "shadow"
+  ],
   "hiddenHotspots": [
     {
       "id": "hidden_moon_cupseal",
@@ -227,7 +279,9 @@
       "dwellMs": 1800,
       "speaker": "酒盏",
       "dialogue": "杯底有一枚小小月印，像李白把今晚的清辉悄悄留给后来人。",
-      "reward": { "moonlight": 120 }
+      "reward": {
+        "moonlight": 120
+      }
     },
     {
       "id": "hidden_moon_bamboo_shadow",
@@ -238,7 +292,9 @@
       "dwellMs": 2000,
       "speaker": "竹影",
       "dialogue": "竹影摇动，像第三位客人向你点头。",
-      "reward": { "scroll": 45 }
+      "reward": {
+        "scroll": 45
+      }
     }
   ],
   "imagePrompts": {
@@ -249,5 +305,20 @@
     "ending_invite_moon": "Cinematic ending illustration, Li Bai dream, player raises wine cup to a huge moon, silver-gold light, romantic Tang poetry, no text.",
     "ending_shadow_three": "Cinematic ending illustration, three moonlit shadows seated in a Tang cloister, wine reflections, poetic fantasy, no text.",
     "ending_lone_cup": "Cinematic ending illustration, quiet wine cup under bamboo moonlight, solitary but peaceful Tang poetry mood, no text."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_moon_three_v1",
+      "source": "月下独酌·其一",
+      "panoramaUrl": "/assets/panoramas/moon_three_main_4096x2048.jpg",
+      "coverUrl": "/assets/panoramas/moon_three_main_4096x2048.jpg",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "明月",
+        "酒杯",
+        "影"
+      ]
+    }
   }
 }

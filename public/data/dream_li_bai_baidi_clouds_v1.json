@@ -13,7 +13,20 @@
       "探索全景中的诗意意象",
       "解开三道与诗句紧密相关的闯关题",
       "集齐碎片后选择梦境归宿"
-    ]
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_baidi_clouds_v1",
+      "source": "早发白帝城",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_baidi_clouds_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_baidi_clouds_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "白帝城",
+        "彩云",
+        "快舟"
+      ]
+    }
   },
   "startNodeId": "main_scene",
   "nodes": [
@@ -239,5 +252,20 @@
   ],
   "imagePrompts": {
     "main_scene": "2:1 equirectangular panorama for Li Bai line 朝辞白帝彩云间，千里江陵一日还。; 清晨、彩云、峡江疾行、轻快归程; no text, no watermark."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_baidi_clouds_v1",
+      "source": "早发白帝城",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_baidi_clouds_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_baidi_clouds_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "白帝城",
+        "彩云",
+        "快舟"
+      ]
+    }
   }
 }

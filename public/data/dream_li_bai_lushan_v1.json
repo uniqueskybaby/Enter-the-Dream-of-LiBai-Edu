@@ -9,7 +9,24 @@
   "world": {
     "worldName": "庐山银河梦境",
     "visualTone": "宏伟、浪漫、紫烟云崖、蓝银飞瀑、金色诗意光点",
-    "spaceRules": ["香炉峰云烟对应“日照香炉生紫烟”", "瀑布动势对应“飞流直下三千尺”", "银河想象对应“疑是银河落九天”"]
+    "spaceRules": [
+      "香炉峰云烟对应“日照香炉生紫烟”",
+      "瀑布动势对应“飞流直下三千尺”",
+      "银河想象对应“疑是银河落九天”"
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_lushan_v1",
+      "source": "望庐山瀑布",
+      "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
+      "coverUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "香炉峰",
+        "瀑布",
+        "银河"
+      ]
+    }
   },
   "startNodeId": "main_lushan_galaxy",
   "nodes": [
@@ -19,7 +36,11 @@
       "title": "庐山银河梦境",
       "subtitle": "环顾云崖，寻找发光的诗意点位",
       "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
-      "initialView": { "yaw": -28, "pitch": 4, "fov": 105 },
+      "initialView": {
+        "yaw": -28,
+        "pitch": 4,
+        "fov": 105
+      },
       "ambientLine": "阳光照着香炉峰，紫烟升起；瀑布从云崖直落，像银河从九天坠入人间。",
       "hotspots": [
         {
@@ -60,7 +81,11 @@
       "title": "香炉紫烟",
       "subtitle": "顺着“香炉峰”进入第一重诗境。",
       "panoramaUrl": "/assets/panoramas/branch_moon_toast_4096x2048.jpg",
-      "initialView": { "yaw": -24, "pitch": 1, "fov": 104 },
+      "initialView": {
+        "yaw": -24,
+        "pitch": 1,
+        "fov": 104
+      },
       "ambientLine": "阳光照在香炉峰上，紫色云烟从山间升起。",
       "hotspots": []
     },
@@ -70,7 +95,11 @@
       "title": "飞瀑前川",
       "subtitle": "顺着“瀑布”进入第二重诗境。",
       "panoramaUrl": "/assets/panoramas/branch_moon_bridge_4096x2048.jpg",
-      "initialView": { "yaw": 15, "pitch": -2, "fov": 104 },
+      "initialView": {
+        "yaw": 15,
+        "pitch": -2,
+        "fov": 104
+      },
       "ambientLine": "瀑布从高处直泻，像白练挂在山前。",
       "hotspots": []
     },
@@ -80,7 +109,11 @@
       "title": "银河落天",
       "subtitle": "顺着“银河”进入第三重诗境。",
       "panoramaUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
-      "initialView": { "yaw": 5, "pitch": -4, "fov": 104 },
+      "initialView": {
+        "yaw": 5,
+        "pitch": -4,
+        "fov": 104
+      },
       "ambientLine": "诗人的想象把瀑布写成从九天落下的银河。",
       "hotspots": []
     }
@@ -168,7 +201,12 @@
       "hint": "这里的“香炉”不是器物，而是庐山的一座山峰。",
       "rewardLine": "香炉峰亮起，紫烟从山间升起。",
       "question": "“日照香炉生紫烟”中的“香炉”指什么？",
-      "options": ["庐山香炉峰", "家中香炉", "江上孤帆", "山间小路"],
+      "options": [
+        "庐山香炉峰",
+        "家中香炉",
+        "江上孤帆",
+        "山间小路"
+      ],
       "correctIndex": 0
     },
     "waterfall": {
@@ -179,7 +217,12 @@
       "hint": "重点理解“飞流直下三千尺”的夸张写法。",
       "rewardLine": "瀑布亮起，飞流直下的动势展开。",
       "question": "“飞流直下三千尺”主要写出瀑布怎样的特点？",
-      "options": ["高而急", "平静无声", "春花繁密", "船行缓慢"],
+      "options": [
+        "高而急",
+        "平静无声",
+        "春花繁密",
+        "船行缓慢"
+      ],
       "correctIndex": 0
     },
     "galaxy": {
@@ -190,12 +233,36 @@
       "hint": "这是李白把山水景物写成天上奇观的浪漫想象。",
       "rewardLine": "银河亮起，诗境之门开启。",
       "question": "“疑是银河落九天”把瀑布想象成了什么？",
-      "options": ["从天而降的银河", "山间小路", "客船灯火", "紫烟云霞"],
+      "options": [
+        "从天而降的银河",
+        "山间小路",
+        "客船灯火",
+        "紫烟云霞"
+      ],
       "correctIndex": 0
     }
   },
-  "puzzleOrder": ["purple_mist", "waterfall", "galaxy"],
+  "puzzleOrder": [
+    "purple_mist",
+    "waterfall",
+    "galaxy"
+  ],
   "imagePrompts": {
     "main_scene": "2:1 equirectangular panorama for Li Bai poem 望庐山瀑布; 香炉峰紫烟、飞瀑前川、银河落天; seamless horizon; no text; no watermark"
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_lushan_v1",
+      "source": "望庐山瀑布",
+      "panoramaUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
+      "coverUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "香炉峰",
+        "瀑布",
+        "银河"
+      ]
+    }
   }
 }

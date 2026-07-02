@@ -13,7 +13,20 @@
       "探索全景中的诗意意象",
       "解开三道与诗句紧密相关的闯关题",
       "集齐碎片后选择梦境归宿"
-    ]
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_moon_mirror_sea_tower_v1",
+      "source": "渡荆门送别",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "天镜",
+        "海楼",
+        "水影"
+      ]
+    }
   },
   "startNodeId": "main_scene",
   "nodes": [
@@ -239,5 +252,20 @@
   ],
   "imagePrompts": {
     "main_scene": "2:1 equirectangular panorama for Li Bai line 月下飞天镜，云生结海楼。; 水月幻境、云楼浮生、清银梦光; no text, no watermark."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_moon_mirror_sea_tower_v1",
+      "source": "渡荆门送别",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "天镜",
+        "海楼",
+        "水影"
+      ]
+    }
   }
 }

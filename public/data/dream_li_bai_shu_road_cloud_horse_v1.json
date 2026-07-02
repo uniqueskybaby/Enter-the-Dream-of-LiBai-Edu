@@ -13,7 +13,20 @@
       "探索全景中的诗意意象",
       "解开三道与诗句紧密相关的闯关题",
       "集齐碎片后选择梦境归宿"
-    ]
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_shu_road_cloud_horse_v1",
+      "source": "送友人入蜀",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "起山",
+        "傍云",
+        "马头"
+      ]
+    }
   },
   "startNodeId": "main_scene",
   "nodes": [
@@ -239,5 +252,20 @@
   ],
   "imagePrompts": {
     "main_scene": "2:1 equirectangular panorama for Li Bai line 山从人面起，云傍马头生。; 险峻、近身、云雾贴面、马上入蜀; no text, no watermark."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_shu_road_cloud_horse_v1",
+      "source": "送友人入蜀",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "起山",
+        "傍云",
+        "马头"
+      ]
+    }
   }
 }

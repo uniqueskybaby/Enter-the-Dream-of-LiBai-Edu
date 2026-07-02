@@ -42,6 +42,7 @@ console.log(`[supplemental-worlds] 已生成 ${supplementalWorldGuides.length} �
 
 function buildWorldConfig(guide) {
   const hotspotIds = guide.hotspots.map((label, index) => slug(`${guide.gameId}_${label}_${index + 1}`));
+  const assetBinding = buildAssetBinding(guide);
   const hotspotConfigs = guide.hotspots.map((label, index) => ({
     id: hotspotIds[index],
     label,
@@ -92,6 +93,7 @@ function buildWorldConfig(guide) {
         '用三道诗境题把画面、字词、情感和写法连起来。',
       ],
       panoramaSeamPolicy: panoramaQualityGuide(),
+      assetBinding,
     },
     startNodeId: 'main_scene',
     nodes: [mainNode, ...branchNodes],
@@ -110,7 +112,20 @@ function buildWorldConfig(guide) {
       origin: 'education-supplement',
       savedAt,
       panoramaSeamPolicy: panoramaQualityGuide(),
+      assetBinding,
     },
+  };
+}
+
+function buildAssetBinding(guide) {
+  return {
+    status: 'dedicated',
+    gameId: guide.gameId,
+    source: guide.source,
+    panoramaUrl: guide.panoramaUrl,
+    coverUrl: guide.panoramaUrl,
+    materialType: '2:1-equirectangular-panorama',
+    semanticAnchors: guide.hotspots,
   };
 }
 

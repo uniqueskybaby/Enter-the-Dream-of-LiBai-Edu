@@ -9,7 +9,24 @@
   "world": {
     "worldName": "长江天际梦境",
     "visualTone": "青碧晴空、淡金夕照、江水如练、送别留白",
-    "spaceRules": ["孤帆会在视线尽头化成云影", "碧空与江水共享同一条天际线", "送别之情只能顺江流向远方"]
+    "spaceRules": [
+      "孤帆会在视线尽头化成云影",
+      "碧空与江水共享同一条天际线",
+      "送别之情只能顺江流向远方"
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_yangtze_farewell_v1",
+      "source": "黄鹤楼送孟浩然之广陵",
+      "panoramaUrl": "/assets/panoramas/yangtze_farewell_main_4096x2048.jpg",
+      "coverUrl": "/assets/panoramas/yangtze_farewell_main_4096x2048.jpg",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "孤帆",
+        "碧空",
+        "长江"
+      ]
+    }
   },
   "startNodeId": "main_yangtze_farewell",
   "nodes": [
@@ -19,7 +36,11 @@
       "title": "长江天际梦境",
       "subtitle": "凭栏远望，寻找孤帆、碧空、长江三枚诗意碎片",
       "panoramaUrl": "/assets/panoramas/yangtze_farewell_main_4096x2048.jpg",
-      "initialView": { "yaw": 2, "pitch": -1, "fov": 105 },
+      "initialView": {
+        "yaw": 2,
+        "pitch": -1,
+        "fov": 105
+      },
       "ambientLine": "远帆慢慢淡入碧空，只剩长江把离别推向天边。",
       "hotspots": [
         {
@@ -60,7 +81,11 @@
       "title": "黄鹤送别亭",
       "subtitle": "杯盏与书信还在亭中，故人的帆影已经远去。",
       "panoramaUrl": "/assets/panoramas/yangtze_farewell_pavilion_4096x2048.jpg",
-      "initialView": { "yaw": -8, "pitch": -2, "fov": 104 },
+      "initialView": {
+        "yaw": -8,
+        "pitch": -2,
+        "fov": 104
+      },
       "ambientLine": "柳丝拂过栏杆，江风把未说完的话递向远帆。",
       "hotspots": []
     },
@@ -70,7 +95,11 @@
       "title": "孤帆云影",
       "subtitle": "你沿云路追望，那一点白帆几乎融进晴空。",
       "panoramaUrl": "/assets/panoramas/yangtze_farewell_sail_4096x2048.jpg",
-      "initialView": { "yaw": 0, "pitch": 0, "fov": 104 },
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 104
+      },
       "ambientLine": "云与江水在脚下相接，孤帆像一枚即将消失的诗印。",
       "hotspots": []
     },
@@ -80,7 +109,11 @@
       "title": "天际江流",
       "subtitle": "帆影已尽，只余一江青碧流向天边。",
       "panoramaUrl": "/assets/panoramas/yangtze_farewell_horizon_4096x2048.jpg",
-      "initialView": { "yaw": 12, "pitch": -3, "fov": 104 },
+      "initialView": {
+        "yaw": 12,
+        "pitch": -3,
+        "fov": 104
+      },
       "ambientLine": "你不再寻找帆影，只听见长江把思念缓缓带走。",
       "hotspots": []
     }
@@ -190,7 +223,12 @@
       "hint": "先找诗句里最小也最远的物象。",
       "rewardLine": "孤帆印亮起，碧空开始变得清澈。",
       "question": "“孤帆远影”中，被诗人一直追望的是什么？",
-      "options": ["一叶孤帆", "一轮明月", "一座高楼", "一片落花"],
+      "options": [
+        "一叶孤帆",
+        "一轮明月",
+        "一座高楼",
+        "一片落花"
+      ],
       "correctIndex": 0
     },
     "sky": {
@@ -201,7 +239,12 @@
       "hint": "帆影消失在哪里？",
       "rewardLine": "碧空印归位，长江的天际线浮现。",
       "question": "“碧空尽”写出了帆影怎样的变化？",
-      "options": ["停在岸边", "沉入水底", "渐渐消失在晴空尽头", "回到亭前"],
+      "options": [
+        "停在岸边",
+        "沉入水底",
+        "渐渐消失在晴空尽头",
+        "回到亭前"
+      ],
       "correctIndex": 2
     },
     "river": {
@@ -212,11 +255,20 @@
       "hint": "帆影消失以后，诗人还看见什么？",
       "rewardLine": "长江印成形，江天诗阵已经开启。",
       "question": "“惟见长江天际流”中，帆影之后还留在视野里的是什么？",
-      "options": ["山寺钟声", "长江向天际流去", "月下酒盏", "黄河金涛"],
+      "options": [
+        "山寺钟声",
+        "长江向天际流去",
+        "月下酒盏",
+        "黄河金涛"
+      ],
       "correctIndex": 1
     }
   },
-  "puzzleOrder": ["sail", "sky", "river"],
+  "puzzleOrder": [
+    "sail",
+    "sky",
+    "river"
+  ],
   "hiddenHotspots": [
     {
       "id": "hidden_yangtze_willow_letter",
@@ -227,7 +279,9 @@
       "dwellMs": 1800,
       "speaker": "江风",
       "dialogue": "柳下压着一张素笺，纸上没有字，只有被江风吹皱的祝愿。",
-      "reward": { "scroll": 60 }
+      "reward": {
+        "scroll": 60
+      }
     },
     {
       "id": "hidden_yangtze_crane_shadow",
@@ -238,7 +292,9 @@
       "dwellMs": 2000,
       "speaker": "黄鹤",
       "dialogue": "一片鹤影掠过江面，像替远行人回望了一眼。",
-      "reward": { "moonlight": 120 }
+      "reward": {
+        "moonlight": 120
+      }
     }
   ],
   "imagePrompts": {
@@ -249,5 +305,20 @@
     "ending_farewell_watcher": "Cinematic ending illustration, Tang farewell pavilion, traveler watching lone sail disappear, willow and river light, no text.",
     "ending_cloud_sail": "Cinematic ending illustration, cloud path above Yangtze, distant white sail in blue sky, poetic farewell dream, no text.",
     "ending_river_horizon": "Cinematic ending illustration, broad Yangtze flowing into horizon after sail vanishes, quiet blue-green sky, no text."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_yangtze_farewell_v1",
+      "source": "黄鹤楼送孟浩然之广陵",
+      "panoramaUrl": "/assets/panoramas/yangtze_farewell_main_4096x2048.jpg",
+      "coverUrl": "/assets/panoramas/yangtze_farewell_main_4096x2048.jpg",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "孤帆",
+        "碧空",
+        "长江"
+      ]
+    }
   }
 }

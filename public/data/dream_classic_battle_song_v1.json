@@ -25,6 +25,19 @@
         100
       ],
       "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+    },
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_classic_battle_song_v1",
+      "source": "破阵子·为陈同甫赋壮词以寄之",
+      "panoramaUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png",
+      "coverUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "剑光",
+        "角声",
+        "沙场"
+      ]
     }
   },
   "startNodeId": "main_scene",
@@ -34,7 +47,7 @@
       "type": "panorama",
       "title": "沙场秋兵梦境",
       "subtitle": "环顾 360 度诗境，按顺序点亮三枚学习意象。",
-      "panoramaUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
+      "panoramaUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png",
       "initialView": {
         "yaw": 10,
         "pitch": 0,
@@ -91,7 +104,7 @@
       "type": "panorama",
       "title": "剑光报国",
       "subtitle": "顺着“剑光”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
+      "panoramaUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png",
       "initialView": {
         "yaw": -52,
         "pitch": 18,
@@ -117,7 +130,7 @@
       "type": "panorama",
       "title": "角声报国",
       "subtitle": "顺着“角声”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
+      "panoramaUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png",
       "initialView": {
         "yaw": 12,
         "pitch": -12,
@@ -143,7 +156,7 @@
       "type": "panorama",
       "title": "沙场报国",
       "subtitle": "顺着“沙场”进入这一重诗境。",
-      "panoramaUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
+      "panoramaUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png",
       "initialView": {
         "yaw": 96,
         "pitch": 14,
@@ -221,7 +234,7 @@
       "text": "你循着“剑光”入梦，读懂了《破阵子·为陈同甫赋壮词以寄之》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "剑光报国",
-      "imageUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg"
+      "imageUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png"
     },
     "ending_b": {
       "id": "ending_b",
@@ -230,7 +243,7 @@
       "text": "你循着“角声”入梦，读懂了《破阵子·为陈同甫赋壮词以寄之》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "角声报国",
-      "imageUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg"
+      "imageUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png"
     },
     "ending_c": {
       "id": "ending_c",
@@ -239,7 +252,7 @@
       "text": "你循着“沙场”入梦，读懂了《破阵子·为陈同甫赋壮词以寄之》里跃出的这一笔。",
       "rewardTitle": "完成诗境学习",
       "rewardText": "沙场报国",
-      "imageUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg"
+      "imageUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png"
     }
   },
   "puzzles": {
@@ -317,6 +330,19 @@
         100
       ],
       "guidance": "全景左右边缘作为低关注区，不放核心主体、文字、人物脸部、亭台楼阁硬直线和热点；核心意象放在中部视区，接缝处以天空、水面、云雾、山影或草地等连续纹理过渡。"
+    },
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_classic_battle_song_v1",
+      "source": "破阵子·为陈同甫赋壮词以寄之",
+      "panoramaUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png",
+      "coverUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "剑光",
+        "角声",
+        "沙场"
+      ]
     }
   }
 }

@@ -13,7 +13,20 @@
       "探索全景中的诗意意象",
       "解开三道与诗句紧密相关的闯关题",
       "集齐碎片后选择梦境归宿"
-    ]
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_jingmen_wilderness_v1",
+      "source": "渡荆门送别",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "山尽",
+        "平野",
+        "江流"
+      ]
+    }
   },
   "startNodeId": "main_scene",
   "nodes": [
@@ -239,5 +252,20 @@
   ],
   "imagePrompts": {
     "main_scene": "2:1 equirectangular panorama for Li Bai line 山随平野尽，江入大荒流。; 远行、舒展、山尽原开、江流大荒; no text, no watermark."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_jingmen_wilderness_v1",
+      "source": "渡荆门送别",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "山尽",
+        "平野",
+        "江流"
+      ]
+    }
   }
 }

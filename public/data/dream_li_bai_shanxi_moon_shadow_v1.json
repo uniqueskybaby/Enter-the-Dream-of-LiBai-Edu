@@ -13,7 +13,20 @@
       "探索全景中的诗意意象",
       "解开三道与诗句紧密相关的闯关题",
       "集齐碎片后选择梦境归宿"
-    ]
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_shanxi_moon_shadow_v1",
+      "source": "梦游天姥吟留别",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "湖月",
+        "我影",
+        "剡溪"
+      ]
+    }
   },
   "startNodeId": "main_scene",
   "nodes": [
@@ -239,5 +252,20 @@
   ],
   "imagePrompts": {
     "main_scene": "2:1 equirectangular panorama for Li Bai line 湖月照我影，送我至剡溪。; 清夜、湖月、水路、影随人行; no text, no watermark."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_shanxi_moon_shadow_v1",
+      "source": "梦游天姥吟留别",
+      "panoramaUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png",
+      "coverUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "湖月",
+        "我影",
+        "剡溪"
+      ]
+    }
   }
 }

@@ -7,7 +7,10 @@
     "worldName": "庐山银河梦境",
     "configUrl": "/data/dream_li_bai_lushan_v1.json",
     "coverUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
-    "theme": "紫烟飞瀑"
+    "theme": "紫烟飞瀑",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_lushan_v1"
   },
   {
     "gameId": "dream_li_bai_moon_three_v1",
@@ -17,7 +20,10 @@
     "worldName": "月影三人梦境",
     "configUrl": "/data/dream_li_bai_moon_three_v1.json",
     "coverUrl": "/assets/panoramas/moon_three_main_4096x2048.jpg",
-    "theme": "月银酒金"
+    "theme": "月银酒金",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_moon_three_v1"
   },
   {
     "gameId": "dream_li_bai_yellow_river_v1",
@@ -27,7 +33,10 @@
     "worldName": "黄河天海梦境",
     "configUrl": "/data/dream_li_bai_yellow_river_v1.json",
     "coverUrl": "/assets/panoramas/yellow_river_main_4096x2048.jpg",
-    "theme": "金涛天水"
+    "theme": "金涛天水",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_yellow_river_v1"
   },
   {
     "gameId": "dream_li_bai_yangtze_farewell_v1",
@@ -37,7 +46,10 @@
     "worldName": "长江天际梦境",
     "configUrl": "/data/dream_li_bai_yangtze_farewell_v1.json",
     "coverUrl": "/assets/panoramas/yangtze_farewell_main_4096x2048.jpg",
-    "theme": "青碧送别"
+    "theme": "青碧送别",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_yangtze_farewell_v1"
   },
   {
     "gameId": "dream_generated_changsha_1925",
@@ -49,7 +61,10 @@
     "coverUrl": "/assets/panoramas/dream_generated_changsha_1925_main_scene.png",
     "theme": "玩家AI生成",
     "origin": "player-ai",
-    "savedAt": "2026-05-24T08:49:10.818Z"
+    "savedAt": "2026-05-24T08:49:10.818Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_generated_changsha_1925"
   },
   {
     "gameId": "dream_generated_silver_saddle_meteor",
@@ -61,7 +76,10 @@
     "coverUrl": "/assets/panoramas/dream_generated_silver_saddle_meteor_main_scene.png",
     "theme": "玩家AI生成",
     "origin": "player-ai",
-    "savedAt": "2026-05-24T15:08:36.294Z"
+    "savedAt": "2026-05-24T15:08:36.294Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_generated_silver_saddle_meteor"
   },
   {
     "gameId": "dream_li_bai_tianshan_cloudsea_v1",
@@ -73,7 +91,10 @@
     "coverUrl": "/assets/panoramas/dream_li_bai_tianshan_cloudsea_main.png",
     "theme": "雪岭月银",
     "origin": "built-in",
-    "savedAt": "2026-06-30T00:00:00.000Z"
+    "savedAt": "2026-06-30T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_tianshan_cloudsea_v1"
   },
   {
     "gameId": "dream_li_bai_tianmen_sail_v1",
@@ -85,7 +106,10 @@
     "coverUrl": "/assets/panoramas/dream_li_bai_tianmen_sail_main.png",
     "theme": "青山日帆",
     "origin": "built-in",
-    "savedAt": "2026-06-30T00:00:00.000Z"
+    "savedAt": "2026-06-30T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_tianmen_sail_v1"
   },
   {
     "gameId": "dream_li_bai_jingmen_wilderness_v1",
@@ -97,7 +121,10 @@
     "coverUrl": "/assets/panoramas/dream_li_bai_jingmen_wilderness_main.png",
     "theme": "平野江蓝",
     "origin": "built-in",
-    "savedAt": "2026-06-30T00:00:00.000Z"
+    "savedAt": "2026-06-30T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_jingmen_wilderness_v1"
   },
   {
     "gameId": "dream_li_bai_moon_mirror_sea_tower_v1",
@@ -109,7 +136,10 @@
     "coverUrl": "/assets/panoramas/dream_li_bai_moon_mirror_sea_tower_main.png",
     "theme": "月镜云楼",
     "origin": "built-in",
-    "savedAt": "2026-06-30T00:00:00.000Z"
+    "savedAt": "2026-06-30T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_moon_mirror_sea_tower_v1"
   },
   {
     "gameId": "dream_li_bai_baidi_clouds_v1",
@@ -121,7 +151,10 @@
     "coverUrl": "/assets/panoramas/dream_li_bai_baidi_clouds_main.png",
     "theme": "彩云峡光",
     "origin": "built-in",
-    "savedAt": "2026-06-30T00:00:00.000Z"
+    "savedAt": "2026-06-30T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_baidi_clouds_v1"
   },
   {
     "gameId": "dream_li_bai_shu_road_cloud_horse_v1",
@@ -133,7 +166,10 @@
     "coverUrl": "/assets/panoramas/dream_li_bai_shu_road_cloud_horse_main.png",
     "theme": "蜀道云骑",
     "origin": "built-in",
-    "savedAt": "2026-06-30T00:00:00.000Z"
+    "savedAt": "2026-06-30T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_shu_road_cloud_horse_v1"
   },
   {
     "gameId": "dream_li_bai_lanling_wine_v1",
@@ -145,7 +181,10 @@
     "coverUrl": "/assets/panoramas/dream_li_bai_lanling_wine_main.png",
     "theme": "玉碗琥珀",
     "origin": "built-in",
-    "savedAt": "2026-06-30T00:00:00.000Z"
+    "savedAt": "2026-06-30T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_lanling_wine_v1"
   },
   {
     "gameId": "dream_li_bai_yueyang_geese_moon_v1",
@@ -157,7 +196,10 @@
     "coverUrl": "/assets/panoramas/dream_li_bai_yueyang_geese_moon_main.png",
     "theme": "雁去月来",
     "origin": "built-in",
-    "savedAt": "2026-06-30T00:00:00.000Z"
+    "savedAt": "2026-06-30T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_yueyang_geese_moon_v1"
   },
   {
     "gameId": "dream_li_bai_shanxi_moon_shadow_v1",
@@ -169,7 +211,10 @@
     "coverUrl": "/assets/panoramas/dream_li_bai_shanxi_moon_shadow_main.png",
     "theme": "湖月送影",
     "origin": "built-in",
-    "savedAt": "2026-06-30T00:00:00.000Z"
+    "savedAt": "2026-06-30T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_shanxi_moon_shadow_v1"
   },
   {
     "gameId": "dream_li_bai_tianmu_rain_mist_v1",
@@ -181,7 +226,10 @@
     "coverUrl": "/assets/panoramas/dream_li_bai_tianmu_rain_mist_main.png",
     "theme": "青云水烟",
     "origin": "built-in",
-    "savedAt": "2026-06-30T00:00:00.000Z"
+    "savedAt": "2026-06-30T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_li_bai_tianmu_rain_mist_v1"
   },
   {
     "gameId": "dream_classic_jingye_moon_v1",
@@ -190,10 +238,13 @@
     "source": "静夜思",
     "worldName": "静夜月霜梦境",
     "configUrl": "/data/dream_classic_jingye_moon_v1.json",
-    "coverUrl": "/assets/panoramas/moon_three_silent_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_jingye_moon_v1_main.png",
     "theme": "月白乡思",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_jingye_moon_v1"
   },
   {
     "gameId": "dream_classic_gulang_moon_v1",
@@ -202,10 +253,13 @@
     "source": "古朗月行",
     "worldName": "白玉盘月梦境",
     "configUrl": "/data/dream_classic_gulang_moon_v1.json",
-    "coverUrl": "/assets/panoramas/moon_three_main_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_gulang_moon_v1_main.png",
     "theme": "童心明月",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_gulang_moon_v1"
   },
   {
     "gameId": "dream_classic_chunxiao_birds_v1",
@@ -214,10 +268,13 @@
     "source": "春晓",
     "worldName": "春晓鸟鸣梦境",
     "configUrl": "/data/dream_classic_chunxiao_birds_v1.json",
-    "coverUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_chunxiao_birds_v1_main.png",
     "theme": "春晨花雨",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_chunxiao_birds_v1"
   },
   {
     "gameId": "dream_classic_stork_tower_v1",
@@ -226,10 +283,13 @@
     "source": "登鹳雀楼",
     "worldName": "鹳雀楼远望梦境",
     "configUrl": "/data/dream_classic_stork_tower_v1.json",
-    "coverUrl": "/assets/panoramas/yellow_river_main_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_stork_tower_v1_main.png",
     "theme": "登高黄河",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_stork_tower_v1"
   },
   {
     "gameId": "dream_classic_liangzhou_pass_v1",
@@ -238,10 +298,13 @@
     "source": "凉州词",
     "worldName": "玉门孤城梦境",
     "configUrl": "/data/dream_classic_liangzhou_pass_v1.json",
-    "coverUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_liangzhou_pass_v1_main.png",
     "theme": "边关黄河",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_liangzhou_pass_v1"
   },
   {
     "gameId": "dream_classic_desert_envoy_v1",
@@ -250,10 +313,13 @@
     "source": "使至塞上",
     "worldName": "大漠长河梦境",
     "configUrl": "/data/dream_classic_desert_envoy_v1.json",
-    "coverUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_desert_envoy_v1_main.png",
     "theme": "大漠落日",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_desert_envoy_v1"
   },
   {
     "gameId": "dream_classic_autumn_mountain_v1",
@@ -262,10 +328,13 @@
     "source": "山居秋暝",
     "worldName": "秋山松泉梦境",
     "configUrl": "/data/dream_classic_autumn_mountain_v1.json",
-    "coverUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_autumn_mountain_v1_main.png",
     "theme": "松泉秋月",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_autumn_mountain_v1"
   },
   {
     "gameId": "dream_classic_luchai_echo_v1",
@@ -274,10 +343,13 @@
     "source": "鹿柴",
     "worldName": "鹿柴深林梦境",
     "configUrl": "/data/dream_classic_luchai_echo_v1.json",
-    "coverUrl": "/assets/panoramas/branch_silent_peak_4096x2048.webp",
+    "coverUrl": "/assets/panoramas/dream_classic_luchai_echo_v1_main.png",
     "theme": "空山返照",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_luchai_echo_v1"
   },
   {
     "gameId": "dream_classic_yuaner_farewell_v1",
@@ -286,10 +358,13 @@
     "source": "送元二使安西",
     "worldName": "渭城朝雨梦境",
     "configUrl": "/data/dream_classic_yuaner_farewell_v1.json",
-    "coverUrl": "/assets/panoramas/yangtze_farewell_pavilion_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_yuaner_farewell_v1_main.png",
     "theme": "雨柳送别",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_yuaner_farewell_v1"
   },
   {
     "gameId": "dream_classic_dufu_wangyue_v1",
@@ -298,10 +373,13 @@
     "source": "望岳",
     "worldName": "泰山绝顶梦境",
     "configUrl": "/data/dream_classic_dufu_wangyue_v1.json",
-    "coverUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_dufu_wangyue_v1_main.png",
     "theme": "泰山层云",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_dufu_wangyue_v1"
   },
   {
     "gameId": "dream_classic_dufu_spring_view_v1",
@@ -310,10 +388,13 @@
     "source": "春望",
     "worldName": "春城草木梦境",
     "configUrl": "/data/dream_classic_dufu_spring_view_v1.json",
-    "coverUrl": "/assets/panoramas/yangtze_farewell_pavilion_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_dufu_spring_view_v1_main.png",
     "theme": "春望家国",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_dufu_spring_view_v1"
   },
   {
     "gameId": "dream_classic_dufu_quatrain_v1",
@@ -322,10 +403,13 @@
     "source": "绝句",
     "worldName": "翠柳白鹭梦境",
     "configUrl": "/data/dream_classic_dufu_quatrain_v1.json",
-    "coverUrl": "/assets/panoramas/yangtze_farewell_horizon_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_dufu_quatrain_v1_main.png",
     "theme": "明丽春景",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_dufu_quatrain_v1"
   },
   {
     "gameId": "dream_classic_grass_farewell_v1",
@@ -334,10 +418,13 @@
     "source": "赋得古原草送别",
     "worldName": "古原春草梦境",
     "configUrl": "/data/dream_classic_grass_farewell_v1.json",
-    "coverUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_grass_farewell_v1_main.png",
     "theme": "古原春风",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_grass_farewell_v1"
   },
   {
     "gameId": "dream_classic_qiantang_spring_v1",
@@ -346,10 +433,13 @@
     "source": "钱塘湖春行",
     "worldName": "钱塘早春梦境",
     "configUrl": "/data/dream_classic_qiantang_spring_v1.json",
-    "coverUrl": "/assets/panoramas/yangtze_farewell_horizon_4096x2048.webp",
+    "coverUrl": "/assets/panoramas/dream_classic_qiantang_spring_v1_main.png",
     "theme": "湖上早春",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_qiantang_spring_v1"
   },
   {
     "gameId": "dream_classic_jiangxue_boat_v1",
@@ -358,10 +448,13 @@
     "source": "江雪",
     "worldName": "寒江独钓梦境",
     "configUrl": "/data/dream_classic_jiangxue_boat_v1.json",
-    "coverUrl": "/assets/panoramas/branch_silent_peak_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_jiangxue_boat_v1_main.png",
     "theme": "寒江雪静",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_jiangxue_boat_v1"
   },
   {
     "gameId": "dream_classic_fengqiao_bells_v1",
@@ -370,10 +463,13 @@
     "source": "枫桥夜泊",
     "worldName": "枫桥钟声梦境",
     "configUrl": "/data/dream_classic_fengqiao_bells_v1.json",
-    "coverUrl": "/assets/panoramas/moon_three_shadow_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_fengqiao_bells_v1_main.png",
     "theme": "夜泊钟声",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_fengqiao_bells_v1"
   },
   {
     "gameId": "dream_classic_guazhou_moon_v1",
@@ -382,10 +478,13 @@
     "source": "泊船瓜洲",
     "worldName": "瓜洲春风梦境",
     "configUrl": "/data/dream_classic_guazhou_moon_v1.json",
-    "coverUrl": "/assets/panoramas/yangtze_farewell_sail_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_guazhou_moon_v1_main.png",
     "theme": "春风归舟",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_guazhou_moon_v1"
   },
   {
     "gameId": "dream_classic_xilin_wall_v1",
@@ -394,10 +493,13 @@
     "source": "题西林壁",
     "worldName": "庐山多面梦境",
     "configUrl": "/data/dream_classic_xilin_wall_v1.json",
-    "coverUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_xilin_wall_v1_main.png",
     "theme": "庐山哲理",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_xilin_wall_v1"
   },
   {
     "gameId": "dream_classic_westlake_rain_v1",
@@ -406,10 +508,13 @@
     "source": "饮湖上初晴后雨",
     "worldName": "西湖晴雨梦境",
     "configUrl": "/data/dream_classic_westlake_rain_v1.json",
-    "coverUrl": "/assets/panoramas/yangtze_farewell_horizon_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_westlake_rain_v1_main.png",
     "theme": "西湖晴雨",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_westlake_rain_v1"
   },
   {
     "gameId": "dream_classic_mid_autumn_moon_v1",
@@ -418,10 +523,13 @@
     "source": "水调歌头",
     "worldName": "中秋共月梦境",
     "configUrl": "/data/dream_classic_mid_autumn_moon_v1.json",
-    "coverUrl": "/assets/panoramas/branch_moon_toast_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_mid_autumn_moon_v1_main.png",
     "theme": "中秋明月",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_mid_autumn_moon_v1"
   },
   {
     "gameId": "dream_classic_shanxi_village_v1",
@@ -430,10 +538,13 @@
     "source": "游山西村",
     "worldName": "柳暗花明梦境",
     "configUrl": "/data/dream_classic_shanxi_village_v1.json",
-    "coverUrl": "/assets/panoramas/lushan_main_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_shanxi_village_v1_main.png",
     "theme": "山村转机",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_shanxi_village_v1"
   },
   {
     "gameId": "dream_classic_battle_song_v1",
@@ -442,10 +553,13 @@
     "source": "破阵子·为陈同甫赋壮词以寄之",
     "worldName": "沙场秋兵梦境",
     "configUrl": "/data/dream_classic_battle_song_v1.json",
-    "coverUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_battle_song_v1_main.png",
     "theme": "沙场壮词",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_battle_song_v1"
   },
   {
     "gameId": "dream_classic_xijiang_moon_v1",
@@ -454,10 +568,13 @@
     "source": "西江月·夜行黄沙道中",
     "worldName": "黄沙道夜行梦境",
     "configUrl": "/data/dream_classic_xijiang_moon_v1.json",
-    "coverUrl": "/assets/panoramas/branch_moon_bridge_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_xijiang_moon_v1_main.png",
     "theme": "乡村月夜",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_xijiang_moon_v1"
   },
   {
     "gameId": "dream_classic_canghai_sea_v1",
@@ -466,10 +583,13 @@
     "source": "观沧海",
     "worldName": "碣石沧海梦境",
     "configUrl": "/data/dream_classic_canghai_sea_v1.json",
-    "coverUrl": "/assets/panoramas/yellow_river_sea_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_canghai_sea_v1_main.png",
     "theme": "沧海星汉",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_canghai_sea_v1"
   },
   {
     "gameId": "dream_classic_chile_sky_v1",
@@ -478,9 +598,12 @@
     "source": "敕勒歌",
     "worldName": "敕勒草原梦境",
     "configUrl": "/data/dream_classic_chile_sky_v1.json",
-    "coverUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg",
+    "coverUrl": "/assets/panoramas/dream_classic_chile_sky_v1_main.png",
     "theme": "草原天地",
     "origin": "education-supplement",
-    "savedAt": "2026-07-01T00:00:00.000Z"
+    "savedAt": "2026-07-01T00:00:00.000Z",
+    "assetStatus": "dedicated",
+    "assetKind": "2:1-equirectangular-panorama",
+    "assetGameId": "dream_classic_chile_sky_v1"
   }
 ]

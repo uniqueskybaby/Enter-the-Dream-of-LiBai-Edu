@@ -9,7 +9,24 @@
   "world": {
     "worldName": "黄河天海梦境",
     "visualTone": "史诗金涛、风暴青灰、云上天光、奔涌水墨",
-    "spaceRules": ["黄河从天幕裂隙垂落", "奔流的水声会推动道路", "海潮记录一去不回的时间"]
+    "spaceRules": [
+      "黄河从天幕裂隙垂落",
+      "奔流的水声会推动道路",
+      "海潮记录一去不回的时间"
+    ],
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_yellow_river_v1",
+      "source": "将进酒",
+      "panoramaUrl": "/assets/panoramas/yellow_river_main_4096x2048.jpg",
+      "coverUrl": "/assets/panoramas/yellow_river_main_4096x2048.jpg",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "黄河",
+        "天水",
+        "归海"
+      ]
+    }
   },
   "startNodeId": "main_yellow_river",
   "nodes": [
@@ -19,7 +36,11 @@
       "title": "黄河天海梦境",
       "subtitle": "站在天河石台，寻找黄河、天水、归海三枚诗意碎片",
       "panoramaUrl": "/assets/panoramas/yellow_river_main_4096x2048.jpg",
-      "initialView": { "yaw": -4, "pitch": 2, "fov": 105 },
+      "initialView": {
+        "yaw": -4,
+        "pitch": 2,
+        "fov": 105
+      },
       "ambientLine": "金色大河从云端奔来，轰鸣声像一卷被展开的时间。",
       "hotspots": [
         {
@@ -60,7 +81,11 @@
       "title": "天河源门",
       "subtitle": "云门洞开，黄河像从天上落入人间。",
       "panoramaUrl": "/assets/panoramas/yellow_river_source_4096x2048.jpg",
-      "initialView": { "yaw": 3, "pitch": 4, "fov": 104 },
+      "initialView": {
+        "yaw": 3,
+        "pitch": 4,
+        "fov": 104
+      },
       "ambientLine": "你站在云端石门前，看见金河从天光深处奔涌而下。",
       "hotspots": []
     },
@@ -70,7 +95,11 @@
       "title": "奔流峡道",
       "subtitle": "水势穿峡而过，像万匹金马撞开山骨。",
       "panoramaUrl": "/assets/panoramas/yellow_river_canyon_4096x2048.jpg",
-      "initialView": { "yaw": -10, "pitch": -2, "fov": 104 },
+      "initialView": {
+        "yaw": -10,
+        "pitch": -2,
+        "fov": 104
+      },
       "ambientLine": "浪声卷起你的衣袖，李白的笑声被水雾推向远方。",
       "hotspots": []
     },
@@ -80,7 +109,11 @@
       "title": "入海潮台",
       "subtitle": "黄河散入沧海，回头路已被潮声洗净。",
       "panoramaUrl": "/assets/panoramas/yellow_river_sea_4096x2048.jpg",
-      "initialView": { "yaw": 12, "pitch": -4, "fov": 104 },
+      "initialView": {
+        "yaw": 12,
+        "pitch": -4,
+        "fov": 104
+      },
       "ambientLine": "金涛与碧海相接，你忽然明白奔流也是一种归处。",
       "hotspots": []
     }
@@ -190,7 +223,12 @@
       "hint": "先确认诗句里的主角是哪条河。",
       "rewardLine": "黄河金骨归位，云端传来更大的水声。",
       "question": "这两句诗中，奔涌的主角是哪条河？",
-      "options": ["黄河", "长江", "洛水", "湘江"],
+      "options": [
+        "黄河",
+        "长江",
+        "洛水",
+        "湘江"
+      ],
       "correctIndex": 0
     },
     "heaven": {
@@ -201,7 +239,12 @@
       "hint": "抬头看水从哪里落下。",
       "rewardLine": "天水印亮起，归海之路在远方显形。",
       "question": "“黄河之水天上来”最强调黄河怎样的气势？",
-      "options": ["低回婉转", "从天而降的壮阔", "静止如镜", "细雨无声"],
+      "options": [
+        "低回婉转",
+        "从天而降的壮阔",
+        "静止如镜",
+        "细雨无声"
+      ],
       "correctIndex": 1
     },
     "sea": {
@@ -212,11 +255,20 @@
       "hint": "终点不是停下，而是归入更大的水域。",
       "rewardLine": "归海潮印成形，天海诗阵已经开启。",
       "question": "“不复回”在诗中主要强化了什么感受？",
-      "options": ["春日闲适", "庭院幽静", "时间与生命不可倒流", "花影摇曳"],
+      "options": [
+        "春日闲适",
+        "庭院幽静",
+        "时间与生命不可倒流",
+        "花影摇曳"
+      ],
       "correctIndex": 2
     }
   },
-  "puzzleOrder": ["river", "heaven", "sea"],
+  "puzzleOrder": [
+    "river",
+    "heaven",
+    "sea"
+  ],
   "hiddenHotspots": [
     {
       "id": "hidden_river_drum",
@@ -227,7 +279,9 @@
       "dwellMs": 1800,
       "speaker": "黄河",
       "dialogue": "水底似有战鼓回响，每一声都把诗句推向更远的海。",
-      "reward": { "moonlight": 150 }
+      "reward": {
+        "moonlight": 150
+      }
     },
     {
       "id": "hidden_river_cliffmark",
@@ -238,7 +292,9 @@
       "dwellMs": 2000,
       "speaker": "石崖",
       "dialogue": "崖壁被浪花刻出一道金痕，像时间曾在这里回头看了一眼。",
-      "reward": { "scroll": 55 }
+      "reward": {
+        "scroll": 55
+      }
     }
   ],
   "imagePrompts": {
@@ -249,5 +305,20 @@
     "ending_heaven_source": "Cinematic ending illustration, traveler at heavenly river source, golden water from clouds, Tang dynasty epic fantasy, no text.",
     "ending_river_rush": "Cinematic ending illustration, traveler breaking through Yellow River canyon spray, golden rapids, heroic Tang poetry, no text.",
     "ending_sea_return": "Cinematic ending illustration, Yellow River entering vast sea, tide platform, reflective sky, poetic and grand, no text."
+  },
+  "meta": {
+    "assetBinding": {
+      "status": "dedicated",
+      "gameId": "dream_li_bai_yellow_river_v1",
+      "source": "将进酒",
+      "panoramaUrl": "/assets/panoramas/yellow_river_main_4096x2048.jpg",
+      "coverUrl": "/assets/panoramas/yellow_river_main_4096x2048.jpg",
+      "materialType": "2:1-equirectangular-panorama",
+      "semanticAnchors": [
+        "黄河",
+        "天水",
+        "归海"
+      ]
+    }
   }
 }
